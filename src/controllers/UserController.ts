@@ -123,12 +123,10 @@ class UserController {
     // Save the updated information to the database
     try {
       await UserController.db.save(user)
-      return res
-        .status(200)
-        .send({
-          'User updated successfully': user,
-          'Old user information was:': userOld,
-        })
+      return res.status(200).send({
+        'User updated successfully': user,
+        'Old user information was:': userOld,
+      })
     } catch (e) {
       return res.status(400).send({ 'Failed updating user info': e })
     }
