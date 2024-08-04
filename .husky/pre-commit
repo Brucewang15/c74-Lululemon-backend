@@ -1,4 +1,5 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
+echo "Husky pre-commit hook is running..."
 yarn prettier --check "src/**/*.{js,jsx,ts,tsx,css,scss,md}"
