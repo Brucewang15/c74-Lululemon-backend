@@ -24,8 +24,6 @@ import * as bodyParser from 'body-parser'
 import { CLog } from './AppHelper'
 import gDB from './InitDataSource'
 import cors = require('cors')
-import routes from './routes'
-import rootRouter from './routes'
 
 const MAX_UPLOAD_FILE_SIZE = 50
 const SERVER_PORT = process.env.PORT
@@ -40,7 +38,6 @@ const startServer = async () => {
     app.disable('x-powered-by')
     app.use(bodyParser.json())
     app.use(cors())
-    app.use('/', rootRouter)
 
     // setup express app here
     // ...
