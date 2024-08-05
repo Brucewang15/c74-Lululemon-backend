@@ -42,8 +42,3 @@ export class UserEntity {
     return bcrypt.compare(plainText, this.password)
   }
 }
-
-//作业
-//1. implment CRUD of user 增删改查
-// 2. 实现一个完整的存放 WebcamPhotos entity， 存放你从摄像头拍的照片 （filename, create date, id, dimensions/size, path, notes备注)
-// 3. API to CRD增删 WebcamPhotos， 还有getAll
