@@ -3,33 +3,43 @@ import { UserEntity } from '../entity/User.entity'
 import { NextFunction, Request, Response } from 'express'
 import { validate } from 'class-validator'
 import * as jwt from 'jsonwebtoken'
+import { CLog } from '../AppHelper'
 
 class AuthController {
   static db = gDB.getRepository(UserEntity)
 
-  static async signUp(req: Request, res: Response, next: NextFunction) {
-    const { firstName, lastName, email, age, gender, password } = req.body
+  // new users signup
+  static async signUp(req: Request, res: Response) {
+    const { email, password } = req.body
+
+    if (!(email && password)) {
+      return res.status(400).send('Invalid email or password.')
+    }
+
+    const db = gDB.getRepository(UserEntity)
+
     let user = new UserEntity()
-    user.firstName = firstName
-    user.lastName = lastName
     user.email = email
-    user.age = age
-    user.gender = gender
     user.password = password
 
-    try {
-      const errors = await validate(user)
-      if (errors.length > 0) {
-        return res
-          .status(400)
-          .send('Your user information is not valid, try again')
-      }
+    user.hashPassword()
 
-      user.hashPassword()
-      await AuthController.db.save(user)
-      return res.status(200).send({ 'user created successfully': user })
-    } catch (e) {
-      return res.status(400).send('User created failed')
+    try {
+      const error = await validate(user, { groups: ['signUp'] })
+      if (error.length > 0) {
+        CLog.bad('Validation failed: ', error)
+        return res.status(400).send({
+          'Validation failed: ': error,
+        })
+      }
+      user = await db.save(user)
+
+      return res
+        .status(201)
+        .send(`User info, ${user.id}, ${user.email}, ${user.password}`)
+    } catch (err) {
+      CLog.bad('Sign up failed: ', err)
+      res.status(400).send('Sign up failed.')
     }
   }
 

@@ -4,6 +4,6 @@ import auth from './auth'
 
 const rootRouter = Router()
 
-rootRouter.use('/user', auth)
+rootRouter.use('/auth', auth)
 
 export default rootRouter
