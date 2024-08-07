@@ -1,8 +1,15 @@
 // 20221020, Kevin Maas
-
+// require('dotenv-flow').config({
+//   path: path.resolve(__dirname, '../'), // 确保路径正确，指向包含 .env 文件的目录
+// })
+// console.log('Loaded DB_FILE:', process.env.DB_FILE) // 打印环境变量，检查是否正确加载
 import { DataSource, DataSourceOptions } from 'typeorm'
 import { CLog, CPath, gisProduction } from './AppHelper'
 import * as path from 'path'
+
+require('dotenv').config({
+  path: path.resolve(__dirname, '../.env.development'),
+})
 
 if (!process.env.PORT) {
   require('dotenv-flow').config()
@@ -48,7 +55,9 @@ const options: DataSourceOptions = {
     entityPath,
     // path.join(__dirname, '../**/**.entity{.ts,.js}') : '**/*.entity{.ts,.js}'
   ],
-  migrations: [process.env.MYSQL_MIGRATIONS],
+  // migrations: [path.join(__dirname, '/../migration/*.ts')],
+  migrations: ['src/migration/*.ts'],
+
   subscribers: [process.env.MYSQL_SUBSCRIBERS],
   // seeds: [
   //     //process.env.TYPEORM_SEEDING_SEEDS

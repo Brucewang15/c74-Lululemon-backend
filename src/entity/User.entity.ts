@@ -20,7 +20,7 @@ export class UserEntity {
   @Length(5, 500)
   email: string
 
-  @Column({ nullable: false })
+  @Column({ nullable: true })
   @Min(1)
   @Max(150)
   age: number
@@ -28,7 +28,7 @@ export class UserEntity {
   @Column({ nullable: true })
   gender: string
 
-  @Column()
+  @Column({ nullable: false })
   @Length(6, 100)
   password: string
 

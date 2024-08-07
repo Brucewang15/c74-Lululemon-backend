@@ -1,4 +1,4 @@
-import { Request, Response } from 'express'
+import { NextFunction, Request, Response } from 'express'
 import gDB from '../InitDataSource'
 import { UserEntity } from '../entity/User.entity'
 import { validate } from 'class-validator'
