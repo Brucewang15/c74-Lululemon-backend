@@ -1,19 +1,3 @@
-//env check
-//
-//--------------------------------------
-//
-// 20221020 by Kevin Maas
-
-//
-// 1 upgrade TypeORM from v0.2.44 to v0.3.10
-// 2. transfer DB connection from createConnection to DataSource mode
-// 3. upgrade other packages to the latest version
-// 4. start to user compiled JS in Production mode to optimize the execution time
-
-//
-//--------------------------------------
-//
-
 import 'reflect-metadata'
 import { createConnection } from 'typeorm'
 import { UserEntity } from './entity/User.entity'

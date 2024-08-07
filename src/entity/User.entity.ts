@@ -1,6 +1,7 @@
 import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm'
 import { IsEmail, Length, Matches, Max, Min } from 'class-validator'
 import * as bcrypt from 'bcrypt'
+import { randomBytes } from 'crypto' // For generating secure tokens
 
 @Entity()
 export class UserEntity {
@@ -45,5 +46,20 @@ export class UserEntity {
   validatePlainPassword(plainText: string): boolean {
     // 这里会return true 和 false
     return bcrypt.compare(plainText, this.password)
+  }
+
+  @Column({ nullable: true })
+  resetToken: string
+
+  generateResetToken() {
+    this.resetToken = randomBytes(20).toString('hex')
+  }
+
+  changePassword(plainText: string) {
+    this.password = plainText
+  }
+
+  checking(plainText: string): boolean {
+    return bcrypt.compareSync(plainText, this.password)
   }
 }
