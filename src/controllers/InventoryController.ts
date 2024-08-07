@@ -14,8 +14,15 @@ class InventoryController {
     
         res.setHeader('Content-Type', 'application/json');
         res.end(JSON.stringify({stock: {
+            "6": 1,
+            "8": 2,
             "10": 4,
+            "12": 2,
+            "14": 1,
+            "16": 1,
+            "S": 2,
             "M": 3,
+            "L": 2,
         }}));
     }
 }
