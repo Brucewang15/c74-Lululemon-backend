@@ -18,6 +18,7 @@ class changeController {
       }
 
       user.changePassword(data.password)
+      user.hashPassword()
       await db.save(user)
       res.status(200).send('Token is valid')
     } catch (err) {

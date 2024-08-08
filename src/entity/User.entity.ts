@@ -1,7 +1,9 @@
-import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm'
+import { Entity, PrimaryGeneratedColumn, Column, OneToMany } from 'typeorm'
 import { IsEmail, Length, Matches, Max, Min } from 'class-validator'
 import * as bcrypt from 'bcrypt'
-import { randomBytes } from 'crypto' // For generating secure tokens
+import { randomBytes } from 'crypto'
+import { Address } from 'node:cluster'
+import { ShippingAddressEntity } from './ShippingAddress.entity' // For generating secure tokens
 
 @Entity()
 export class UserEntity {
@@ -28,6 +30,13 @@ export class UserEntity {
 
   @Column({ nullable: true })
   gender: string
+
+  @OneToMany(
+    () => ShippingAddressEntity,
+    (shippingAddress) => shippingAddress.user,
+    { cascade: true },
+  )
+  shippingAddresses: Address[]
 
   @Column()
   @Length(8, 100, { groups: ['signUp'] })

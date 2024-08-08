@@ -1,12 +1,10 @@
+import InventoryController from '../controllers/InventoryController'
 
-import InventoryController from "../controllers/InventoryController"
-
-import { Router } from "express"
+import { Router } from 'express'
 const router = Router()
 
+router.get('/', InventoryController.index)
 
-router.get("/", InventoryController.index);
-
-router.get("/item/:id", InventoryController.item_detail);
+router.get('/item/:id', InventoryController.item_detail)
 
 export default router
