@@ -27,7 +27,10 @@ class UserController {
           .status(400)
           .send(new ResponseClass(400, 'Please enter a User ID (number)'))
       }
-      user = await userDB.findOneOrFail({ where: { id: userIdNum } })
+      user = await userDB.findOneOrFail({
+        where: { id: userIdNum },
+        relations: ['shoppingCart'],
+      })
       const userBasicInfo = { ...user }
       delete userBasicInfo.password
       if (userBasicInfo.resetToken !== null) {

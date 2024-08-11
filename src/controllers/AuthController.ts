@@ -4,6 +4,8 @@ import { NextFunction, Request, Response } from 'express'
 import { validate } from 'class-validator'
 import * as jwt from 'jsonwebtoken'
 import { CLog } from '../AppHelper'
+import { ShoppingCartEntity } from '../entity/ShoppingCart.entity'
+import cart from '../routes/cart'
 
 class AuthController {
   static db = gDB.getRepository(UserEntity)
@@ -17,7 +19,7 @@ class AuthController {
     }
 
     const db = gDB.getRepository(UserEntity)
-
+    const cartRepo = gDB.getRepository(ShoppingCartEntity)
     let user = new UserEntity()
     user.email = email
     user.password = password
@@ -33,6 +35,16 @@ class AuthController {
         })
       }
       user = await db.save(user)
+
+      // create a shopping cart for user
+      // assign user to shoppingCart's user
+      const shoppingCart = new ShoppingCartEntity()
+      shoppingCart.user = user
+      await cartRepo.save(shoppingCart)
+
+      // assign shopping cart to user's shopping cart
+      user.shoppingCart = shoppingCart
+      await db.save(user)
 
       return res
         .status(201)
@@ -68,6 +80,7 @@ class AuthController {
         where: {
           email: email,
         },
+        relations: ['shoppingCart'],
       })
       // if no user found, return to client
       if (!user) {
