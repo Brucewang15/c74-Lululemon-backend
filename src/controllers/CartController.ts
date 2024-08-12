@@ -92,6 +92,7 @@ export class CartController {
           productId: productId,
           colorId: colorId,
           size: size || null,
+          cart: { id: +cartId },
         },
       })
       // find if the item is already in the db
@@ -104,7 +105,10 @@ export class CartController {
       }
       // if it is not in the db, then make a new cartItem entity and save it to db
       else {
-        let shoppingCart = null
+        let shoppingCart = await cartRepo.findOneOrFail({
+          where: { id: +cartId },
+          relations: ['cartItems'],
+        })
         const cartItem = new CartItemEntity()
         cartItem.image = image
         cartItem.colorId = colorId
@@ -114,6 +118,7 @@ export class CartController {
         cartItem.name = name
         cartItem.swatchName = swatchName
         cartItem.productId = productId
+        cartItem.cart = shoppingCart
 
         const errors = await validate(cartItem)
         if (errors.length > 0)
@@ -126,11 +131,7 @@ export class CartController {
                 errors,
               ),
             )
-        shoppingCart = await cartRepo.findOneOrFail({
-          where: { id: +cartId },
-          relations: ['cartItems'],
-        })
-        cartItem.cart = shoppingCart
+
         shoppingCart.cartItems.push(cartItem)
 
         await cartRepo.save(shoppingCart)
@@ -172,22 +173,53 @@ export class CartController {
     let cart = null
     let cartItem = null
     try {
+      // find the cart item entity in the db and delete it
+      cartItem = await cartItemRepo.findOneOrFail({
+        where: { id: +itemId },
+        relations: ['cart'],
+      })
+      CLog.info('CartItem before deletion:', {
+        id: cartItem.id,
+        productId: cartItem.productId,
+        colorId: cartItem.colorId,
+        size: cartItem.size,
+        cartId: cartItem.cart ? cartItem.cart.id : null,
+      })
+
+      if (cartItem.cart && cartItem.cart.id === +cartId) {
+        await cartItemRepo.delete(cartItem.id)
+      } else {
+        return res
+          .status(400)
+          .send(
+            new ResponseClass(
+              400,
+              'CartItem does not belong to the specified Cart',
+            ),
+          )
+      }
+      await cartItemRepo.delete(cartItem)
+
+      const checkDeleted = await cartItemRepo.findOne({
+        where: { id: +itemId },
+      })
+      if (checkDeleted) {
+        return res
+          .status(500)
+          .send(new ResponseClass(500, 'Failed to delete the cart item.'))
+      }
+
+      CLog.info('The item you deleted ==>', cartItem)
+
       // find the shopping cart entity in the db, and filter the new cartItems
       cart = await cartRepo.findOneOrFail({
         where: { id: +cartId },
         relations: ['cartItems'],
       })
 
-      // find the cart item entity in the db and delete it
-      cartItem = await cartItemRepo.findOneOrFail({ where: { id: +itemId } })
-      await cartItemRepo.delete(cartItem)
-
-      CLog.info('The item you deleted ==>', cartItem)
-
-      const newCartItems = cart.cartItems.filter((item) => {
+      cart.cartItems = cart.cartItems.filter((item) => {
         return item.id !== +itemId
       })
-      cart.cartItems = newCartItems
       await cartRepo.save(cart)
 
       const sanitizedCartItems = instanceToPlain(cart.cartItems)

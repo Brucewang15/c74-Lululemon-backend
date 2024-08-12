@@ -1,10 +1,10 @@
-import { MigrationInterface, QueryRunner } from "typeorm";
+import { MigrationInterface, QueryRunner } from 'typeorm'
 
 export class Migration1723329756054 implements MigrationInterface {
-    name = 'Migration1723329756054'
+  name = 'Migration1723329756054'
 
-    public async up(queryRunner: QueryRunner): Promise<void> {
-        await queryRunner.query(`
+  public async up(queryRunner: QueryRunner): Promise<void> {
+    await queryRunner.query(`
             CREATE TABLE "temporary_cart_item_entity" (
                 "id" integer PRIMARY KEY AUTOINCREMENT NOT NULL,
                 "productId" varchar NOT NULL,
@@ -18,8 +18,8 @@ export class Migration1723329756054 implements MigrationInterface {
                 "cartId" integer,
                 CONSTRAINT "FK_eabcbd5dff337a605c509c85abf" FOREIGN KEY ("cartId") REFERENCES "shopping_cart_entity" ("id") ON DELETE NO ACTION ON UPDATE NO ACTION
             )
-        `);
-        await queryRunner.query(`
+        `)
+    await queryRunner.query(`
             INSERT INTO "temporary_cart_item_entity"(
                     "id",
                     "productId",
@@ -43,15 +43,15 @@ export class Migration1723329756054 implements MigrationInterface {
                 "swatchName",
                 "cartId"
             FROM "cart_item_entity"
-        `);
-        await queryRunner.query(`
+        `)
+    await queryRunner.query(`
             DROP TABLE "cart_item_entity"
-        `);
-        await queryRunner.query(`
+        `)
+    await queryRunner.query(`
             ALTER TABLE "temporary_cart_item_entity"
                 RENAME TO "cart_item_entity"
-        `);
-        await queryRunner.query(`
+        `)
+    await queryRunner.query(`
             CREATE TABLE "temporary_cart_item_entity" (
                 "id" integer PRIMARY KEY AUTOINCREMENT NOT NULL,
                 "productId" varchar NOT NULL,
@@ -65,8 +65,8 @@ export class Migration1723329756054 implements MigrationInterface {
                 "cartId" integer,
                 CONSTRAINT "FK_eabcbd5dff337a605c509c85abf" FOREIGN KEY ("cartId") REFERENCES "shopping_cart_entity" ("id") ON DELETE NO ACTION ON UPDATE NO ACTION
             )
-        `);
-        await queryRunner.query(`
+        `)
+    await queryRunner.query(`
             INSERT INTO "temporary_cart_item_entity"(
                     "id",
                     "productId",
@@ -90,22 +90,22 @@ export class Migration1723329756054 implements MigrationInterface {
                 "swatchName",
                 "cartId"
             FROM "cart_item_entity"
-        `);
-        await queryRunner.query(`
+        `)
+    await queryRunner.query(`
             DROP TABLE "cart_item_entity"
-        `);
-        await queryRunner.query(`
+        `)
+    await queryRunner.query(`
             ALTER TABLE "temporary_cart_item_entity"
                 RENAME TO "cart_item_entity"
-        `);
-    }
+        `)
+  }
 
-    public async down(queryRunner: QueryRunner): Promise<void> {
-        await queryRunner.query(`
+  public async down(queryRunner: QueryRunner): Promise<void> {
+    await queryRunner.query(`
             ALTER TABLE "cart_item_entity"
                 RENAME TO "temporary_cart_item_entity"
-        `);
-        await queryRunner.query(`
+        `)
+    await queryRunner.query(`
             CREATE TABLE "cart_item_entity" (
                 "id" integer PRIMARY KEY AUTOINCREMENT NOT NULL,
                 "productId" varchar NOT NULL,
@@ -119,8 +119,8 @@ export class Migration1723329756054 implements MigrationInterface {
                 "cartId" integer,
                 CONSTRAINT "FK_eabcbd5dff337a605c509c85abf" FOREIGN KEY ("cartId") REFERENCES "shopping_cart_entity" ("id") ON DELETE NO ACTION ON UPDATE NO ACTION
             )
-        `);
-        await queryRunner.query(`
+        `)
+    await queryRunner.query(`
             INSERT INTO "cart_item_entity"(
                     "id",
                     "productId",
@@ -144,15 +144,15 @@ export class Migration1723329756054 implements MigrationInterface {
                 "swatchName",
                 "cartId"
             FROM "temporary_cart_item_entity"
-        `);
-        await queryRunner.query(`
+        `)
+    await queryRunner.query(`
             DROP TABLE "temporary_cart_item_entity"
-        `);
-        await queryRunner.query(`
+        `)
+    await queryRunner.query(`
             ALTER TABLE "cart_item_entity"
                 RENAME TO "temporary_cart_item_entity"
-        `);
-        await queryRunner.query(`
+        `)
+    await queryRunner.query(`
             CREATE TABLE "cart_item_entity" (
                 "id" integer PRIMARY KEY AUTOINCREMENT NOT NULL,
                 "productId" varchar NOT NULL,
@@ -166,8 +166,8 @@ export class Migration1723329756054 implements MigrationInterface {
                 "cartId" integer,
                 CONSTRAINT "FK_eabcbd5dff337a605c509c85abf" FOREIGN KEY ("cartId") REFERENCES "shopping_cart_entity" ("id") ON DELETE NO ACTION ON UPDATE NO ACTION
             )
-        `);
-        await queryRunner.query(`
+        `)
+    await queryRunner.query(`
             INSERT INTO "cart_item_entity"(
                     "id",
                     "productId",
@@ -191,10 +191,9 @@ export class Migration1723329756054 implements MigrationInterface {
                 "swatchName",
                 "cartId"
             FROM "temporary_cart_item_entity"
-        `);
-        await queryRunner.query(`
+        `)
+    await queryRunner.query(`
             DROP TABLE "temporary_cart_item_entity"
-        `);
-    }
-
+        `)
+  }
 }
