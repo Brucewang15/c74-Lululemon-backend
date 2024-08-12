@@ -8,7 +8,6 @@ const productSearchClient = new vision.ProductSearchClient()
 const imageAnnotatorClient = new vision.ImageAnnotatorClient()
 
 class VisionApi {
-
   static getSimilarProductsUri = async (img_uri) => {
     const projectId = 'jay-lulu-test'
     const location = 'us-east1'
@@ -18,12 +17,12 @@ class VisionApi {
     const productSetPath = productSearchClient.productSetPath(
       projectId,
       location,
-      productSetId
+      productSetId,
     )
 
     const request = {
-      image: {source: {imageUri: img_uri}},
-      features: [{type: "PRODUCT_SEARCH" as const}],
+      image: { source: { imageUri: img_uri } },
+      features: [{ type: 'PRODUCT_SEARCH' as const }],
       imageContext: {
         productSearchParams: {
           productSet: productSetPath,
@@ -45,12 +44,12 @@ class VisionApi {
     const productSetPath = productSearchClient.productSetPath(
       projectId,
       location,
-      productSetId
+      productSetId,
     )
 
     const request = {
-      image: {content: img},
-      features: [{type: "PRODUCT_SEARCH" as const}],
+      image: { content: img },
+      features: [{ type: 'PRODUCT_SEARCH' as const }],
       imageContext: {
         productSearchParams: {
           productSet: productSetPath,
@@ -70,13 +69,15 @@ class VisionApi {
     const requests = [request]
 
     try {
+      const responses = await imageAnnotatorClient.batchAnnotateImages({
+        requests: requests,
+      })
 
-      const responses = await imageAnnotatorClient.batchAnnotateImages({requests: requests})
-
-      if (responses[0]["responses"][0]["error"] != null){
-        console.error(responses[0]["responses"][0]["error"])
+      if (responses[0]['responses'][0]['error'] != null) {
+        console.error(responses[0]['responses'][0]['error'])
       }
-      const results = responses[0]["responses"][0]['productSearchResults']['results']
+      const results =
+        responses[0]['responses'][0]['productSearchResults']['results']
       // console.log(results)
       // console.log('\nSimilar product information:')
       // results.forEach(result => {
@@ -91,7 +92,6 @@ class VisionApi {
       console.error(err)
     }
   }
-
 }
 
 export default VisionApi

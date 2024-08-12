@@ -7,7 +7,7 @@ import {
   JoinTable,
   JoinColumn,
 } from 'typeorm'
-import { IsEmail, Length, Matches, Max, Min } from 'class-validator'
+import { IsEmail, IsOptional, Length, Matches, Max, Min } from 'class-validator'
 import * as bcrypt from 'bcrypt'
 import { randomBytes } from 'crypto'
 import { Address } from 'node:cluster'
@@ -35,6 +35,7 @@ export class UserEntity {
   email: string
 
   @Column({ nullable: true })
+  @IsOptional()
   @Min(1)
   @Max(150)
   age: number

@@ -29,7 +29,7 @@ class UserController {
       }
       user = await userDB.findOneOrFail({
         where: { id: userIdNum },
-        relations: ['shoppingCart'],
+        relations: ['shoppingCart', 'shippingAddresses'],
       })
       const userBasicInfo = { ...user }
       delete userBasicInfo.password
@@ -49,6 +49,58 @@ class UserController {
     } catch (e) {
       CLog.bad('Finding user failed', e)
       return res.status(400).send(new ResponseClass(400, 'Failed finding user'))
+    }
+  }
+
+  // edit user info
+  static async updateUserInfo(req: Request, res: Response, next: NextFunction) {
+    const { userId } = req.params
+    const { firstName, lastName, email, gender, age } = req.body
+    if (!userId) {
+      return res
+        .status(400)
+        .send(new ResponseClass(400, 'We cannot find the user'))
+    }
+    const userRepo = gDB.getRepository(UserEntity)
+    try {
+      let user = await userRepo.findOneOrFail({
+        where: { id: +userId },
+        relations: ['shoppingCart', 'shippingAddresses'],
+      })
+      if (firstName !== undefined) user.firstName = firstName
+      if (lastName !== undefined) user.lastName = lastName
+      if (email !== undefined && email !== user.email) user.email = email
+      if (gender !== undefined) user.gender = gender
+      if (age !== undefined && age !== null) user.age = age
+
+      const errors = await validate(user)
+      if (errors.length > 0) {
+        CLog.bad('information wrong:', errors)
+        return res
+          .status(400)
+          .send(
+            new ResponseClass(
+              400,
+              'Ensure the information format meets the requirements',
+            ),
+          )
+      }
+
+      await userRepo.save(user)
+      const sanitizedUserInfo = { ...user }
+      delete sanitizedUserInfo.password
+      delete sanitizedUserInfo.resetToken
+
+      return res.status(200).send(
+        new ResponseClass(200, 'Update user info successfully', {
+          userInfo: sanitizedUserInfo,
+        }),
+      )
+    } catch (e) {
+      CLog.bad('Update user basic info failed', e)
+      return res
+        .status(400)
+        .send(new ResponseClass(400, 'Update user basic info failed'))
     }
   }
 
@@ -74,7 +126,15 @@ class UserController {
         relations: ['shippingAddresses'],
       })
 
-      return res.status(200).send({ shippingAddress: user.shippingAddresses })
+      return res
+        .status(200)
+        .send(
+          new ResponseClass(
+            200,
+            "User's shipping addresses retrieved successfully",
+            { userId: user.id, shippingAddress: user.shippingAddresses },
+          ),
+        )
     } catch (e) {
       CLog.bad('shipping address failed finding:', e)
       return res
@@ -194,15 +254,12 @@ class UserController {
 
       await addressRepo.delete(address)
       await userRepo.save(user)
-      return res
-        .status(200)
-        .send(
-          new ResponseClass(
-            HttpCode.E200,
-            'Address deleted successfully',
-            user.shippingAddresses,
-          ),
-        )
+      return res.status(200).send(
+        new ResponseClass(HttpCode.E200, 'Address deleted successfully', {
+          userId: user.id,
+          shippingAddress: user.shippingAddresses,
+        }),
+      )
     } catch (e) {
       CLog.bad('Deleting address error', e)
       return res
@@ -280,6 +337,7 @@ class UserController {
     return res.status(200).send(
       new ResponseClass(200, 'Address update successfully', {
         updatedAddress: existingAddress,
+        userId: user.id,
       }),
     )
   }

@@ -8,7 +8,6 @@ class ImageAIController {
   }
 
   static imageSearch_uri = async (req: Request, res: Response) => {
-
     const { image_uri } = req.body
 
     try {
@@ -17,16 +16,14 @@ class ImageAIController {
     } catch (err) {
       res.status(400).send(err)
     }
-    
   }
-  
-  static imageSearch_image = async (req: Request, res: Response) => {
 
+  static imageSearch_image = async (req: Request, res: Response) => {
     const imageBase64 = req.body.toString('base64')
 
-      // console.log(req.body)
-      // console.log(imageBase64)
-      
+    // console.log(req.body)
+    // console.log(imageBase64)
+
     try {
       var result = await VisionApi.getSimilarProductsImage(imageBase64)
       // console.log(result)
@@ -34,7 +31,6 @@ class ImageAIController {
     } catch (err) {
       res.status(400).send(err)
     }
-    
   }
 }
 
