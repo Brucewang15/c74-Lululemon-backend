@@ -200,13 +200,11 @@ export class SaveForLaterController {
       cart.savedItems = cart.savedItems.filter((i) => i.id !== +savedItemId)
       await savedItemRepo.remove(savedItem)
 
-      return res
-        .status(200)
-        .send(
-          new ResponseClass(200, 'Deleting a saved item successfully', {
-            savedItems: cart.savedItems,
-          }),
-        )
+      return res.status(200).send(
+        new ResponseClass(200, 'Deleting a saved item successfully', {
+          savedItems: cart.savedItems,
+        }),
+      )
     } catch (e) {
       CLog.bad('deleting a saved item failed', e)
       return res
