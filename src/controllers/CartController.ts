@@ -25,7 +25,7 @@ export class CartController {
     try {
       shoppingCart = await cartRepo.findOneOrFail({
         where: { id: +cartId },
-        relations: ['cartItems'],
+        relations: ['cartItems', 'savedItems'],
       })
       CLog.info('shopping cart items', shoppingCart.cartItems)
       return res

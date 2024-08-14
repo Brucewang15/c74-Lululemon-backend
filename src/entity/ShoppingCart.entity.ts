@@ -9,6 +9,7 @@ import {
 } from 'typeorm'
 import { CartItemEntity } from './CartItem.entity'
 import { UserEntity } from './User.entity'
+import { SaveForLaterEntity } from './SaveForLater.entity'
 
 @Entity()
 export class ShoppingCartEntity {
@@ -20,6 +21,11 @@ export class ShoppingCartEntity {
     eager: true,
   })
   cartItems: CartItemEntity[]
+
+  @OneToMany(() => SaveForLaterEntity, (savedItem) => savedItem.cart, {
+    eager: true,
+  })
+  savedItems: SaveForLaterEntity[]
 
   @OneToOne(() => UserEntity, (user) => user.shoppingCart)
   @JoinColumn()
