@@ -22,9 +22,9 @@ if (!process.env.DB_FILE) {
 
 // alert only
 const entityPath =
-  process.env.ENV === 'production'
-    ? path.join(__dirname + '/../../build/src/auth2/entity/**/*.entity.js')
-    : path.join(__dirname + '/../src/entity/**/*.entity.ts')
+    process.env.ENV === 'production'
+        ? path.join(__dirname + '/../../build/src/auth2/entity/**/*.entity.js')
+        : path.join(__dirname + '/../src/entity/**/*.entity.ts')
 CLog.ok(`Env is: -->${process.env.NODE_ENV}`)
 
 CLog.ok(`Server Path-->${__dirname}`)
