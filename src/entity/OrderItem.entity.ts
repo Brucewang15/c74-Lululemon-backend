@@ -4,7 +4,7 @@ import { Exclude } from 'class-transformer'
 import { OrderEntity } from './Order.entity'
 
 @Entity()
-export class CartItemEntity {
+export class OrderItemEntity {
   @PrimaryGeneratedColumn()
   id: number
 
@@ -32,9 +32,7 @@ export class CartItemEntity {
   @Column()
   swatchName: string
 
-  @ManyToOne(() => ShoppingCartEntity, (cart) => cart.cartItems, {
-    cascade: true,
-  })
+  @ManyToOne(() => OrderEntity, (order) => order.orderItems, { cascade: true })
   @Exclude()
-  cart: ShoppingCartEntity
+  order: OrderEntity
 }

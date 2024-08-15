@@ -13,7 +13,8 @@ import { randomBytes } from 'crypto'
 import { Address } from 'node:cluster'
 import { ShippingAddressEntity } from './ShippingAddress.entity'
 import { ShoppingCartEntity } from './ShoppingCart.entity'
-import { CartItemEntity } from './CartItem.entity' // For generating secure tokens
+import { CartItemEntity } from './CartItem.entity'
+import { OrderEntity } from './Order.entity' // For generating secure tokens
 
 @Entity()
 export class UserEntity {
@@ -92,4 +93,7 @@ export class UserEntity {
   })
   @JoinColumn()
   shoppingCart: ShoppingCartEntity
+
+  @OneToMany(() => OrderEntity, (order) => order.user)
+  orders: OrderEntity[]
 }
