@@ -150,6 +150,7 @@ class UserController {
     const id = +userId
     const { firstName, lastName, phoneNumber, address, province, postalCode } =
       req.body
+
     if (!userId) {
       return res
         .status(400)
@@ -160,6 +161,7 @@ class UserController {
           ),
         )
     }
+
     if (
       !firstName ||
       !lastName ||
@@ -177,6 +179,7 @@ class UserController {
           ),
         )
     }
+
     let newAddress = new ShippingAddressEntity()
     newAddress.address = address
     newAddress.firstName = firstName
@@ -185,6 +188,8 @@ class UserController {
     newAddress.postalCode = postalCode
     newAddress.phoneNumber = phoneNumber
     let user = null
+
+    console.log(newAddress)
 
     try {
       const errors = await validate(newAddress)
