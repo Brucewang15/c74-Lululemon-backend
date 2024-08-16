@@ -80,7 +80,7 @@ class AuthController {
         where: {
           email: email,
         },
-        relations: ['shoppingCart'],
+        relations: ['shoppingCart', 'shippingAddresses'],
       })
       // if no user found, return to client
       if (!user) {
