@@ -72,15 +72,27 @@ export class OrderController {
     const addressRepo = gDB.getRepository(ShippingAddressEntity)
     const orderItemRepo = gDB.getRepository(OrderItemEntity)
     const cartItemRepo = gDB.getRepository(CartItemEntity)
+
     try {
       const user = await userRepo.findOneOrFail({
         where: { id: +userId },
         relations: ['shoppingCart'],
       })
+
       if (!user) {
         return res.status(404).send(new ResponseClass(404, 'no user found'))
       }
 
+      if (user.shoppingCart.cartItems.length === 0) {
+        return res
+          .status(400)
+          .send(
+            new ResponseClass(
+              400,
+              'Your shopping cart is empty, cannot place order',
+            ),
+          )
+      }
       const shippingAddress = await addressRepo.findOneOrFail({
         where: { id: +orderData.shippingAddressId },
       })
@@ -91,18 +103,19 @@ export class OrderController {
       order.totalBeforeTax = orderData.totalBeforeTax
       order.shippingAddress = shippingAddress
       order.isGift = orderData.isGift
+      order.user = user
 
       if (orderData.shippingFee !== undefined) {
         order.shippingFee = orderData.shippingFee
       }
-      order.calcTotal()
-      order.user = user
 
       if (order.isGift) {
         order.giftFrom = orderData.giftFrom
         order.giftTo = orderData.giftTo
         order.giftMessage = orderData.giftMessage
       }
+
+      order.calcTotal()
 
       order.orderItems = []
 
@@ -124,6 +137,7 @@ export class OrderController {
         // remove shopping cart when they placed an order
         await cartItemRepo.remove(cartItem)
       }
+
       const errors = await validate(order)
       if (errors.length > 0) {
         CLog.bad('order format validation failed', errors)
