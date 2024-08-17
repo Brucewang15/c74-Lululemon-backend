@@ -148,8 +148,15 @@ class UserController {
   static async addAddress(req: Request, res: Response, next: NextFunction) {
     const { userId } = req.params
     const id = +userId
-    const { firstName, lastName, phoneNumber, address, province, postalCode } =
-      req.body
+    const {
+      firstName,
+      lastName,
+      phoneNumber,
+      address,
+      province,
+      postalCode,
+      city,
+    } = req.body
 
     if (!userId) {
       return res
@@ -168,7 +175,8 @@ class UserController {
       !phoneNumber ||
       !address ||
       !province ||
-      !postalCode
+      !postalCode ||
+      !city
     ) {
       return res
         .status(400)
@@ -187,6 +195,7 @@ class UserController {
     newAddress.province = province
     newAddress.postalCode = postalCode
     newAddress.phoneNumber = phoneNumber
+    newAddress.city = city
     let user = null
 
     console.log(newAddress)
@@ -277,8 +286,15 @@ class UserController {
 
   static async updateAddress(req: Request, res: Response, next: NextFunction) {
     const { userId, addressId } = req.params
-    const { firstName, lastName, phoneNumber, address, province, postalCode } =
-      req.body
+    const {
+      firstName,
+      lastName,
+      phoneNumber,
+      address,
+      province,
+      postalCode,
+      city,
+    } = req.body
     if (!(userId && addressId)) {
       return res
         .status(400)
@@ -319,6 +335,7 @@ class UserController {
       if (province !== undefined) existingAddress.province = province
       if (phoneNumber !== undefined) existingAddress.phoneNumber = phoneNumber
       if (address !== undefined) existingAddress.address = address
+      if (city !== undefined) existingAddress.city = city
       if (postalCode !== undefined) existingAddress.postalCode = postalCode
       const errors = await validate(existingAddress)
       if (errors.length > 0) {

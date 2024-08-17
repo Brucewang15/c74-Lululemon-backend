@@ -24,6 +24,9 @@ export class ShippingAddressEntity {
   address: string
 
   @Column({ nullable: false })
+  city: string
+
+  @Column({ nullable: false })
   province: string
 
   @Column({ nullable: false })
