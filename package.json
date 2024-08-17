@@ -33,7 +33,7 @@
     "jsonwebtoken": "^9.0.2",
     "moment": "^2.30.1",
     "node-webcam": "^0.8.2",
-    "openai": "^4.55.7",
+    "openai": "^4.55.9",
     "paypal-rest-sdk": "^1.8.1",
     "reflect-metadata": "^0.2.2",
     "sqlite3": "^5.1.7",

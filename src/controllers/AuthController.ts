@@ -10,6 +10,8 @@ import cart from '../routes/cart'
 class AuthController {
   static db = gDB.getRepository(UserEntity)
 
+
+
   // new users signup
   static async signUp(req: Request, res: Response) {
     const { email, password } = req.body
