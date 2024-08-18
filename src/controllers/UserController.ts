@@ -225,6 +225,7 @@ class UserController {
         new ResponseClass(200, 'Shipping Address Added Successfully', {
           userId: user.id,
           shippingAddress: user.shippingAddresses,
+          newAddress: newAddress,
         }),
       )
     } catch (e) {
