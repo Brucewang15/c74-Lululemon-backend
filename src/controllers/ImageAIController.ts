@@ -14,7 +14,14 @@ class ImageAIController {
       var result = await VisionApi.getSimilarProductsUri(image_uri)
       res.status(200).send(result)
     } catch (err) {
-      res.status(400).send(err)
+      if (err.code == 1) {
+        res.status(503).send(err.message)
+      } else if (err.code == 2) {
+        res.status(406).send(err.message)
+      } else {
+        console.log(err)
+        res.status(400).send(err.message)
+      }
     }
   }
 

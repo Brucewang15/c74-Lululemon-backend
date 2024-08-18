@@ -98,7 +98,7 @@ class VisionApi {
 
     const search_res = responses[0]['responses'][0]['productSearchResults']['results']
     const content_res = responses[0]['responses'][1]['safeSearchAnnotation']
-    console.log(content_res)
+    // console.log(content_res)
 
     var inappropriate = false
     for (const key in content_res) {
