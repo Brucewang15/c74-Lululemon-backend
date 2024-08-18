@@ -1,4 +1,4 @@
-import { NextFunction, Request, Response } from 'express'
+import { NextFunction, Request, response, Response } from 'express'
 import axios from 'axios'
 import vision from '@google-cloud/vision'
 
@@ -20,7 +20,7 @@ class VisionApi {
       productSetId,
     )
 
-    const request = {
+    const search_req = {
       image: { source: { imageUri: img_uri } },
       features: [{ type: 'PRODUCT_SEARCH' as const }],
       imageContext: {
@@ -32,7 +32,14 @@ class VisionApi {
       },
     }
 
-    return await VisionApi.getSimilarProducts(request)
+    const content_req = {
+      image: { source: { imageUri: img_uri } },
+      features: [{ type: 'SAFE_SEARCH_DETECTION' as const }],
+    }
+
+    const requests = [search_req, content_req]
+
+    return await VisionApi.getSimilarProducts(requests)
   }
 
   static getSimilarProductsImage = async (img) => {
@@ -47,7 +54,7 @@ class VisionApi {
       productSetId,
     )
 
-    const request = {
+    const search_req = {
       image: { content: img },
       features: [{ type: 'PRODUCT_SEARCH' as const }],
       imageContext: {
@@ -59,26 +66,53 @@ class VisionApi {
       },
     }
 
-    return await VisionApi.getSimilarProducts(request)
+    const content_req = {
+      image: { content: img },
+      features: [{ type: 'SAFE_SEARCH_DETECTION' as const }],
+    }
+
+    const requests = [search_req, content_req]
+
+    return await VisionApi.getSimilarProducts(requests)
   }
 
-  static getSimilarProducts = async (request) => {
-    /**
-     * TODO(developer): Uncomment the following line before running the sample.
-     */
-    const requests = [request]
+  static getSimilarProducts = async (requests) => {
 
     const responses = await imageAnnotatorClient.batchAnnotateImages({
       requests: requests,
     })
 
-    if (responses[0]['responses'][0]['error'] != null) {
-      const error = responses[0]['responses'][0]['error']
+    const search_err = responses[0]['responses'][0]['error']
+    const content_err = responses[0]['responses'][1]['error']
+
+    if (search_err != null) {
+      const error = search_err
       console.log(error)
       throw { message: `Google Vision Error: ${error.message}`, code: 1 }
     }
-    const results =
-      responses[0]['responses'][0]['productSearchResults']['results']
+    if (content_err != null) {
+      const error = content_err
+      console.log(error)
+      throw { message: `Google Vision Error: ${error.message}`, code: 1 }
+    }
+
+    const search_res = responses[0]['responses'][0]['productSearchResults']['results']
+    const content_res = responses[0]['responses'][1]['safeSearchAnnotation']
+    console.log(content_res)
+
+    var inappropriate = false
+    for (const key in content_res) {
+      if (key == "adult" || key == "violence") {
+        if (content_res[key] == "VERY_LIKELY") {
+          inappropriate = true
+          break
+        }
+      }
+    }
+
+    if (inappropriate) {
+      throw { message: `Content warning`, code: 2 }
+    }
       
     // console.log(results)
     // console.log('\nSimilar product information:')
@@ -89,7 +123,7 @@ class VisionApi {
     //   console.log('Product category:', result['product'].productCategory)
     // })
 
-    return results
+    return search_res
   }
 }
 
