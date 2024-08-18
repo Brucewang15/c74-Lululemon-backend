@@ -68,29 +68,28 @@ class VisionApi {
      */
     const requests = [request]
 
-    try {
-      const responses = await imageAnnotatorClient.batchAnnotateImages({
-        requests: requests,
-      })
+    const responses = await imageAnnotatorClient.batchAnnotateImages({
+      requests: requests,
+    })
 
-      if (responses[0]['responses'][0]['error'] != null) {
-        console.error(responses[0]['responses'][0]['error'])
-      }
-      const results =
-        responses[0]['responses'][0]['productSearchResults']['results']
-      // console.log(results)
-      // console.log('\nSimilar product information:')
-      // results.forEach(result => {
-      //   console.log('Product id:', result['product'].name.split('/').pop())
-      //   console.log('Product display name:', result['product'].displayName)
-      //   console.log('Product description:', result['product'].description)
-      //   console.log('Product category:', result['product'].productCategory)
-      // })
-
-      return results
-    } catch (err) {
-      console.error(err)
+    if (responses[0]['responses'][0]['error'] != null) {
+      const error = responses[0]['responses'][0]['error']
+      console.log(error)
+      throw { message: `Google Vision Error: ${error.message}`, code: 1 }
     }
+    const results =
+      responses[0]['responses'][0]['productSearchResults']['results']
+      
+    // console.log(results)
+    // console.log('\nSimilar product information:')
+    // results.forEach(result => {
+    //   console.log('Product id:', result['product'].name.split('/').pop())
+    //   console.log('Product display name:', result['product'].displayName)
+    //   console.log('Product description:', result['product'].description)
+    //   console.log('Product category:', result['product'].productCategory)
+    // })
+
+    return results
   }
 }
 

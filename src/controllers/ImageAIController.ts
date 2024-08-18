@@ -29,7 +29,12 @@ class ImageAIController {
       // console.log(result)
       res.status(200).send(result)
     } catch (err) {
-      res.status(400).send(err)
+      if (err.code == 1) {
+        console.log(err)
+        res.status(503).send(err.message)
+      } else {
+        res.status(400).send(err.message)
+      }
     }
   }
 }
