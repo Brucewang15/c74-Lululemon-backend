@@ -13,8 +13,13 @@ class InventoryController {
     res.end(
       JSON.stringify({
         stock: {
+          '6': 1,
+          '8': 2,
           '10': 4,
+          '12': 2,
+          S: 2,
           M: 3,
+          L: 1,
         },
       }),
     )
