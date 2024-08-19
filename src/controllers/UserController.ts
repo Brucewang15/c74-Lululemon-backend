@@ -156,6 +156,7 @@ class UserController {
       province,
       postalCode,
       city,
+      country,
     } = req.body
 
     if (!userId) {
@@ -176,7 +177,8 @@ class UserController {
       !address ||
       !province ||
       !postalCode ||
-      !city
+      !city ||
+      !country
     ) {
       return res
         .status(400)
@@ -196,6 +198,7 @@ class UserController {
     newAddress.postalCode = postalCode
     newAddress.phoneNumber = phoneNumber
     newAddress.city = city
+    newAddress.country = country
     let user = null
 
     console.log(newAddress)
@@ -295,6 +298,7 @@ class UserController {
       province,
       postalCode,
       city,
+      country,
     } = req.body
     if (!(userId && addressId)) {
       return res
@@ -338,6 +342,8 @@ class UserController {
       if (address !== undefined) existingAddress.address = address
       if (city !== undefined) existingAddress.city = city
       if (postalCode !== undefined) existingAddress.postalCode = postalCode
+      if (country !== undefined) existingAddress.country = country
+
       const errors = await validate(existingAddress)
       if (errors.length > 0) {
         return res

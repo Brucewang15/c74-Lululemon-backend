@@ -29,6 +29,9 @@ export class ShippingAddressEntity {
   @Column({ nullable: false })
   province: string
 
+  @Column({ nullable: true })
+  country: string
+
   @Column({ nullable: false })
   @Length(5, 7)
   // either US zip code, or canada Postal code

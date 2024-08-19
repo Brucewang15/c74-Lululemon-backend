@@ -77,7 +77,6 @@ class VisionApi {
   }
 
   static getSimilarProducts = async (requests) => {
-
     const responses = await imageAnnotatorClient.batchAnnotateImages({
       requests: requests,
     })
@@ -96,14 +95,15 @@ class VisionApi {
       throw { message: `Google Vision Error: ${error.message}`, code: 1 }
     }
 
-    const search_res = responses[0]['responses'][0]['productSearchResults']['results']
+    const search_res =
+      responses[0]['responses'][0]['productSearchResults']['results']
     const content_res = responses[0]['responses'][1]['safeSearchAnnotation']
     // console.log(content_res)
 
     var inappropriate = false
     for (const key in content_res) {
-      if (key == "adult" || key == "violence") {
-        if (content_res[key] == "VERY_LIKELY") {
+      if (key == 'adult' || key == 'violence') {
+        if (content_res[key] == 'VERY_LIKELY') {
           inappropriate = true
           break
         }
@@ -113,7 +113,7 @@ class VisionApi {
     if (inappropriate) {
       throw { message: `Content warning`, code: 2 }
     }
-      
+
     // console.log(results)
     // console.log('\nSimilar product information:')
     // results.forEach(result => {
