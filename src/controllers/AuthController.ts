@@ -82,6 +82,7 @@ class AuthController {
         },
         relations: ['shoppingCart', 'shippingAddresses'],
       })
+
       // if no user found, return to client
       if (!user) {
         return res.status(404).send('User not found')

@@ -300,6 +300,7 @@ class UserController {
       city,
       country,
     } = req.body
+
     if (!(userId && addressId)) {
       return res
         .status(400)
@@ -345,6 +346,7 @@ class UserController {
       if (country !== undefined) existingAddress.country = country
 
       const errors = await validate(existingAddress)
+
       if (errors.length > 0) {
         return res
           .status(400)

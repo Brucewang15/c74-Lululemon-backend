@@ -1,4 +1,5 @@
-import { OpenAI } from 'openai'
+// import { OpenAI } from "openai";
+import OpenAI from 'openai'
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
@@ -210,7 +211,11 @@ const filters = {
 }
 
 const promptTemplate = `
-Given the following categories and options, extract the relevant keywords from the user's input.
+Given the following categories and options, extract the relevant keywords from the user's input. 
+Your answer should only include the categories and values that are defined in the provided lists and are relevant to user inputs.
+If the answer includes sizes, please provide slightly more options instead of giving only one.
+If any of the categories in the answer has no value, do not include it.
+
 
 Categories:
 - Gender: ${filters.gender.join(', ')}
@@ -243,6 +248,7 @@ export function generatePrompt(userInput: string) {
 
 // Function to send a request to OpenAI
 export async function getAIResponse(prompt: string) {
+  // console.log("Received response:", prompt);
   try {
     const response = await openai.chat.completions.create({
       model: 'gpt-3.5-turbo',

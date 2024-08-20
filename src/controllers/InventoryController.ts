@@ -18,6 +18,7 @@ class InventoryController {
           '10': 4,
           '12': 2,
           S: 2,
+
           M: 3,
           L: 1,
         },
