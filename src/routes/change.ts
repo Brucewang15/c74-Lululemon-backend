@@ -1,7 +1,7 @@
-import { Router } from "express";
-import changeController from "../controllers/changeController";
+import { Router } from 'express'
+import changeController from '../controllers/changeController'
 
-const router = Router();
-router.post("/changepassword/:token", changeController.change);
+const router = Router()
+router.post('/changepassword/:token', changeController.change)
 
-export default router;
+export default router

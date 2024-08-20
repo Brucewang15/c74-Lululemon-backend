@@ -41,7 +41,6 @@ class VisionApi {
 
     return await VisionApi.getSimilarProducts(requests)
   }
-
   static getSimilarProductsImage = async (img) => {
     const projectId = 'jay-lulu-test'
     const location = 'us-east1'

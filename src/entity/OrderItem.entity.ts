@@ -1,38 +1,38 @@
-import { Entity, PrimaryGeneratedColumn, Column, ManyToOne } from 'typeorm'
-import { ShoppingCartEntity } from './ShoppingCart.entity'
-import { Exclude } from 'class-transformer'
-import { OrderEntity } from './Order.entity'
+import { Entity, PrimaryGeneratedColumn, Column, ManyToOne } from "typeorm";
+import { ShoppingCartEntity } from "./ShoppingCart.entity";
+import { Exclude } from "class-transformer";
+import { OrderEntity } from "./Order.entity";
 
 @Entity()
 export class OrderItemEntity {
   @PrimaryGeneratedColumn()
-  id: number
+  id: number;
 
   @Column()
-  productId: string
+  productId: string;
 
   @Column()
-  colorId: string
+  colorId: string;
 
   @Column({ nullable: true })
-  size: string | null
+  size: string | null;
 
   @Column()
-  quantity: number
+  quantity: number;
 
   @Column()
-  price: number
+  price: number;
 
   @Column()
-  image: string
+  image: string;
 
   @Column()
-  name: string
+  name: string;
 
   @Column()
-  swatchName: string
+  swatchName: string;
 
   @ManyToOne(() => OrderEntity, (order) => order.orderItems, { cascade: true })
   @Exclude()
-  order: OrderEntity
+  order: OrderEntity;
 }
