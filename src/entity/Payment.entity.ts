@@ -6,43 +6,43 @@ import {
   OneToOne,
   PrimaryGeneratedColumn,
   UpdateDateColumn,
-} from "typeorm";
-import { OrderEntity } from "./Order.entity";
-import { UserEntity } from "./User.entity";
+} from 'typeorm'
+import { OrderEntity } from './Order.entity'
+import { UserEntity } from './User.entity'
 
 export enum PaymentStatus {
-  PENDING = "pending",
-  PAID = "paid",
+  PENDING = 'pending',
+  PAID = 'paid',
 }
 
 export enum PaymentMethod {
-  CREDIT_CARD = "credit_card",
-  PAYPAL = "paypal",
-  STRIPE = "stripe",
+  CREDIT_CARD = 'credit_card',
+  PAYPAL = 'paypal',
+  STRIPE = 'stripe',
 }
 @Entity()
 export class PaymentEntity {
   @PrimaryGeneratedColumn()
-  id: number;
+  id: number
 
-  @Column({ type: "text", default: PaymentStatus.PENDING })
-  paymentStatus: PaymentStatus;
+  @Column({ type: 'text', default: PaymentStatus.PENDING })
+  paymentStatus: PaymentStatus
 
-  @Column({ type: "text", nullable: true })
-  paymentMethod: PaymentMethod;
+  @Column({ type: 'text', nullable: true })
+  paymentMethod: PaymentMethod
 
-  @Column({ type: "decimal", precision: 10, scale: 2, nullable: false })
-  totalAmount: number;
+  @Column({ type: 'decimal', precision: 10, scale: 2, nullable: false })
+  totalAmount: number
 
   @OneToOne(() => OrderEntity, (OrderEntity) => OrderEntity.id)
-  orderId: OrderEntity;
+  orderId: OrderEntity
 
   @ManyToOne(() => UserEntity, (UserEntity) => UserEntity.payments)
-  userId: UserEntity;
+  userId: UserEntity
 
   @CreateDateColumn()
-  createdAt: Date;
+  createdAt: Date
 
   @UpdateDateColumn()
-  updatedAt: Date;
+  updatedAt: Date
 }
