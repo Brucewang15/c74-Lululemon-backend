@@ -14,7 +14,8 @@ import { Address } from 'node:cluster'
 import { ShippingAddressEntity } from './ShippingAddress.entity'
 import { ShoppingCartEntity } from './ShoppingCart.entity'
 import { CartItemEntity } from './CartItem.entity'
-import { OrderEntity } from './Order.entity' // For generating secure tokens
+import { OrderEntity } from './Order.entity'
+import {PaymentEntity} from "./Payment.entity"; // For generating secure tokens
 
 @Entity()
 export class UserEntity {
@@ -96,4 +97,7 @@ export class UserEntity {
 
   @OneToMany(() => OrderEntity, (order) => order.user)
   orders: OrderEntity[]
+
+  @OneToMany(() => PaymentEntity, PaymentEntity => PaymentEntity.id)
+  payments: PaymentEntity[]
 }

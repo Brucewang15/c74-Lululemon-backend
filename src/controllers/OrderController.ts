@@ -145,17 +145,18 @@ export class OrderController {
       }
       console.log('Saving Order:', order)
 
-      await orderRepo.save(order)
+      const savedOrder = await orderRepo.save(order)
       const sanitizedUser = {
         id: user.id,
         firstName: user.firstName,
         lastName: user.lastName,
       }
-      order.user = sanitizedUser as any
-      const sanitizedOrderInfo = instanceToPlain(order)
+      savedOrder.user = sanitizedUser as any
+      const sanitizedOrderInfo = instanceToPlain(savedOrder)
       return res.status(200).send(
         new ResponseClass(200, 'Placed Order Successfully!', {
           order: sanitizedOrderInfo,
+          orderId: savedOrder.id
         }),
       )
     } catch (e) {
