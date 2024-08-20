@@ -6,22 +6,22 @@ import {
   OneToMany,
   OneToOne,
   PrimaryGeneratedColumn,
-} from 'typeorm'
-import { CartItemEntity } from './CartItem.entity'
-import { UserEntity } from './User.entity'
+} from "typeorm";
+import { CartItemEntity } from "./CartItem.entity";
+import { UserEntity } from "./User.entity";
 
 @Entity()
 export class ShoppingCartEntity {
   @PrimaryGeneratedColumn()
-  id: number
+  id: number;
 
   // Relations :
   @OneToMany(() => CartItemEntity, (cartItem) => cartItem.cart, {
     eager: true,
   })
-  cartItems: CartItemEntity[]
+  cartItems: CartItemEntity[];
 
   @OneToOne(() => UserEntity, (user) => user.shoppingCart)
   @JoinColumn()
-  user: UserEntity
+  user: UserEntity;
 }

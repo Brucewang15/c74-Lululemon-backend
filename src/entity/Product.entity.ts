@@ -1,35 +1,35 @@
-import { Column, Entity, PrimaryGeneratedColumn, Unique } from 'typeorm'
-import { Min } from 'class-validator'
+import { Column, Entity, PrimaryGeneratedColumn, Unique } from "typeorm";
+import { Min } from "class-validator";
 
 @Entity()
-@Unique(['productId'])
+@Unique(["productId"])
 export class ProductEntity {
   @Column()
   @PrimaryGeneratedColumn()
-  id: number
+  id: number;
 
   @Column()
-  productId: string
+  productId: string;
 
   @Column()
-  colorId: string
+  colorId: string;
 
   @Column()
-  size: string
+  size: string;
 
   @Column()
   @Min(0)
-  quantity: number
+  quantity: number;
 
   @Column()
-  price: number
+  price: number;
 
   @Column()
-  image: string
+  image: string;
 
   @Column()
-  name: string
+  name: string;
 
   @Column()
-  swatchName: string
+  swatchName: string;
 }

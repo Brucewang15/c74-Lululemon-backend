@@ -64,7 +64,7 @@ class OpenAIController {
       const extractedData = processAIResponse(aiResponse);
       console.log("DATA: ", extractedData);
       const searchBody = generateSearchBody(bodyTemplate, extractedData);
-      console.log("BODY: ", searchBody);
+      //console.log("BODY: ", searchBody);
 
       res.json({ success: true, data: searchBody });
     } catch (error) {
