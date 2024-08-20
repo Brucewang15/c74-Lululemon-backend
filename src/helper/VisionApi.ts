@@ -1,28 +1,28 @@
-import { NextFunction, Request, Response } from 'express'
-import axios from 'axios'
-import vision from '@google-cloud/vision'
+import { NextFunction, Request, Response } from "express";
+import axios from "axios";
+import vision from "@google-cloud/vision";
 
-const google_api_key = process.env.GOOGLE_API_KEY
+const google_api_key = process.env.GOOGLE_API_KEY;
 
-const productSearchClient = new vision.ProductSearchClient()
-const imageAnnotatorClient = new vision.ImageAnnotatorClient()
+const productSearchClient = new vision.ProductSearchClient();
+const imageAnnotatorClient = new vision.ImageAnnotatorClient();
 
 class VisionApi {
   static getSimilarProductsUri = async (img_uri) => {
-    const projectId = 'jay-lulu-test'
-    const location = 'us-east1'
-    const productSetId = 'lulu01'
-    const productCategory = 'apparel'
-    const filter = ''
+    const projectId = "jay-lulu-test";
+    const location = "us-east1";
+    const productSetId = "lulu01";
+    const productCategory = "apparel";
+    const filter = "";
     const productSetPath = productSearchClient.productSetPath(
       projectId,
       location,
       productSetId,
-    )
+    );
 
     const request = {
       image: { source: { imageUri: img_uri } },
-      features: [{ type: 'PRODUCT_SEARCH' as const }],
+      features: [{ type: "PRODUCT_SEARCH" as const }],
       imageContext: {
         productSearchParams: {
           productSet: productSetPath,
@@ -30,26 +30,26 @@ class VisionApi {
           filter: filter,
         },
       },
-    }
+    };
 
-    return await VisionApi.getSimilarProducts(request)
-  }
+    return await VisionApi.getSimilarProducts(request);
+  };
 
   static getSimilarProductsImage = async (img) => {
-    const projectId = 'jay-lulu-test'
-    const location = 'us-east1'
-    const productSetId = 'lulu01'
-    const productCategory = 'apparel'
-    const filter = ''
+    const projectId = "jay-lulu-test";
+    const location = "us-east1";
+    const productSetId = "lulu01";
+    const productCategory = "apparel";
+    const filter = "";
     const productSetPath = productSearchClient.productSetPath(
       projectId,
       location,
       productSetId,
-    )
+    );
 
     const request = {
       image: { content: img },
-      features: [{ type: 'PRODUCT_SEARCH' as const }],
+      features: [{ type: "PRODUCT_SEARCH" as const }],
       imageContext: {
         productSearchParams: {
           productSet: productSetPath,
@@ -57,27 +57,27 @@ class VisionApi {
           filter: filter,
         },
       },
-    }
+    };
 
-    return await VisionApi.getSimilarProducts(request)
-  }
+    return await VisionApi.getSimilarProducts(request);
+  };
 
   static getSimilarProducts = async (request) => {
     /**
      * TODO(developer): Uncomment the following line before running the sample.
      */
-    const requests = [request]
+    const requests = [request];
 
     try {
       const responses = await imageAnnotatorClient.batchAnnotateImages({
         requests: requests,
-      })
+      });
 
-      if (responses[0]['responses'][0]['error'] != null) {
-        console.error(responses[0]['responses'][0]['error'])
+      if (responses[0]["responses"][0]["error"] != null) {
+        console.error(responses[0]["responses"][0]["error"]);
       }
       const results =
-        responses[0]['responses'][0]['productSearchResults']['results']
+        responses[0]["responses"][0]["productSearchResults"]["results"];
       // console.log(results)
       // console.log('\nSimilar product information:')
       // results.forEach(result => {
@@ -87,11 +87,11 @@ class VisionApi {
       //   console.log('Product category:', result['product'].productCategory)
       // })
 
-      return results
+      return results;
     } catch (err) {
-      console.error(err)
+      console.error(err);
     }
-  }
+  };
 }
 
-export default VisionApi
+export default VisionApi;
