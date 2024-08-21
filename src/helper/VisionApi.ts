@@ -85,13 +85,17 @@ class VisionApi {
 
     if (search_err != null) {
       const error = search_err
-      console.log(error)
-      throw { message: `Google Vision Error: ${error.message}`, code: 1 }
+      //console.log(error)
+      if (error.code == 13) {
+        throw { message: `Google Vision Internal Error: ${error.message}`, code: 1 }
+      } else {
+        throw { message: `Input Error: ${error.message}`, code: 3 }
+      }
     }
     if (content_err != null) {
       const error = content_err
-      console.log(error)
-      throw { message: `Google Vision Error: ${error.message}`, code: 1 }
+      //console.log(error)
+      throw { message: `Input Content Error: ${error.message}`, code: 2 }
     }
 
     const search_res =

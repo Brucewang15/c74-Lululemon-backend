@@ -9,11 +9,14 @@ const router = Router()
 
 router.get('/', ImageAIController.index)
 
-router.post('/search/uri', ImageAIController.imageSearch_uri)
+router.post('/search/uri', (req, res) => {
+  ImageAIController.handleImageSearch(req, res, true)
+})
 router.post(
   '/search/img',
-  bodyParser.raw({ type: ['image/jpeg', 'image/png'], limit: '4mb' }),
-  ImageAIController.imageSearch_image,
+  bodyParser.raw({ type: ['image/jpeg', 'image/png'], limit: '4mb' }), (req, res) => {
+    ImageAIController.handleImageSearch(req, res, false)
+  },
 )
 
 export default router
