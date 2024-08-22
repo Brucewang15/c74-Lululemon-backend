@@ -167,6 +167,104 @@ export class OrderController {
     }
   }
 
+  // update an order's shipping address
+
+  static async updateOrderAddress(
+    req: Request,
+    res: Response,
+    next: NextFunction,
+  ) {
+    const { orderId, userId } = req.params
+    const {
+      firstName,
+      lastName,
+      phoneNumber,
+      address,
+      province,
+      postalCode,
+      city,
+      country,
+    } = req.body
+
+    if (!orderId || !userId) {
+      return res
+        .status(400)
+        .send(
+          new ResponseClass(
+            400,
+            'please include both order id and user id to update an address',
+          ),
+        )
+    }
+
+    const orderRepo = gDB.getRepository(OrderEntity)
+    const shippingAddressRepo = gDB.getRepository(ShippingAddressEntity)
+    const userRepo = gDB.getRepository(UserEntity)
+
+    try {
+      // find the order
+      const order = await orderRepo.findOneOrFail({
+        where: { id: +orderId },
+        relations: ['shippingAddress'],
+      })
+      if (!order)
+        return res
+          .status(404)
+          .send(new ResponseClass(404, 'We cannot find your order, try again'))
+
+      // create a new address entity
+      let newAddress = new ShippingAddressEntity()
+      if (firstName !== undefined) newAddress.firstName = firstName
+      if (lastName !== undefined) newAddress.lastName = lastName
+      if (phoneNumber !== undefined) newAddress.phoneNumber = phoneNumber
+      if (address !== undefined) newAddress.address = address
+      if (province !== undefined) newAddress.province = province
+      if (postalCode !== undefined) newAddress.postalCode = postalCode
+      if (city !== undefined) newAddress.city = city
+      if (country !== undefined) newAddress.country = country
+
+      // validate the new address format
+      const errors = await validate(newAddress)
+      if (errors.length > 0) {
+        CLog.bad('validating address format failed', errors)
+        return res
+          .status(400)
+          .send(new ResponseClass(400, 'Validating new address failed'))
+      }
+      // find the user
+      const user = await userRepo.findOneOrFail({
+        where: { id: +userId },
+        relations: ['shippingAddresses'],
+      })
+      if (!user) {
+        return res
+          .status(404)
+          .send(
+            new ResponseClass(404, 'No user found, enter the right user id'),
+          )
+      }
+      // save the new address to the user
+      user.shippingAddresses.push(newAddress)
+      await userRepo.save(user)
+      // replace the order address
+      order.shippingAddress = newAddress
+      await orderRepo.save(order)
+
+      return res
+        .status(200)
+        .send(
+          new ResponseClass(200, 'editing order address successfully', {
+            order,
+          }),
+        )
+    } catch (e) {
+      CLog.bad('editing order address failed', e)
+      return res
+        .status(400)
+        .send(new ResponseClass(400, 'Editing order address failed', e))
+    }
+  }
+
   //   update order (just the order status: pending, paid, shipped, delivered, cancelled
   static async updateOrderStatus(
     req: Request,

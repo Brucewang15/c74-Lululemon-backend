@@ -54,13 +54,12 @@ export class PaymentController {
 
       await orderRepo.save(orderToUpdate)
 
-      return res
-        .status(200)
-        .send(
-          new ResponseClass(200, 'Payment Successful', {
-            paymentId: newPayment.id,
-          }),
-        )
+
+      return res.status(200).send(
+        new ResponseClass(200, 'Payment Successful', {
+          paymentId: newPayment.id,
+        }),
+      )
     } catch (e) {
       console.error('Payment processing failed:', e)
       return res.status(500).send('Payment processing failed.')

@@ -87,7 +87,7 @@ export class UserEntity {
     (shippingAddress) => shippingAddress.user,
     { cascade: true },
   )
-  shippingAddresses: Address[]
+  shippingAddresses: ShippingAddressEntity[]
 
   @OneToOne(() => ShoppingCartEntity, (shoppingCart) => shoppingCart.user, {
     cascade: true,

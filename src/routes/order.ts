@@ -13,4 +13,9 @@ router.post('/:orderId/updateStatus', OrderController.updateOrderStatus)
 router.delete('/:orderId', OrderController.deleteOrder)
 //5. get all orders for a specific user
 router.get('/user/:userId', OrderController.getAllOrders)
+// 6. Updating order's address
+router.post(
+  '/:orderId/user/:userId/updateAddress',
+  OrderController.updateOrderAddress,
+)
 export default router
