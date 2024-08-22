@@ -18,4 +18,6 @@ router.post(
   '/:orderId/user/:userId/updateAddress',
   OrderController.updateOrderAddress,
 )
+// 7. updating order's shipping fee
+router.post('/:orderId/updateShippingFee', OrderController.updateShippingFee)
 export default router

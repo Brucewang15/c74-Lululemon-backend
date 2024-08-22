@@ -250,13 +250,11 @@ export class OrderController {
       order.shippingAddress = newAddress
       await orderRepo.save(order)
 
-      return res
-        .status(200)
-        .send(
-          new ResponseClass(200, 'editing order address successfully', {
-            order,
-          }),
-        )
+      return res.status(200).send(
+        new ResponseClass(200, 'editing order address successfully', {
+          order,
+        }),
+      )
     } catch (e) {
       CLog.bad('editing order address failed', e)
       return res
@@ -297,6 +295,60 @@ export class OrderController {
       return res
         .status(400)
         .send(new ResponseClass(400, 'update order status failed', e.message))
+    }
+  }
+
+  // Update order's shipping fee
+
+  static async updateShippingFee(
+    req: Request,
+    res: Response,
+    next: NextFunction,
+  ) {
+    const { orderId } = req.params
+    const { shippingFee } = req.body
+    if (!orderId) {
+      return res
+        .status(400)
+        .send(
+          new ResponseClass(
+            400,
+            'include your orderId to update the shipping fee',
+          ),
+        )
+    }
+
+    const orderRepo = gDB.getRepository(OrderEntity)
+
+    try {
+      // find the order
+      let order = await orderRepo.findOneOrFail({ where: { id: +orderId } })
+      if (!order) {
+        return res
+          .status(404)
+          .send(new ResponseClass(404, 'No order found, check your order id'))
+      }
+
+      // change the order's fee to the new fee
+      order.shippingFee = shippingFee
+
+      // re-calculate the total
+      order.calcTotal()
+
+      await orderRepo.save(order)
+      const sanitizedOrderInfo = instanceToPlain(order)
+      return res.status(200).send(
+        new ResponseClass(200, 'Shipping fee updated successfully', {
+          order: sanitizedOrderInfo,
+        }),
+      )
+    } catch (error) {
+      CLog.bad('updating shipping fee failed', error)
+      return res
+        .status(400)
+        .send(
+          new ResponseClass(400, 'Updating shipping fee failed', error.message),
+        )
     }
   }
 

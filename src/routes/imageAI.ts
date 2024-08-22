@@ -14,7 +14,8 @@ router.post('/search/uri', (req, res) => {
 })
 router.post(
   '/search/img',
-  bodyParser.raw({ type: ['image/jpeg', 'image/png'], limit: '4mb' }), (req, res) => {
+  bodyParser.raw({ type: ['image/jpeg', 'image/png'], limit: '4mb' }),
+  (req, res) => {
     ImageAIController.handleImageSearch(req, res, false)
   },
 )

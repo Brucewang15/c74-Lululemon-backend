@@ -54,7 +54,6 @@ export class PaymentController {
 
       await orderRepo.save(orderToUpdate)
 
-
       return res.status(200).send(
         new ResponseClass(200, 'Payment Successful', {
           paymentId: newPayment.id,

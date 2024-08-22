@@ -7,9 +7,12 @@ class ImageAIController {
     res.send('NOT IMPLEMENTED')
   }
 
-  static handleImageSearch = async (req: Request, res: Response, doUriSearch: boolean) => {
-    
-    var errMsg = ""
+  static handleImageSearch = async (
+    req: Request,
+    res: Response,
+    doUriSearch: boolean,
+  ) => {
+    var errMsg = ''
     for (var i = 0; i < 3; i++) {
       try {
         var result
@@ -22,7 +25,6 @@ class ImageAIController {
         }
         res.status(200).send(result)
         return
-
       } catch (err) {
         console.log(err)
         if (err.code == 1) {
