@@ -102,7 +102,7 @@ class AuthController {
           lastName: user.lastName,
         },
         process.env.JWT_SECRET,
-        { expiresIn: 60 * 10 },
+        { expiresIn: 60 * 120 },
       )
 
       // Delete password before sending it back to the client

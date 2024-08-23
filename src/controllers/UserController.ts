@@ -5,6 +5,11 @@ import { CLog } from '../AppHelper'
 import { validate } from 'class-validator'
 import { ShippingAddressEntity } from '../entity/ShippingAddress.entity'
 import { HttpCode, ResponseClass } from '../helper/Response'
+import * as bcrypt from "bcrypt";
+
+interface AuthRequest extends Request {
+  userId?: number;
+}
 
 class UserController {
   // find user basic info API
@@ -371,6 +376,48 @@ class UserController {
         userId: user.id,
       }),
     )
+  }
+
+  static async updatePassword(req: AuthRequest, res: Response) {
+    const { currentPassword, newPassword } = req.body;
+    const userId = req.userId;
+
+    if (!(currentPassword && newPassword)) {
+      return res
+        .status(400)
+        .send(new ResponseClass(400, 'Current password and new password are required.'))
+    }
+
+    const userRepository = gDB.getRepository(UserEntity);
+
+    try {
+      const user = await userRepository.findOneOrFail({ where: { id: userId } });
+
+      // Verify current password
+      const isPasswordCorrect = await bcrypt.compare(currentPassword, user.password);
+      if (!isPasswordCorrect) {
+        return res
+        .status(200)
+        .send(new ResponseClass(400, 'Current password is incorrect'))
+      }
+
+      // Hash new password
+      const saltRounds = 10;
+      const hashedPassword = await bcrypt.hash(newPassword, saltRounds);
+
+      // Update user's password
+      user.password = hashedPassword;
+      await userRepository.save(user);
+
+      return res
+        .status(200)
+        .send(new ResponseClass(200, 'Password updated successfully'))
+    } catch (err) {
+      CLog.bad('Password update failed: ', err);
+      return res
+        .status(400)
+        .send(new ResponseClass(400, 'Password update failed.'))
+    }
   }
 }
 
