@@ -15,6 +15,7 @@ export class OrderController {
   // get one order by order id
   static async getOrder(req: Request, res: Response, next: NextFunction) {
     const { orderId } = req.params
+
     if (!orderId) {
       return res
         .status(400)
@@ -390,9 +391,12 @@ export class OrderController {
     }
   }
 
-  // get all orders from one user by their user id
-
-  static async getAllOrders(req: Request, res: Response, next: NextFunction) {
+  // get all orders from ONE user by their user id
+  static async getUserAllOrders(
+    req: Request,
+    res: Response,
+    next: NextFunction,
+  ) {
     const { userId } = req.params
     const userRepo = gDB.getRepository(UserEntity)
     if (!userId) {
@@ -400,6 +404,7 @@ export class OrderController {
         .status(400)
         .send('Please include a user id when searching for orders')
     }
+
     try {
       const user = await userRepo.findOneOrFail({
         where: { id: +userId },
@@ -415,15 +420,100 @@ export class OrderController {
             ),
           )
       }
+      // pagination
+      const page = +req.query.page || 1
+      const limit = +req.query.limit || 5
+
+      const startIndex: number = (page - 1) * limit
+      const endIndex: number = page * limit
+      const totalOrders = user.orders.length
+      const totalPages = Math.ceil(totalOrders / limit)
+      const prevPage = startIndex > 0 ? page - 1 : 'No prev page'
+      const nextPage = endIndex < totalOrders ? page + 1 : 'No next page'
+      const paginatedOrders = user.orders.slice(startIndex, endIndex)
+
+      if (page > totalPages) {
+        return res
+          .status(404)
+          .send(
+            new ResponseClass(
+              404,
+              'The page number you entered is bigger than total page, try again',
+              { totalPages },
+            ),
+          )
+      }
+
+      const paginationInfo = {
+        totalOrders: totalOrders,
+        previousPage: prevPage,
+        currentPage: page,
+        nextPage: nextPage,
+        totalPages: totalPages,
+        paginatedOrders,
+      }
       return res.status(200).send(
-        new ResponseClass(200, 'Your order info is found', {
-          orders: user.orders,
+        // new ResponseClass(200, 'Your order info is found', {
+        //   orders: user.orders,
+        //   paginatedOrders,
+        // }),
+
+        new ResponseClass(200, 'All orders found', {
+          paginationInfo,
+          allOrdersWithoutPagination: user.orders,
         }),
       )
     } catch (e) {
       return res
         .status(400)
         .send(new ResponseClass(400, 'loading orders failed', e.message))
+    }
+  }
+
+  static async getAllOrders(req: Request, res: Response, next: NextFunction) {
+    // query, default page = 1 && limit (page size ) = 5
+    let { page = 1, limit = 5 } = req.query
+
+    // transform page and limit to Numbers
+    page = +page
+    limit = +limit
+
+    const orderRepo = gDB.getRepository(OrderEntity)
+
+    //find all orders
+    try {
+      const allOrders = await orderRepo.find()
+      if (!allOrders) {
+        return res.status(404).send('No orders in the database')
+      }
+      const startIndex: number = (page - 1) * limit
+      const endIndex: number = page * limit
+      const totalOrders: number = allOrders.length
+      const totalPage: number = Math.ceil(totalOrders / limit)
+      const prevPage: any =
+        startIndex > 0 ? page - 1 : 'You are on the first page now'
+      const nextPage: any =
+        endIndex < totalOrders ? page + 1 : 'You are on the last page now'
+      const paginatedOrders = allOrders.slice(startIndex, endIndex)
+      const paginationInfo = {
+        totalPage,
+        prevPage,
+        currentPage: page,
+        nextPage,
+        limit,
+        ordersByPage: paginatedOrders,
+      }
+
+      return res.status(200).send(
+        new ResponseClass(200, 'All orders found successfully,', {
+          ordersWithPage: paginationInfo,
+          ordersWithoutPage: allOrders,
+        }),
+      )
+    } catch (e) {
+      return res
+        .status(400)
+        .send(new ResponseClass(400, 'Get all orders failed', e.message))
     }
   }
 }
