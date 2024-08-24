@@ -23,4 +23,8 @@ router.delete(
 //4. update a shipping address of a user
 router.put('/userInfo/:userId/address/:addressId', UserController.updateAddress)
 // ------
+
+//Password update
+router.post('/userInfo/updatePassword', UserController.updatePassword)
+
 export default router
