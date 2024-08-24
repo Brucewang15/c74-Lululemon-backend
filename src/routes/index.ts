@@ -8,6 +8,7 @@ import imageAI from './imageAI'
 import openAI from './openAI'
 import payment from './payment'
 import order from './order'
+import invoice from './invoice'
 
 const rootRouter = Router()
 rootRouter.use('/auth', auth)
@@ -19,4 +20,5 @@ rootRouter.use('/image-ai', imageAI)
 rootRouter.use('/openAI', openAI)
 rootRouter.use('/payment', payment)
 rootRouter.use('/order', order)
+rootRouter.use('/invoice', invoice)
 export default rootRouter
