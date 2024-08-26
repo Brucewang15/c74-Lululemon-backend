@@ -23,6 +23,6 @@ rootRouter.use('/openAI', openAI)
 rootRouter.use('/payment', authMiddleware, payment)
 rootRouter.use('/order', authMiddleware, order)
 rootRouter.use('/invoice', invoice)
-rootRouter.use('/wishlist', authMiddleware, wishlist)
+rootRouter.use('/wishlist', wishlist)
 
 export default rootRouter

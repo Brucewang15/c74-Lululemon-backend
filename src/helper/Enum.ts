@@ -1,9 +1,9 @@
 export enum OrderStatus {
-  PENDING = 'pending',
-  PAID = 'paid',
-  SHIPPED = 'shipped',
-  DELIVERED = 'delivered',
-  CANCELED = 'canceled',
+  PENDING = "pending",
+  PAID = "paid",
+  SHIPPED = "shipped",
+  DELIVERED = "delivered",
+  CANCELED = "canceled",
 }
 
 export enum ShippingType {

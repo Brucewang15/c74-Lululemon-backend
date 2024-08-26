@@ -4,41 +4,42 @@ import { UserEntity } from '../entity/User.entity'
 import { WishlistEntity } from '../entity/Wishlist.entity'
 import { ProductEntity } from '../entity/Product.entity'
 
-interface AuthenticatedRequest extends Request {
-  userId?: number
-}
-
 export class WishlistController {
-  static async getWishlist(req: AuthenticatedRequest, res: Response) {
-    const userId = req.userId
+  static async getWishlist(req: Request, res: Response) {
+    // const userId = req.userId;
+    const userId = Number(req.params.userId)
     if (!userId) {
       return res.status(401).json({ message: 'Unauthorized' })
     }
     try {
-      const user = gDB.getRepository(UserEntity).findOne({
-        where: { id: userId },
+      const user = await gDB.getRepository(UserEntity).findOne({
+        where: { id: +userId },
         relations: ['wishlist', 'wishlist.products'],
       })
 
       if (!user) {
         return res.status(404).json({ message: 'User not found' })
       }
-      res.json((await user).wishlist?.products || [])
+      res.json(user.wishlist?.products || [])
     } catch (error) {
       res.status(500).json({ message: 'Internal server error' })
     }
   }
 
-  static async addProductToWishlist(req: AuthenticatedRequest, res: Response) {
-    const userId = req.userId
+  static async addProductToWishlist(req: Request, res: Response) {
+    //const userId = req.userId;
+    const userId = Number(req.params.userId)
     const { productId, name, price, image } = req.body
+    if (!userId) {
+      return res.status(401).json({ message: 'Unauthorized' })
+    }
     try {
       const userRepo = gDB.getRepository(UserEntity)
       const wishlistRepo = gDB.getRepository(WishlistEntity)
       const productRepo = gDB.getRepository(ProductEntity)
 
       let user = await userRepo.findOne({
-        where: { id: userId },
+        where: { id: +userId },
         relations: ['wishlist', 'wishlist.products'],
       })
 
@@ -49,29 +50,53 @@ export class WishlistController {
       // create new wishlist if wishlist not found
       if (!user.wishlist) {
         const newWishlist = wishlistRepo.create()
+        newWishlist.user = user
         user.wishlist = newWishlist
+        //await wishlistRepo.save(newWishlist);
         await userRepo.save(user)
       }
-      // add product to wishlist
-      const wishlistProduct = productRepo.create({
-        productId,
-        name,
-        price,
-        image,
-        wishlist: user.wishlist,
+
+      const wishlist = await wishlistRepo.findOne({
+        where: { id: user.wishlist.id },
+        relations: ['products'],
       })
 
-      await productRepo.save(wishlistProduct)
+      // Check if the product already exists in the products table
+      const existingProduct = await productRepo.findOne({
+        where: { productId },
+      })
+      let wishlistProduct = existingProduct
+
+      if (!existingProduct) {
+        wishlistProduct = productRepo.create({ productId, name, price, image })
+        await productRepo.save(wishlistProduct)
+      }
+
+      if (
+        wishlist.products.some((product) => product.id === wishlistProduct.id)
+      ) {
+        return res.status(400).json({ message: 'Product already in wishlist' })
+      }
+
+      wishlist.products.push(wishlistProduct)
+      await wishlistRepo.save(wishlist)
 
       res.status(201).json(wishlistProduct)
+
+      //res.status(201).json(wishlistProduct);
     } catch (e) {
       res.status(500).json({ message: 'Internal server error' })
     }
   }
 
-  static async removeFromWishlist(req: AuthenticatedRequest, res: Response) {
-    const userId = req.userId
-    const { productId } = req.params
+  static async removeFromWishlist(req: Request, res: Response) {
+    //const userId = req.userId;
+    const userId = Number(req.params.userId)
+    const productId = req.params.productId
+    console.log('REMOVING FROM WISHLIST')
+    console.log(userId)
+    console.log(productId)
+    // const { productId } = req.params;
 
     if (!userId || !productId) {
       return res
@@ -84,7 +109,7 @@ export class WishlistController {
       const productRepository = gDB.getRepository(ProductEntity)
 
       const wishlist = await wishlistRepository.findOne({
-        where: { user: { id: userId } },
+        where: { user: { id: +userId } },
         relations: ['products'],
       })
 
@@ -92,9 +117,15 @@ export class WishlistController {
         return res.status(404).json({ message: 'Wishlist not found' })
       }
 
-      wishlist.products = wishlist.products.filter(
-        (product) => product.id !== +productId,
-      )
+      const product = await productRepository.findOne({ where: { productId } })
+
+      if (!product) {
+        return res
+          .status(404)
+          .json({ message: 'Product not found in wishlist' })
+      }
+
+      wishlist.products = wishlist.products.filter((p) => p.id !== product.id)
       await wishlistRepository.save(wishlist)
 
       res.status(200).json({

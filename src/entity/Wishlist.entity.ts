@@ -1,7 +1,8 @@
 import {
   Entity,
   PrimaryGeneratedColumn,
-  OneToMany,
+  ManyToMany,
+  JoinTable,
   OneToOne,
   JoinColumn,
 } from 'typeorm'
@@ -13,14 +14,13 @@ export class WishlistEntity {
   @PrimaryGeneratedColumn()
   id: number
 
-  // Relation with ProductEntity
-  @OneToMany(() => ProductEntity, (product) => product.wishlist, {
+  @ManyToMany(() => ProductEntity, (product) => product.wishlists, {
+    cascade: true,
     eager: true,
   })
+  @JoinTable()
   products: ProductEntity[]
 
-  // Relation with UserEntity
   @OneToOne(() => UserEntity, (user) => user.wishlist)
-  @JoinColumn()
   user: UserEntity
 }
