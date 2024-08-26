@@ -10,6 +10,7 @@ import openAI from './openAI'
 import payment from './payment'
 import order from './order'
 import authMiddleware from '../middleware/jwt.middleware'
+import wishlist from "./wishlist";
 
 const rootRouter = Router()
 rootRouter.use('/auth', auth)
@@ -22,5 +23,6 @@ rootRouter.use('/openAI', openAI)
 rootRouter.use('/payment', authMiddleware, payment)
 rootRouter.use('/order', authMiddleware, order)
 rootRouter.use('/invoice', invoice)
+rootRouter.use('/wishlist', authMiddleware, wishlist)
 
 export default rootRouter
