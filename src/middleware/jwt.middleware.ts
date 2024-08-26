@@ -34,13 +34,11 @@ const authMiddleware = (
 
     const currentTimestamp = Math.floor(Date.now() / 1000)
     if (decoded.exp && decoded.exp < currentTimestamp) {
-      return res
-        .status(401)
-        .json({
-          isValid: false,
-          redirectToLogin: true,
-          message: 'Token has expired',
-        })
+      return res.status(401).json({
+        isValid: false,
+        redirectToLogin: true,
+        message: 'Token has expired',
+      })
     }
     next()
   } catch (error) {
