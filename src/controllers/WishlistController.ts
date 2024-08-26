@@ -97,12 +97,10 @@ export class WishlistController {
       )
       await wishlistRepository.save(wishlist)
 
-      res
-        .status(200)
-        .json({
-          message: 'Product removed from wishlist',
-          wishlist: wishlist.products,
-        })
+      res.status(200).json({
+        message: 'Product removed from wishlist',
+        wishlist: wishlist.products,
+      })
     } catch (error) {
       console.error('Error removing from wishlist:', error)
       res.status(500).json({ message: 'Error removing from wishlist' })
