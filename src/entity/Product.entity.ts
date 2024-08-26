@@ -1,5 +1,5 @@
-import { Entity, PrimaryGeneratedColumn, Column, ManyToOne } from "typeorm";
-import { WishlistEntity } from "./Wishlist.entity";
+import { Entity, PrimaryGeneratedColumn, Column, ManyToMany } from 'typeorm';
+import { WishlistEntity } from './Wishlist.entity';
 
 @Entity()
 export class ProductEntity {
@@ -13,14 +13,11 @@ export class ProductEntity {
   name: string;
 
   @Column()
-  price: number;
+  price: string;
 
   @Column()
   image: string;
 
-  // Relation with WishlistEntity
-  @ManyToOne(() => WishlistEntity, (wishlist) => wishlist.products, {
-    cascade: true,
-  })
-  wishlist: WishlistEntity;
+  @ManyToMany(() => WishlistEntity, (wishlist) => wishlist.products)
+  wishlists: WishlistEntity[];
 }

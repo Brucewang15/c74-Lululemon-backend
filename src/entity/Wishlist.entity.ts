@@ -1,26 +1,19 @@
-import {
-  Entity,
-  PrimaryGeneratedColumn,
-  OneToMany,
-  OneToOne,
-  JoinColumn,
-} from "typeorm";
-import { ProductEntity } from "./Product.entity";
-import { UserEntity } from "./User.entity";
+import { Entity, PrimaryGeneratedColumn, ManyToMany, JoinTable, OneToOne, JoinColumn } from 'typeorm';
+import { ProductEntity } from './Product.entity';
+import { UserEntity } from './User.entity';
 
 @Entity()
 export class WishlistEntity {
   @PrimaryGeneratedColumn()
   id: number;
 
-  // Relation with ProductEntity
-  @OneToMany(() => ProductEntity, (product) => product.wishlist, {
+  @ManyToMany(() => ProductEntity, (product) => product.wishlists, {
+    cascade: true,
     eager: true,
   })
+  @JoinTable()
   products: ProductEntity[];
 
-  // Relation with UserEntity
   @OneToOne(() => UserEntity, (user) => user.wishlist)
-  @JoinColumn()
   user: UserEntity;
 }
