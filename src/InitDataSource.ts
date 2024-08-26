@@ -3,49 +3,51 @@
 //   path: path.resolve(__dirname, '../'), // 确保路径正确，指向包含 .env 文件的目录
 // })
 // console.log('Loaded DB_FILE:', process.env.DB_FILE) // 打印环境变量，检查是否正确加载
-import { DataSource, DataSourceOptions } from 'typeorm'
-import { CLog, CPath, gisProduction } from './AppHelper'
-import * as path from 'path'
+import { DataSource, DataSourceOptions } from "typeorm";
+import { CLog, CPath, gisProduction } from "./AppHelper";
+import * as path from "path";
 
-require('dotenv').config({
-  path: path.resolve(__dirname, '../.env.development'),
-})
+require("dotenv").config({
+  path: path.resolve(__dirname, "../.env.development"),
+});
 
 if (!process.env.PORT) {
-  require('dotenv-flow').config()
+  require("dotenv-flow").config();
 }
 
 if (!process.env.DB_FILE) {
-  CLog.bad(`Invalid or Missing [Primary] DB Config env, ${process.env.DB_FILE}`)
-  process.exit(1)
+  CLog.bad(
+    `Invalid or Missing [Primary] DB Config env, ${process.env.DB_FILE}`,
+  );
+  process.exit(1);
 }
 
 // alert only
 const entityPath =
-  process.env.ENV === 'production'
-    ? path.join(__dirname + '/../../build/src/auth2/entity/**/*.entity.js')
-    : path.join(__dirname + '/../src/entity/**/*.entity.ts')
-CLog.ok(`Env is: -->${process.env.NODE_ENV}`)
+  process.env.ENV === "production"
+    ? path.join(__dirname + "/../../build/src/auth2/entity/**/*.entity.js")
+    : path.join(__dirname + "/../src/entity/**/*.entity.ts");
+CLog.ok(`Env is: -->${process.env.NODE_ENV}`);
 
-CLog.ok(`Server Path-->${__dirname}`)
-CLog.ok(`Entity Path: -->${entityPath}`)
+CLog.ok(`Server Path-->${__dirname}`);
+CLog.ok(`Entity Path: -->${entityPath}`);
 CLog.ok(`DB Info:
 [Master]-->${process.env.DB_FILE}
-`)
+`);
 
 CLog.info(`Seed info: 
    ${process.env.TYPEORM_SEEDING_SEEDS} 
-`)
+`);
 
 const options: DataSourceOptions = {
-  type: 'sqlite',
+  type: "sqlite",
   ...{
     database: process.env.DB_FILE,
   },
 
-  synchronize: process.env.DB_SYNC.toLowerCase() === 'true',
+  synchronize: process.env.DB_SYNC.toLowerCase() === "true",
   extra: { connectionLimit: 50 },
-  logging: ['error'],
+  logging: ["error"],
   maxQueryExecutionTime: 3000, //logging query executing 1 second
 
   // "keepConnectionAlive":true,
@@ -57,7 +59,7 @@ const options: DataSourceOptions = {
     // path.join(__dirname, '../**/**.entity{.ts,.js}') : '**/*.entity{.ts,.js}'
   ],
   // migrations: [path.join(__dirname, '/../migration/*.ts')],
-  migrations: ['src/migration/*.ts'],
+  migrations: ["src/migration/*.ts"],
 
   subscribers: [process.env.MYSQL_SUBSCRIBERS],
   // seeds: [
@@ -69,7 +71,7 @@ const options: DataSourceOptions = {
   //     "migrationsDir": process.env.MYSQL_MIGRATIONSDIR,
   //     "subscribersDir": process.env.MYSQL_SUBSCRIBERSDIR
   // }
-}
-const gDB = new DataSource(options)
+};
+const gDB = new DataSource(options);
 
-export default gDB
+export default gDB;

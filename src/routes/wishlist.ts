@@ -1,10 +1,10 @@
-import { Router } from 'express'
-import {WishlistController} from "../controllers/WishlistController";
+import { Router } from "express";
+import { WishlistController } from "../controllers/WishlistController";
 
-const router = Router()
+const router = Router();
 
-router.get('/', WishlistController.getWishlist);
-router.post('/add', WishlistController.addProductToWishlist);
-router.delete('/remove/:productId', WishlistController.removeFromWishlist);
+router.get("/:userId", WishlistController.getWishlist);
+router.post("/add/:userId", WishlistController.addProductToWishlist);
+router.delete("/remove/:userId/:productId", WishlistController.removeFromWishlist);
 
-export default router
+export default router;
