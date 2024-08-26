@@ -62,7 +62,9 @@ export class WishlistController {
       });
 
       // Check if the product already exists in the products table
-      const existingProduct = await productRepo.findOne({ where: { productId } });
+      const existingProduct = await productRepo.findOne({
+        where: { productId },
+      });
       let wishlistProduct = existingProduct;
 
       if (!existingProduct) {
@@ -70,7 +72,9 @@ export class WishlistController {
         await productRepo.save(wishlistProduct);
       }
 
-      if (wishlist.products.some(product => product.id === wishlistProduct.id)) {
+      if (
+        wishlist.products.some((product) => product.id === wishlistProduct.id)
+      ) {
         return res.status(400).json({ message: "Product already in wishlist" });
       }
 
@@ -89,7 +93,7 @@ export class WishlistController {
     //const userId = req.userId;
     const userId = Number(req.params.userId);
     const productId = req.params.productId;
-    console.log('REMOVING FROM WISHLIST');
+    console.log("REMOVING FROM WISHLIST");
     console.log(userId);
     console.log(productId);
     // const { productId } = req.params;
@@ -116,13 +120,20 @@ export class WishlistController {
       const product = await productRepository.findOne({ where: { productId } });
 
       if (!product) {
-        return res.status(404).json({ message: "Product not found in wishlist" });
+        return res
+          .status(404)
+          .json({ message: "Product not found in wishlist" });
       }
 
-      wishlist.products = wishlist.products.filter(p => p.id !== product.id);
+      wishlist.products = wishlist.products.filter((p) => p.id !== product.id);
       await wishlistRepository.save(wishlist);
 
-      res.status(200).json({ message: "Product removed from wishlist", wishlist: wishlist.products });
+      res
+        .status(200)
+        .json({
+          message: "Product removed from wishlist",
+          wishlist: wishlist.products,
+        });
     } catch (error) {
       console.error("Error removing from wishlist:", error);
       res.status(500).json({ message: "Error removing from wishlist" });

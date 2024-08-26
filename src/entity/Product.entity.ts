@@ -1,5 +1,5 @@
-import { Entity, PrimaryGeneratedColumn, Column, ManyToMany } from 'typeorm';
-import { WishlistEntity } from './Wishlist.entity';
+import { Entity, PrimaryGeneratedColumn, Column, ManyToMany } from "typeorm";
+import { WishlistEntity } from "./Wishlist.entity";
 
 @Entity()
 export class ProductEntity {
