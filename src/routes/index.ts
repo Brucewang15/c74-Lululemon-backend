@@ -10,7 +10,7 @@ import openAI from './openAI'
 import payment from './payment'
 import order from './order'
 import authMiddleware from '../middleware/jwt.middleware'
-import wishlist from "./wishlist";
+import wishlist from './wishlist'
 
 const rootRouter = Router()
 rootRouter.use('/auth', auth)

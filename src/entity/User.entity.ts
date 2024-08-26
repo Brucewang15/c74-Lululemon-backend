@@ -16,7 +16,7 @@ import { ShoppingCartEntity } from './ShoppingCart.entity'
 import { CartItemEntity } from './CartItem.entity'
 import { OrderEntity } from './Order.entity'
 import { PaymentEntity } from './Payment.entity' // For generating secure tokens
-import { WishlistEntity } from './Wishlist.entity';
+import { WishlistEntity } from './Wishlist.entity'
 
 @Entity()
 export class UserEntity {
@@ -107,5 +107,5 @@ export class UserEntity {
     cascade: true,
   })
   @JoinColumn()
-  wishlist: WishlistEntity;
+  wishlist: WishlistEntity
 }
