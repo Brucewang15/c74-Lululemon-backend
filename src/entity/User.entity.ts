@@ -16,6 +16,7 @@ import { ShoppingCartEntity } from './ShoppingCart.entity'
 import { CartItemEntity } from './CartItem.entity'
 import { OrderEntity } from './Order.entity'
 import { PaymentEntity } from './Payment.entity' // For generating secure tokens
+import { WishlistEntity } from './Wishlist.entity';
 
 @Entity()
 export class UserEntity {
@@ -100,4 +101,11 @@ export class UserEntity {
 
   @OneToMany(() => PaymentEntity, (PaymentEntity) => PaymentEntity.id)
   payments: PaymentEntity[]
+
+  // Wishlist relation
+  @OneToOne(() => WishlistEntity, (wishlist) => wishlist.user, {
+    cascade: true,
+  })
+  @JoinColumn()
+  wishlist: WishlistEntity;
 }

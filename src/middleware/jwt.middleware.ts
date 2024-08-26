@@ -6,24 +6,24 @@ interface AuthRequest extends Request {
 }
 
 const authMiddleware = (
-  req: AuthRequest,
-  res: Response,
-  next: NextFunction,
+    req: AuthRequest,
+    res: Response,
+    next: NextFunction,
 ) => {
   const authHeader = req.headers.authorization
 
   if (!authHeader) {
     return res
-      .status(401)
-      .json({ redirectToLogin: true, message: 'No token provided' })
+        .status(401)
+        .json({ redirectToLogin: true, message: 'No token provided' })
   }
 
   const token = authHeader.split(' ')[1]
 
   if (!token) {
     return res
-      .status(401)
-      .json({ redirectToLogin: true, message: 'No token provided' })
+        .status(401)
+        .json({ redirectToLogin: true, message: 'No token provided' })
   }
 
   try {
@@ -35,12 +35,12 @@ const authMiddleware = (
     const currentTimestamp = Math.floor(Date.now() / 1000)
     if (decoded.exp && decoded.exp < currentTimestamp) {
       return res
-        .status(401)
-        .json({
-          isValid: false,
-          redirectToLogin: true,
-          message: 'Token has expired',
-        })
+          .status(401)
+          .json({
+            isValid: false,
+            redirectToLogin: true,
+            message: 'Token has expired',
+          })
     }
     next()
   } catch (error) {
