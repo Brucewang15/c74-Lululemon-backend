@@ -41,6 +41,7 @@
     "pdfkit": "^0.15.0",
     "reflect-metadata": "^0.2.2",
     "sqlite3": "^5.1.7",
+    "stripe": "^16.8.0",
     "typeorm": "0.3.20",
     "typeorm-seeding": "^1.6.1"
   },
