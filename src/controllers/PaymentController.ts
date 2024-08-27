@@ -20,6 +20,57 @@ paypal.configure({
 })
 
 export class PaymentController {
+  static async createStripePayment(req: Request, res: Response) {
+    const { orderId, userId } = req.body
+
+    const orderRepo = gDB.getRepository(OrderEntity);
+    let orderToUpdate = await orderRepo.findOne({ where: { id: orderId } });
+
+    
+    const paymentRepo = gDB.getRepository(PaymentEntity)
+    const newPayment = new PaymentEntity()
+    newPayment.paymentStatus = PaymentStatus.PENDING
+    newPayment.paymentMethod = PaymentMethod.STRIPE
+    newPayment.totalAmount = orderToUpdate.totalAfterTax
+    newPayment.orderId = orderId
+    newPayment.userId = userId
+
+
+    const savedPayment = await paymentRepo.save(newPayment);
+
+    const paymentIntent = await stripe.paymentIntents.create({
+      amount: orderToUpdate.totalAfterTax * 100,
+      currency: 'cad',
+      payment_method_types: ["card"]
+    })
+
+    return res
+      .status(200)
+      .send(
+        new ResponseClass(200, 'Payment Ready', {
+          clientSecret: paymentIntent.client_secret,
+          paymentId: savedPayment.id
+        }),
+      )
+  }
+
+  static async completeStripePayment(req: Request, res: Response) {
+    const { orderId, userId, paymentId } = req.body
+
+    const paymentRepo = gDB.getRepository(PaymentEntity)
+    let paymentToUpdate = await paymentRepo.findOne({ where: { id: paymentId } });
+    paymentToUpdate.paymentStatus = PaymentStatus.PAID
+
+    await paymentRepo.save(paymentToUpdate);
+    
+    return res
+      .status(200)
+      .send(
+        new ResponseClass(200, 'Payment Successful'),
+      )
+  }
+
+  
   static async createPayment(req: Request, res: Response) {
     const { amount, orderId, userId, payType } = req.body
 
@@ -30,13 +81,6 @@ export class PaymentController {
         .send('Missing payment information in request body.')
     }
 
-    // const paymentTotal = amount.total
-    //
-    // if (!paymentTotal || paymentTotal <= 0) {
-    //   return res
-    //     .status(400)
-    //     .send('Missing payment information in request body.')
-    // }
     try {
       const paymentRepo = gDB.getRepository(PaymentEntity)
       const newPayment = new PaymentEntity()
@@ -61,63 +105,17 @@ export class PaymentController {
 
       await orderRepo.save(orderToUpdate)
 
-      if (payType == 'stripe') {
-        const orderItemRepo = gDB.getRepository(OrderItemEntity)
-        const orderItems = await orderItemRepo.find({
-          where: { order: { id: orderId } },
-        })
+      return res
+      .status(200)
+      .send(
+        new ResponseClass(200, 'Payment Successful', {
+          paymentId: newPayment.id,
+        }),
+      )
 
-        const stripeSession = await stripe.checkout.sessions.create({
-          line_items: [
-            {
-              price_data: {
-                currency: 'cad',
-                unit_amount: orderToUpdate.totalAfterTax * 100,
-                tax_behavior: 'inclusive',
-                product_data: {
-                  name: 'Lululemon Order',
-                },
-              },
-              adjustable_quantity: {
-                enabled: false,
-              },
-              quantity: 1,
-            },
-          ],
-          // orderItems.map((orderItem) => ({
-          //   price_data: {
-          //     currency: 'cad',
-          //     product_data: {
-          //       name: orderItem.name,
-          //     },
-          //     unit_amount: orderItem.price * 100,
-          //     tax_behavior: 'inclusive',
-          //   },
-          //   adjustable_quantity: {
-          //     enabled: false,
-          //   },
-          //   quantity: orderItem.quantity,
-          // })),
-          mode: 'payment',
-          success_url: 'http://localhost:3000/shop/thankyou',
-          cancel_url: 'http://localhost:3000/',
-        })
-
-        return res.status(200).send(
-          new ResponseClass(200, 'Payment Successful', {
-            sessionId: stripeSession.id,
-          }),
-        )
-      } else {
-        return res.status(200).send(
-          new ResponseClass(200, 'Payment Successful', {
-            paymentId: newPayment.id,
-          }),
-        )
-      }
     } catch (e) {
-      console.error('Payment processing failed:', e)
-      return res.status(500).send('Payment processing failed.')
-    }
+      console.error("Payment processing failed:", e);
+      return res.status(500).send("Payment processing failed.");
+   }
   }
 }
