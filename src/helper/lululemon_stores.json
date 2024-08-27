@@ -1,0 +1,3522 @@
+[
+    {
+        "Link": "https://shop.lululemon.com/stores/us/auburn/auburn-pop-up",
+        "Store Name": "Auburn Pop Up",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "334-769-2561",
+        "Email": "auburn-popup@lululemon.com",
+        "Address": "234 N. Gay Street, Unit C1, Auburn, AL, US, 36830"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/birmingham/birmingham",
+        "Store Name": "Summit Birmingham",
+        "Open Hours": "Mon - Sat: 10:00am - 9:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "205-303-1892",
+        "Email": "birmingham-store@lululemon.com",
+        "Address": "220 Summit Boulevard, Unit 140, Birmingham, AL, US, 35243"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/huntsville/merchants-walk",
+        "Store Name": "Bridge Street Town Centre",
+        "Open Hours": "Mon - Sat: 10:00am - 9:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "256-535-0422",
+        "Email": "merchantswalk-store@lululemon.com",
+        "Address": "365 The Bridge Street, Building 330, Suite 110, Huntsville, AL, US, 35806"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/mobile/legacy-village-at-spring-hill",
+        "Store Name": "Legacy Village at Spring Hill",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "251-320-6347",
+        "Email": "legacyvillage-store@lululemon.com",
+        "Address": "9 Du Rhu Drive, Mobile, AL, US, 36608"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/montgomery/the-shoppes-at-eastchase-pop-up",
+        "Store Name": "The Shoppes at EastChase Pop Up",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "334-396-3889",
+        "Email": "eastchase-popup@lululemon.com",
+        "Address": "7060 EastChase Parkway, Montgomery, AL, US, 36117"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/tuscaloosa/midtown-village-pop-up",
+        "Store Name": "Midtown Village Pop Up",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "205-349-3029",
+        "Email": "tuscaloosa-popup@lululemon.com",
+        "Address": "1800 McFarland Boulevard East, Space 108, Tuscaloosa, AL, US, 35404"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/anchorage/5th-avenue-mall",
+        "Store Name": "5th Avenue Mall",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "907-274-0003",
+        "Email": "anchorage-store@lululemon.com",
+        "Address": "320 W 5th Ave, D30A, Anchorage, AK, US, 99501"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/anchorage/dimond-center-pop-up",
+        "Store Name": "Dimond Center Pop Up",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 12:00pm - 7:00pm",
+        "Phone": "907-563-2019",
+        "Email": "dimond-popup@lululemon.com",
+        "Address": "800 East Dimond Boulevard Suite #110, Anchorage, AK, US, 99515"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/chandler/chandler",
+        "Store Name": "Chandler Blvd",
+        "Open Hours": "Mon - Sat: 10:00am - 9:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "480-485-3359",
+        "Email": "chandler-store@lululemon.com",
+        "Address": "3111 West Chandler Boulevard, Unit 1016, Chandler, AZ, US, 85226"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/flagstaff/aspen-place-flagstaff-local",
+        "Store Name": "Aspen Place Flagstaff - Local",
+        "Open Hours": "Mon - Thu: 10:00am - 7:00pm; Fri - Sat: 10:00am - 8:00pm; Sun: 10:00am - 6:00pm",
+        "Phone": "928-779-9861",
+        "Email": "flagstaff-local@lululemon.com",
+        "Address": "320 S Regent St, Suite 304, Flagstaff, AZ, US, 86001"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/gilbert/santan-village",
+        "Store Name": "SanTan Village",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "480-618-7762",
+        "Email": "Santanvillage-store@lululemon.com",
+        "Address": "2156 E. Williams Field Rd, Suite 109, Gilbert, AZ, US, 85295"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/glendale/arrowhead-towne-center",
+        "Store Name": "Arrowhead Towne Center",
+        "Open Hours": "Mon - Sat: 10:00am - 9:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "623-257-6665",
+        "Email": "arrowhead-store@lululemon.com",
+        "Address": "7700 W Arrowhead Towne Center, Space 1097, Glendale, AZ, US, 85308"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/glendale/westgate-outlets",
+        "Store Name": "Westgate Outlets",
+        "Open Hours": "Mon - Sat: 10:00am - 9:00pm; Sun: 10:00am - 7:00pm",
+        "Phone": "623-877-9291",
+        "Email": "westgate-outlet@lululemon.com",
+        "Address": "6800 North 95th Avenue, Suite 390, Glendale, AZ, US, 85305"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/phoenix/biltmore",
+        "Store Name": "Biltmore Fashion Park",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "602-932-2684",
+        "Email": "biltmore-store@lululemon.com",
+        "Address": "2502 E. Camelback Road, Suite 133, Phoenix, AZ, US, 85016"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/scottsdale/scottsdale",
+        "Store Name": "Scottsdale Quarter",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "480-531-7266",
+        "Email": "scottsdale-store@lululemon.com",
+        "Address": "15257 North Scottsdale Road, F-115, Scottsdale, AZ, US, 85254"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/scottsdale/scottsdalefs",
+        "Store Name": "Scottsdale Fashion Square",
+        "Open Hours": "Mon - Sat: 10:00am - 9:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "623-745-1612",
+        "Email": "scottsdalefs-store@lululemon.com",
+        "Address": "7014 East Camelback Rd, Unit 2238, Scottsdale, AZ, US, 85251"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/tempe/tempe-marketplace-pop-up",
+        "Store Name": "Tempe Marketplace Pop Up",
+        "Open Hours": "Mon - Sat: 11:00am - 9:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "480-914-5537",
+        "Email": "tempe-popup@lululemon.com",
+        "Address": "2000 E Rio Salado Pkwy, Suite 1013, Tempe, AZ, US, 85281"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/tucson/laencantada",
+        "Store Name": "La Encantada",
+        "Open Hours": "Mon - Wed: 10:00am - 7:00pm; Thu - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "520-341-2397",
+        "Email": "laencantada-store@lululemon.com",
+        "Address": "2905 E Skyline Dr, Tucson, Arizona, 85718, Space 251, Tucson, AZ, US, 85718"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/fayetteville/fayetteville-local",
+        "Store Name": "Fayetteville Local",
+        "Open Hours": "Mon - Fri: 10:00am - 7:00pm; Sat: 9:00am - 7:00pm; Sun: 10:00am - 5:00pm",
+        "Phone": "479-444-6917",
+        "Email": "fayetteville-local@lululemon.com",
+        "Address": "200 West Center Street, Suite 2, Fayetteville, AR, US, 72701"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/little-rock/promenadeatchenal",
+        "Store Name": "Promenade at Chenal",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "501-356-3972",
+        "Email": "littlerock-store@lululemon.com",
+        "Address": "17809 Chenal Parkway, Unit G103, Little Rock, AR, US, 72223"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/rogers/pinnacle-hills",
+        "Store Name": "Pinnacle Hills",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "479-269-4008",
+        "Email": "pinnaclehills@lululemon.com",
+        "Address": "2150-2203 S Promenade Blvd, Rogers, AR, US, 72758"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/arcadia/santa-anita",
+        "Store Name": "Santa Anita",
+        "Open Hours": "Mon - Sat: 10:00am - 9:00pm; Sun: 11:00am - 8:00pm",
+        "Phone": "626-602-9570",
+        "Email": "Santaanita-store@lululemon.com",
+        "Address": "400 South Baldwin Avenue, Suite D12, Arcadia, CA, US, 91007"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/bakersfield/bakersfield-store",
+        "Store Name": "Bakersfield",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "661-449-2360",
+        "Email": "bakersfield-store@lululemon.com",
+        "Address": "Suite E2 & E3 9000 MING AVENUE, Bakersfield, CA, US, 93311"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/berkeley/college-ave",
+        "Store Name": "Berkeley",
+        "Open Hours": "Mon - Sat: 11:00am - 7:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "510-939-9223",
+        "Email": "berkeley-store@lululemon.com",
+        "Address": "1901 Fourth Street, Suite 102, Berkeley, CA, US, 94710"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/beverly-hills/northbeverly",
+        "Store Name": "N. Beverly Dr",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "424-999-0829",
+        "Email": "northbeverly-store@lululemon.com",
+        "Address": "334 North Beverly Drive, Beverly Hills, CA, US, 90210"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/brea/brea-mall",
+        "Store Name": "Brea Mall",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "714-475-1641",
+        "Email": "breamall-store@lululemon.com",
+        "Address": "1124B Brea Mall, Brea, CA, US, 92821"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/burlingame/burlingame",
+        "Store Name": "Burlingame Ave",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 10:00am - 6:00pm",
+        "Phone": "650-718-8760",
+        "Email": "burlingame-store@lululemon.com",
+        "Address": "1304 Burlingame Ave, Burlingame, CA, US, 94010"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/cabazon/desert-hills-outlets",
+        "Store Name": "Desert Hills Premium Outlets",
+        "Open Hours": "Mon - Sat: 10:00am - 9:00pm; Sun: 10:00am - 8:00pm",
+        "Phone": "951-922-8182",
+        "Email": "deserthills-outlet@lululemon.com",
+        "Address": "48400 Seminole Drive, Unit 420, Cabazon, CA, US, 92230"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/calabasas/thecommons",
+        "Store Name": "The Commons",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "818-658-2927",
+        "Email": "Calabasas-store@lululemon.com",
+        "Address": "4719 Commons Way, Suite R, Calabasas, CA, US, 91302"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/camarillo/camarillo-premium-outlets",
+        "Store Name": "Camarillo Premium Outlets",
+        "Open Hours": "Mon - Sun: 10:00am - 8:00pm",
+        "Phone": "805-383-3673",
+        "Email": "camarillo-outlet@lululemon.com",
+        "Address": "850 E. Ventura Boulevard, Suite #714, Camarillo, CA, US, 93010"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/carlsbad/carlsbadforum",
+        "Store Name": "The Forum",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "760-462-7566",
+        "Email": "carlsbad-store@lululemon.com",
+        "Address": "1915 Calle Barcelona, 134, Carlsbad, CA, US, 92009"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/cerritos/los-cerritos-center",
+        "Store Name": "Los Cerritos Center",
+        "Open Hours": "Mon - Sat: 10:00am - 9:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "562-784-8280",
+        "Email": "loscerritos-store@lululemon.com",
+        "Address": "239 Los Cerritos Center, C03, Cerritos, CA, US, 90703"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/chula-vista/otay-ranch-pop-up",
+        "Store Name": "Otay Ranch Pop Up",
+        "Open Hours": "Mon - Sat: 11:00am - 8:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "619-870-8630",
+        "Email": "otayranch-popup@lululemon.com",
+        "Address": "2015 Birch Rd, Suite 915, Chula Vista, CA, US, 91915"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/commerce/citadel-outlets",
+        "Store Name": "Citadel Outlets",
+        "Open Hours": "Mon - Sun: 10:00am - 9:00pm",
+        "Phone": "323-278-3560",
+        "Email": "citadel-outlet@lululemon.com",
+        "Address": "100 Citadel Drive, Unit 711, Commerce, CA, US, 90040"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/corte-madera/village",
+        "Store Name": "The Village",
+        "Open Hours": "Mon - Fri: 10:00am - 8:00pm; Sat: 10:00am - 7:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "415-993-4312",
+        "Email": "cortemadera-store@lululemon.com",
+        "Address": "1620 Redwood Highway, Corte Madera, CA, US, 94925"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/costa-mesa/costamesa",
+        "Store Name": "South Coast Plaza",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 10:00am - 7:00pm",
+        "Phone": "714-582-1260",
+        "Email": "southcoast-store@lululemon.com",
+        "Address": "3333 Bear St, Suite #303, Costa Mesa, CA, US, 92626"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/el-segundo/thepoint",
+        "Store Name": "The Point",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 11:00am - 8:00pm",
+        "Phone": "424-328-6164",
+        "Email": "thepoint-store@lululemon.com",
+        "Address": "840 South Sepulveda Boulevard, Unit B108, El Segundo, CA, US, 90245"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/escondido/north-county-pop-up",
+        "Store Name": "North County Pop Up",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "760-480-7540",
+        "Email": "northcounty-popup@lululemon.com",
+        "Address": "272 East Via Rancho Parkway, Suite 335, Escondido, CA, US, 92025"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/fresno/fig-garden-village-store",
+        "Store Name": "Fig Garden Village",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "559-314-3263",
+        "Email": "figgarden-store@lululemon.com",
+        "Address": "712 W Shaw, Space 43A, Fresno, CA, US, 93704"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/gilroy/gilroy",
+        "Store Name": "Gilroy Premium Outlets",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "408-846-4281",
+        "Email": "gilroy-outlet@lululemon.com",
+        "Address": "681 Leavesley Road, Unit C-075, Gilroy, CA, US, 95020"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/glendale/glendale",
+        "Store Name": "Americana",
+        "Open Hours": "Mon - Thu: 10:00am - 9:00pm; Fri - Sat: 10:00am - 10:00pm; Sun: 11:00am - 8:00pm",
+        "Phone": "818-814-9937",
+        "Email": "americana-store@lululemon.com",
+        "Address": "529 Americana Way, Glendale, CA, US, 91210"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/huntington-beach/pacific-city",
+        "Store Name": "Pacific City",
+        "Open Hours": "Mon - Sat: 10:00am - 9:00pm; Sun: 10:00am - 6:00pm",
+        "Phone": "657-845-6043",
+        "Email": "pacificcity-store@lululemon.com",
+        "Address": "21010 Pacific Coast Hwy, D110, Huntington Beach, CA, US, 92648"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/irvine/irvine",
+        "Store Name": "Irvine Spectrum Ctr",
+        "Open Hours": "Mon - Thu: 10:00am - 9:00pm; Fri - Sat: 10:00am - 10:00pm; Sun: 10:00am - 9:00pm",
+        "Phone": "949-749-4895",
+        "Email": "irvine-store@lululemon.com",
+        "Address": "877 Spectrum Dr, Irvine, CA, US, 92618"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/long-beach/long-beach-2nd-pch",
+        "Store Name": "Long Beach, 2ND & PCH",
+        "Open Hours": "Mon - Sat: 10:00am - 9:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "562-553-6558",
+        "Email": "longbeach-store@lululemon.com",
+        "Address": "6460 East Pacific Coast Highway - Unit 115, Long Beach, CA, US, 90803"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/los-angeles/century-city",
+        "Store Name": "Century City",
+        "Open Hours": "Mon - Thu: 10:00am - 9:00pm; Fri - Sat: 10:00am - 10:00pm; Sun: 11:00am - 8:00pm",
+        "Phone": "424-371-7756",
+        "Email": "centurycity-store@lululemon.com",
+        "Address": "10250 Santa Monica Blvd, Unit 2680, Los Angeles, CA, US, 90067"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/los-angeles/studiocity",
+        "Store Name": "Studio City",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 10:00am - 6:00pm",
+        "Phone": "818-431-2616",
+        "Email": "studiocity-store@lululemon.com",
+        "Address": "12199 Ventura Blvd, Los Angeles, CA, US, 91604"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/los-angeles/melrose",
+        "Store Name": "Melrose Ave",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 10:00am - 6:00pm",
+        "Phone": "424-999-0954",
+        "Email": "Melrose-store@lululemon.com",
+        "Address": "8532 Melrose Ave, Los Angeles, CA, US, 90069"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/canoga-park/westfield-topanga",
+        "Store Name": "Westfield Topanga",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "818-446-1023",
+        "Email": "wftopanga-store@lululemon.com",
+        "Address": "6600 Topanga Canyon Blvd, #2070B, Los Angeles, CA, US, 91303"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/los-angeles/the-grove",
+        "Store Name": "The Grove",
+        "Open Hours": "Mon - Thu: 10:00am - 9:00pm; Fri - Sat: 10:00am - 10:00pm; Sun: 11:00am - 8:00pm",
+        "Phone": "323-417-8287",
+        "Email": "thegrove-store@lululemon.com",
+        "Address": "Space F2 - 189 The Grove Drive, Los Angeles, CA, US, 90036"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/los-gatos/los-gatos-store",
+        "Store Name": "Los Gatos",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 10:00am - 5:00pm",
+        "Phone": "408-790-1460",
+        "Email": "losgatos-store@lululemon.com",
+        "Address": "32 N Santa Cruz Ave, Los Gatos, CA, US, 95030"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/malibu/country-mart",
+        "Store Name": "Country Mart",
+        "Open Hours": "Mon - Sat: 10:00am - 6:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "424-999-0654",
+        "Email": "countrymart-store@lululemon.com",
+        "Address": "3880 Cross Creek Rd, Malibu, CA, US, 90265"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/mission-viejo/shopsatmissionviejo",
+        "Store Name": "The Shops at Mission Viejo",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "949-990-5010",
+        "Email": "missionviejo-store@lululemon.com",
+        "Address": "The Shops At Mission Viejo, Unit 907B, Mission Viejo, CA, US, 92691"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/monterey/del-monte-center",
+        "Store Name": "Del Monte Center",
+        "Open Hours": "Mon - Fri: 10:00am - 8:00pm; Sat: 10:00am - 7:00pm; Sun: 10:00am - 5:00pm",
+        "Phone": "831-249-2580",
+        "Email": "delmonte-store@lululemon.com",
+        "Address": "440 Del Monte Center Monterey, Monterey, CA, US, 93940"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/napa/first-street-napa",
+        "Store Name": "First Street Napa",
+        "Open Hours": "Mon - Thu: 11:00am - 6:00pm; Fri - Sat: 10:00am - 6:00pm; Sun: 11:00am - 5:00pm",
+        "Phone": "707-690-9977",
+        "Email": "napa-store@lululemon.com",
+        "Address": "1220 First Street, Napa, CA, US, 94559"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/newport-beach/fashionisland",
+        "Store Name": "Fashion Island",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "949-749-4693",
+        "Email": "newport-store@lululemon.com",
+        "Address": "203 Newport Center Dr, Newport Beach, CA, US, 92660"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/oakland/the-hive",
+        "Store Name": "The Hive",
+        "Open Hours": "Mon - Fri: 12:00pm - 6:00pm; Sat - Sun: 11:00am - 5:00pm",
+        "Phone": "510-625-1364",
+        "Email": "thehive-store@lululemon.com",
+        "Address": "2495 Broadway, Oakland, CA, US, 94612"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/oxnard/the-collection-at-riverpark-pop-up",
+        "Store Name": "The Collection at Riverpark Pop Up",
+        "Open Hours": "Mon - Sat: 10:00am - 9:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "805-919-8188",
+        "Email": "riverpark-popup@lululemon.com",
+        "Address": "621 Town Center Drive, Suite 2230, Oxnard, CA, US, 93036"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/pacific-palisades/the-pacific-palisades",
+        "Store Name": "The Pacific Palisades",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 10:00am - 6:00pm",
+        "Phone": "424-373-8997",
+        "Email": "palisades-store@lululemon.com",
+        "Address": "15287 W Sunset Blvd, Pacific Palisades, CA, US, 90272"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/palm-desert/el-paseo-palm-desert",
+        "Store Name": "Palm Desert",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 10:00am - 6:00pm",
+        "Phone": "760-478-6560",
+        "Email": "palmdesert-store@lululemon.com",
+        "Address": "73-425 El Paseo, Palm Desert CA 92260, 104, Palm Desert, CA, US, 92260"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/palo-alto/stanford-shopping-center",
+        "Store Name": "Stanford Shopping Center",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "650-718-8399",
+        "Email": "stanford-store@lululemon.com",
+        "Address": "660 Stanford Shopping Center, 186A, Palo Alto, CA, US, 94304"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/pasadena/pasadena",
+        "Store Name": "Colorado Blvd",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "626-603-8385",
+        "Email": "pasadena-store@lululemon.com",
+        "Address": "103 W. Colorado Blvd, Pasadena, CA, US, 91105"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/pleasanton/stoneridgemall",
+        "Store Name": "Stoneridge Shopping Center",
+        "Open Hours": "Mon - Thu: 10:00am - 7:00pm; Fri - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "925-744-6176",
+        "Email": "stoneridgemall-store@lululemon.com",
+        "Address": "2401 Stoneridge Mall Road, Unit E224, Pleasanton, CA, US, 94588"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/rancho-cucamonga/victoria-gardens",
+        "Store Name": "Victoria Gardens",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "909-487-2968",
+        "Email": "victoriagardens@lululemon.com",
+        "Address": "12434 South Main Street, Space #1350, Rancho Cucamonga, CA, US, 91739"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/roseville/roseville",
+        "Store Name": "Galleria at Roseville",
+        "Open Hours": "Mon - Sat: 10:00am - 9:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "916-796-4450",
+        "Email": "roseville-store@lululemon.com",
+        "Address": "1151 Galleria Blvd, Space 125, Roseville, CA, US, 95678"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/sacramento/ardenfair",
+        "Store Name": "Arden Fair",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "916-398-2744",
+        "Email": "ardenfair-store@lululemon.com",
+        "Address": "1689 Arden Way, Suite 1274, Sacramento, CA, US, 95815"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/san-clemente/outlets-at-san-clemente",
+        "Store Name": "Outlets at San Clemente",
+        "Open Hours": "Mon - Sun: 10:00am - 8:00pm",
+        "Phone": "949-361-8810",
+        "Email": "sanclemente-outlet@lululemon.com",
+        "Address": "101 West Avenida Vista Hermosa, Unit 505, San Clemente, CA, US, 92672"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/san-diego/westfieldutc",
+        "Store Name": "Westfield UTC",
+        "Open Hours": "Mon - Sat: 10:00am - 9:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "858-358-7617",
+        "Email": "westfieldutc-store@lululemon.com",
+        "Address": "4465 La Jolla Village Drive, H2 / Ste E-25, San Diego, CA, US, 92122"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/san-diego/lajolla",
+        "Store Name": "Girard St",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 10:00am - 6:00pm",
+        "Phone": "858-923-4132",
+        "Email": "lajolla-store@lululemon.com",
+        "Address": "7835 Girard Street, San Diego, CA, US, 92037"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/san-diego/fashionvalley",
+        "Store Name": "Fashion Valley",
+        "Open Hours": "Mon - Sat: 10:00am - 9:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "619-404-6100",
+        "Email": "fashionvalley-store@lululemon.com",
+        "Address": "7007 Friars Road, Unit 890A, San Diego, CA, US, 92108"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/san-diego/one-paseo",
+        "Store Name": "One Paseo",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "858-358-7663",
+        "Email": "onepaseo-store@lululemon.com",
+        "Address": "3715 Caminito Court, Unit 0620, San Diego, CA, US, 92130"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/san-francisco/cowhollow",
+        "Store Name": "Cow Hollow",
+        "Open Hours": "Mon - Sun: 10:00am - 7:00pm",
+        "Phone": "415-915-2913",
+        "Email": "cowhollow-store@lululemon.com",
+        "Address": "1981 Union Street, San Francisco, CA, US, 94123"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/san-francisco/sanfranciscocentre",
+        "Store Name": "San Francisco Centre",
+        "Open Hours": "Mon - Fri: 11:00am - 8:00pm; Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "628-244-8897",
+        "Email": "sanfranciscocentre@lululemon.com",
+        "Address": "845 Market Street, Unit 225, San Francisco, CA, US, 94103"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/san-francisco/fillmore-street---san-francisco",
+        "Store Name": "Fillmore Street - San Francisco",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "415-409-6915",
+        "Email": "Fillmorestreet-store@lululemon.com",
+        "Address": "2040 Fillmore Street, San Francisco, CA, US, 94115"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/san-jose/santanarow",
+        "Store Name": "Santana Row",
+        "Open Hours": "Mon - Sat: 10:00am - 9:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "408-843-5172",
+        "Email": "santanarow-store@lululemon.com",
+        "Address": "334 Santana Row, Unit 1035, San Jose, CA, US, 95128"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/san-jose/westfield-valley-fair",
+        "Store Name": "Westfield Valley Fair",
+        "Open Hours": "Mon - Sat: 10:00am - 9:00pm; Sun: 11:00am - 8:00pm",
+        "Phone": "408-692-2317",
+        "Email": "valleyfair-store@lululemon.com",
+        "Address": "2855 Stevens Creek Boulevard, Suite 1135, San Jose, CA, US, 95050"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/san-luis-obispo/monterey-street",
+        "Store Name": "Monterey street",
+        "Open Hours": "Mon - Fri: 10:00am - 9:00pm; Sat: 10:00am - 7:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "805-617-1684",
+        "Email": "slo-store@lululemon.com",
+        "Address": "840 Monterey Street, Suite B101, San Luis Obispo, CA, US, 93401"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/san-mateo/lululemon-hillsdale-mall",
+        "Store Name": "Hillsdale Mall",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "650-750-0554",
+        "Email": "hillsdale-store@lululemon.com",
+        "Address": "17 Hillsdale Mall, San Mateo, CA, US, 94403"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/santa-barbara/santabarbara",
+        "Store Name": "Santa Barbara",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "805-301-1380",
+        "Email": "santabarbara-store@lululemon.com",
+        "Address": "740 State Street, Santa Barbara, CA, US, 93101"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/santa-monica/santamonicablvd",
+        "Store Name": "Third Street Promenade",
+        "Open Hours": "Mon - Sun: 10:00am - 8:00pm",
+        "Phone": "310-987-4425",
+        "Email": "santamonica-store@lululemon.com",
+        "Address": "1457 Third Street Promenade, Santa Monica, CA, US, 90401"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/santa-rosa/montgomery-village",
+        "Store Name": "Montgomery Village",
+        "Open Hours": "Mon - Sat: 10:00am - 6:00pm; Sun: 10:00am - 5:00pm",
+        "Phone": "707-350-8778",
+        "Email": "montgomery-store@lululemon.com",
+        "Address": "2307 Magowan Drive Santa Rosa, CA 95405, Santa Rosa, CA, US, 95405"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/temecula/promendateattemecula",
+        "Store Name": "Promenade at Temecula",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "951-433-7239",
+        "Email": "temecula-store@lululemon.com",
+        "Address": "40820 Winchester Road, Suite 250, Temecula, CA, US, 92591"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/thousand-oaks/promenadeatwestlake",
+        "Store Name": "Promenade at Westlake",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "805-222-7165",
+        "Email": "westlake-store@lululemon.com",
+        "Address": "100 Promenade Way , Suite F, Thousand Oaks, CA, US, 91362-3832"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/torrance/del-amo-fashion-center",
+        "Store Name": "Del Amo Fashion Center",
+        "Open Hours": "Mon - Sat: 10:00am - 9:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "424-317-8857",
+        "Email": "delamo-store@lululemon.com",
+        "Address": "21420 Hawthorne Blvd, Unit 416, Torrance, CA, US, 90503"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/valencia/valencia",
+        "Store Name": "Valencia Town Square",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "661-535-1719",
+        "Email": "valencia-store@lululemon.com",
+        "Address": "24201 Valencia Boulevard, Valencia, CA, US, 91355"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/venice/abbot-kinney",
+        "Store Name": "Abbot Kinney",
+        "Open Hours": "Mon - Thu: 10:00am - 7:00pm; Fri - Sat: 10:00am - 8:00pm; Sun: 10:00am - 7:00pm",
+        "Phone": "310-314-4325",
+        "Email": "abbotkinney-store@lululemon.com",
+        "Address": "1130 Abbot Kinney Blvd, Venice, CA, US, 90291"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/walnut-creek/broadwayplaza",
+        "Store Name": "Broadway Plaza",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "925-940-8419",
+        "Email": "walnutcreek-store@lululemon.com",
+        "Address": "1210 Broadway Plaza Street, Walnut Creek, CA, US, 94596"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/aspen/aspen",
+        "Store Name": "Aspen",
+        "Open Hours": "Mon - Fri: 10:00am - 6:00pm; Sat: 9:00am - 6:00pm; Sun: 10:00am - 5:00pm",
+        "Phone": "970-406-7746",
+        "Email": "aspen-store@lululemon.com",
+        "Address": "Space D 204 S. Galena Street, Aspen, CO, US, 81611"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/aurora/southlands-pop-up",
+        "Store Name": "Southlands Pop Up",
+        "Open Hours": "Mon - Tue: 10:00am - 7:00pm; Wed: 10:00am - 8:00pm; Thu: 10:00am - 7:00pm; Fri - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "720-792-9561",
+        "Email": "southlands-popup@lululemon.com",
+        "Address": "6240 S Main Street, Space L-110, Aurora, CO, US, 80016"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/boulder/boulder",
+        "Store Name": "29th St",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "720-821-7538",
+        "Email": "29thstreet-store@lululemon.com",
+        "Address": "1710 29th Street, Unit #1088, Boulder, CO, US, 80301"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/breckenridge/main-street-station-breckenridge",
+        "Store Name": "Main Street Station - Breckenridge",
+        "Open Hours": "Mon - Thu: 10:00am - 7:00pm; Fri - Sat: 10:00am - 8:00pm; Sun: 10:00am - 6:00pm",
+        "Phone": "970-406-7731",
+        "Email": "breckenridge-store@lululemon.com",
+        "Address": "505 South Main Street, Suite A2, Breckenridge, CO, US, 80424"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/broomfield/flatiron-crossing-pop-up",
+        "Store Name": "Flatiron Crossing Pop Up",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "720-504-1283",
+        "Email": "flatiron-popup@lululemon.com",
+        "Address": "One W. Flatiron Circle, Space #1180, Broomfield, CO, US, 80021"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/castle-rock/outlets-at-castle-rock",
+        "Store Name": "Outlets at Castle Rock",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "303-688-7976",
+        "Email": "castlerock-outlet@lululemon.com",
+        "Address": "5050 Factory Shops Boulevard, Unit 310, Castle Rock, CO, US, 80108"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/colorado-springs/shops-at-briargate-store",
+        "Store Name": "Shops at Briargate",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "719-625-3009",
+        "Email": "coloradospringsstore@lululemon.com",
+        "Address": "1845 Briargate Parkway, Suite 439, Colorado Springs, CO, US, 80920"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/colorado-springs/creekwalk-pop-up",
+        "Store Name": "Creekwalk Pop Up",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "719-203-5770",
+        "Email": "creekwalk-popup@lululemon.com",
+        "Address": "120 East Cheyenne Road, Suite 140, Colorado Springs, CO, US, 80906"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/denver/highlands-square",
+        "Store Name": "Highlands Square",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 9:00am - 6:00pm",
+        "Phone": "303-974-4727",
+        "Email": "highlands-store@lululemon.com",
+        "Address": "3420 W. 32nd Avenue, Unit 102, Denver, CO, US, 80211"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/denver/shops-at-northfield-pop-up",
+        "Store Name": "Shops at Northfield Pop Up",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "720-783-4373",
+        "Email": "northfield-popup@lululemon.com",
+        "Address": "8246 Northfield Blvd, Suite 1410, Denver, CO, US, 80238"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/denver/cherrycreek",
+        "Store Name": "Cherry Creek",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "720-571-4054",
+        "Email": "cherrycreek-store@lululemon.com",
+        "Address": "3000 East First Ave, Unit 1103, Denver, CO, US, 80206"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/fort-collins/shops-at-foothills-mall",
+        "Store Name": "Shops at Foothills Mall",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 10:00am - 7:00pm",
+        "Phone": "970-406-7664",
+        "Email": "foothills-store@lululemon.com",
+        "Address": "3260 South College Avenue, Suite 110, Fort Collins, CO, US, 80525"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/lakewood/belmar-co-pop-up",
+        "Store Name": "Belmar, CO Pop Up",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "303-936-0027",
+        "Email": "belmar-popup@lululemon.com",
+        "Address": "399 S Teller Street, Space 2M3R44, Lakewood, CO, US, 80226"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/littleton/aspen-grove",
+        "Store Name": "Aspen Grove",
+        "Open Hours": "Mon - Thu: 10:00am - 7:00pm; Fri - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "970-423-7692",
+        "Email": "aspengrove-store@lululemon.com",
+        "Address": "7301 S Santa Fe Drive, Unit 445, Littleton, CO, US, 80120"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/lone-tree/parkmeadows",
+        "Store Name": "Park Meadows",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "720-640-8453",
+        "Email": "parkmeadows-store@lululemon.com",
+        "Address": "8401 Park Meadows Center Drive, Suite 2150, Lone Tree, CO, US, 80124"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/steamboat-springs/steamboat-springs",
+        "Store Name": "Steamboat Springs",
+        "Open Hours": "Mon - Thu: 10:00am - 6:00pm; Fri - Sat: 10:00am - 7:00pm; Sun: 10:00am - 6:00pm",
+        "Phone": "970-879-1798",
+        "Email": "steamboat-store@lululemon.com",
+        "Address": "730 Lincoln Avenue, Suite 320, Steamboat Springs, CO, US, 80487"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/vail/vail",
+        "Store Name": "Vail Village",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 10:00am - 6:00pm",
+        "Phone": "970-474-5919",
+        "Email": "vailvillage-store@lululemon.com",
+        "Address": "193 East Gore Creek Plaza, Unit A, Vail, CO, US, 81657"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/vail/vail-village-mens-pop-up",
+        "Store Name": "Vail Village Men's Pop Up",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 10:00am - 6:00pm",
+        "Phone": "970-476-7281",
+        "Email": "vailvillagemen-popup@lululemon.com",
+        "Address": "162 Gore Creek Drive, Unit 136, Vail, CO, US, 81657"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/westminster/orchard-town-center",
+        "Store Name": "Orchard Town Center",
+        "Open Hours": "Mon - Sat: 10:00am - 9:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "303-280-1622",
+        "Email": "orchardtown-store@lululemon.com",
+        "Address": "14584 Orchard Parkway, Suite #350, Westminster, CO, US, 80023"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/danbury/danburyfairmall",
+        "Store Name": "Danbury Fair Mall",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "475-275-9553",
+        "Email": "danbury-store@lululemon.com",
+        "Address": "7 Backus Avenue, D-201, Danbury, CT, US, 06810"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/darien/the-commons-at-darien-pop-up",
+        "Store Name": "The Commons at Darien, Pop Up",
+        "Open Hours": "Mon - Sun: 10:00am - 6:00pm",
+        "Phone": "475-336-2093",
+        "Email": "darien-popup@lululemon.com",
+        "Address": "The Commons at Darien, 94 Heights Road, Unit 106, Darien, CT, US, 06820"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/west-hartford/farmington",
+        "Store Name": "Westfarms Mall",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "860-979-5685",
+        "Email": "westfarmsmall-store@lululemon.com",
+        "Address": "545 Westfarms Mall, Farmington, CT, US, 06032"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/greenwich/greenwich",
+        "Store Name": "Greenwich Ave",
+        "Open Hours": "Mon - Sun: 10:00am - 6:00pm",
+        "Phone": "203-793-6259",
+        "Email": "greenwich-store@lululemon.com",
+        "Address": "151 Greenwich Ave, Greenwich, CT, US, 06830"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/new-haven/new-haven",
+        "Store Name": "New Haven",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "475-275-9793",
+        "Email": "newhaven-store@lululemon.com",
+        "Address": "13 Broadway, New Haven, CT, US, 06511"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/westport/westport",
+        "Store Name": "Westport Store",
+        "Open Hours": "Mon - Sun: 10:00am - 6:00pm",
+        "Phone": "475-256-5433",
+        "Email": "westport-store@lululemon.com",
+        "Address": "69 Main Street, Westport, CT, US, 06880"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/newark/christiana-mall",
+        "Store Name": "Christiana Mall",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "302-391-6064",
+        "Email": "christianamall-store@lululemon.com",
+        "Address": "132 Christiana Mall, Unit 1374, Newark, DE, US, 19702"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/washington/georgetownstore",
+        "Store Name": "Georgetown",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 10:00am - 7:00pm",
+        "Phone": "202-946-6709",
+        "Email": "georgetown-store@lululemon.com",
+        "Address": "3265 M Street NW, Washington, DC, US, 20007"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/washington/f-street",
+        "Store Name": "F Street",
+        "Open Hours": "Mon: 10:00am - 7:00pm; Tue - Sat: 10:00am - 8:00pm; Sun: 10:00am - 7:00pm",
+        "Phone": "202-946-6821",
+        "Email": "fstreet-store@lululemon.com",
+        "Address": "1090 F Street Northwest, Washington, DC, US, 20004"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/aventura/aventuramall",
+        "Store Name": "Aventura Mall",
+        "Open Hours": "Mon - Sat: 10:00am - 9:30pm; Sun: 11:00am - 8:00pm",
+        "Phone": "786-442-2724",
+        "Email": "aventura-store@lululemon.com",
+        "Address": "19565 Biscayne Blvd, Unit 910, Aventura, FL, US, 33180"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/boca-raton/bocaraton",
+        "Store Name": "Boca Town Center",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "561-621-3270",
+        "Email": "bocatowncenter-store@lululemon.com",
+        "Address": "6000 Glades Road, 1148C, Boca Raton, FL, US, 33431"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/coral-gables/merrick-park",
+        "Store Name": "Merrick Park",
+        "Open Hours": "Mon - Thu: 11:00am - 8:00pm; Fri - Sat: 11:00am - 9:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "305-506-1378",
+        "Email": "merrickpark-store@lululemon.com",
+        "Address": "342 San Lorenzo, Unit 1050, Coral Gables, FL, US, 33146"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/estero/coconut-point-pop-up",
+        "Store Name": "Coconut Point Pop Up",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "239-913-6974",
+        "Email": "coconutpoint-popup@lululemon.com",
+        "Address": "23151 Fashion Drive, Suite 107, Estero, FL, US, 33928"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/estero/miromar-outlets",
+        "Store Name": "Miromar Outlets",
+        "Open Hours": "Mon - Thu: 10:00am - 7:00pm; Fri - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "239-421-0001",
+        "Email": "miromar-outlet@lululemon.com",
+        "Address": "10801 Corkscrew Road, Unit 358, Estero, FL, US, 33928"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/fort-lauderdale/river-market",
+        "Store Name": "River Market",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 10:00am - 6:00pm",
+        "Phone": "954-787-5456",
+        "Email": "rivermarket-store@lululemon.com",
+        "Address": "2360 N. Federal Highway, Fort Lauderdale, FL, US, 33305"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/fort-lauderdale/las-olas-blvd-ft-lauderdale",
+        "Store Name": "Las Olas Blvd, Ft Lauderdale",
+        "Open Hours": "Mon - Sat: 10:00am - 9:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "954-287-0993",
+        "Email": "lasolasblvd-store@lululemon.com",
+        "Address": "1016 East Las Olas, Fort Lauderdale, FL, US, 33301"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/jacksonville/stjohnscenter",
+        "Store Name": "St Johns Ctr",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "904-822-4110",
+        "Email": "jacksonville-store@lululemon.com",
+        "Address": "4791 River City Drive Suite143, Jacksonville, FL, US, 32246"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/lake-buena-vista/disney-springs",
+        "Store Name": "Disney Springs",
+        "Open Hours": "Mon - Thu: 10:00am - 11:00pm; Fri - Sat: 10:00am - 11:30pm; Sun: 10:00am - 11:00pm",
+        "Phone": "407-305-3514",
+        "Email": "disneysprings-store@lululemon.com",
+        "Address": "1520 E Buena Vista Drive, Lake Buena Vista, FL, US, 32830"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/miami/brickell-city-center",
+        "Store Name": "Brickell City Centre",
+        "Open Hours": "Mon - Sat: 10:00am - 9:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "786-442-2417",
+        "Email": "brickell-store@lululemon.com",
+        "Address": "701 South Miami Avenue, Unit 256, Miami, FL, US, 33130"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/miami/miami-worldcenter",
+        "Store Name": "Miami Worldcenter",
+        "Open Hours": "Mon - Sat: 11:00am - 8:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "305-680-5917",
+        "Email": "miami-store@lululemon.com",
+        "Address": "652 NE 2nd Ave, Suite 152, Miami, FL, US, 33132"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/miami/dadeland-mall",
+        "Store Name": "Dadeland Mall",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "786-847-7631",
+        "Email": "dadeland-store@lululemon.com",
+        "Address": "7535 North Kendall Drive, Space 2140, Miami, FL, US, 33156"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/miami/lincolnroad",
+        "Store Name": "lululemon Lincoln Road",
+        "Open Hours": "Mon - Sat: 11:00am - 9:00pm; Sun: 11:00am - 8:00pm",
+        "Phone": "786-738-9578",
+        "Email": "lincolnroad-store@lululemon.com",
+        "Address": "800 Lincoln Road, Suite 810, Miami Beach, FL, US, 33139"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/miramar-beach/grand-boulevard",
+        "Store Name": "Grand Boulevard",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "850-724-8859",
+        "Email": "grandblvd-store@lululemon.com",
+        "Address": "500 Grand Boulevard, Suite K-107A, Miramar Beach, FL, US, 32550"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/naples/naples",
+        "Store Name": "Waterside Shops",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 11:00am - 5:00pm",
+        "Phone": "239-977-2609",
+        "Email": "naples-store@lululemon.com",
+        "Address": "5555 Tamiami Trail North, Unit G-10, Naples, FL, US, 34108"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/orlando/orlandooutlets",
+        "Store Name": "Orlando Premium Outlet",
+        "Open Hours": "Mon - Sat: 10:00am - 9:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "407-238-1076",
+        "Email": "orlandooutlet-store@lululemon.com",
+        "Address": "8174 Vineland Avenue, Space #1509, Orlando, FL, US, 32821"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/orlando/mallatmillenia",
+        "Store Name": "Mall at Millenia",
+        "Open Hours": "Mon - Fri: 11:00am - 9:00pm; Sat: 10:00am - 9:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "407-305-5032",
+        "Email": "mallatmillenia-store@lululemon.com",
+        "Address": "4200 Conroy Road, E135, Orlando, FL, US, 32839"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/orlando/florida-mall-pop-up",
+        "Store Name": "Florida Mall Pop Up",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "689-304-5237",
+        "Email": "floridamall-popup@lululemon.com",
+        "Address": "8001 S Orange Blossom Trl, 410B, Orlando, FL, US, 32809"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/palm-beach-gardens/thegardens",
+        "Store Name": "The Gardens",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "561-621-3579",
+        "Email": "gardens-store@lululemon.com",
+        "Address": "3101 PGA Blvd, M-207, Palm Beach Gardens, FL, US, 33410"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/pembroke-pines/shops-at-pembroke-gardens",
+        "Store Name": "Shops At Pembroke Gardens",
+        "Open Hours": "Mon - Sat: 10:00am - 9:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "754-816-1608",
+        "Email": "pembroke-store@lululemon.com",
+        "Address": "14564 SW 5th Street, Pembroke Pines, FL, US, 33027"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/santa-rosa-beach/grayton-beach",
+        "Store Name": "Grayton Beach",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 10:00am - 6:00pm",
+        "Phone": "850-409-9530",
+        "Email": "graytonbeach-store@lululemon.com",
+        "Address": "80 E Co Hwy 30A, Santa Rosa Beach, FL, US, 32459"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/sarasota/universitytowncenter",
+        "Store Name": "University Town Center",
+        "Open Hours": "Mon: Closed; Tue - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "941-909-3431",
+        "Email": "sarasota-store@lululemon.com",
+        "Address": "140 University Town Center Drive, Unit 275, Sarasota, FL, US, 34243"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/sunrise/sawgrass-mills-outlet",
+        "Store Name": "Sawgrass Mills Outlet",
+        "Open Hours": "Mon - Sat: 10:00am - 9:00pm; Sun: 11:00am - 8:00pm",
+        "Phone": "954-908-8829",
+        "Email": "sawgrassmills-outlet@lululemon.com",
+        "Address": "1800 Sawgrass Circle, Suite 4075, Sunrise, FL, US, 33323"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/tallahassee/miracle-plaza",
+        "Store Name": "Miracle Plaza",
+        "Open Hours": "Mon - Sat: 10:00am - 7:30pm; Sun: 11:00am - 6:00pm",
+        "Phone": "850-493-7102",
+        "Email": "miracleplaza-store@lululemon.com",
+        "Address": "1817 Thomasville Road, Ste 530, Tallahassee, FL, US, 32303"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/tampa/international-plaza",
+        "Store Name": "International Plaza",
+        "Open Hours": "Mon - Sat: 10:00am - 9:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "813-872-6831",
+        "Email": "internationalplaza@lululemon.com",
+        "Address": "2223 North West Shore Blvd, Unit 264, Tampa, FL, US, 33607"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/tampa/hydeparkvillage",
+        "Store Name": "Hyde Park Village",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "813-733-6272",
+        "Email": "hydeparkvlg-store@lululemon.com",
+        "Address": "727 South Dakota Avenue, Tampa, FL, US, 33606"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/viera/the-avenue-viera",
+        "Store Name": "The Avenue Viera",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "321-510-0609",
+        "Email": "avenueviera-store@lululemon.com",
+        "Address": "2271 Town Center Blvd, unit 107, Viera, FL, US, 32940"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/west-palm-beach/the-square",
+        "Store Name": "The Square",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "561-621-3431",
+        "Email": "rosemarysquare-store@lululemon.com",
+        "Address": "701 South Rosemary Avenue, #141, West Palm Beach, FL, US, 33401"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/winter-park/winter-park",
+        "Store Name": "Winter Park",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 10:30am - 5:30pm",
+        "Phone": "407-554-5121",
+        "Email": "winterpark-store@lululemon.com",
+        "Address": "200 N. Park Ave, Winter Park, FL, US, 32789"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/alpharetta/avalon",
+        "Store Name": "Avalon",
+        "Open Hours": "Mon - Sat: 10:00am - 9:00pm; Sun: 12:00pm - 7:00pm",
+        "Phone": "678-606-9135",
+        "Email": "alpharetta-store@lululemon.com",
+        "Address": "5185 Avalon Boulevard, Alpharetta, GA, US, 30009"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/athens/beechwood-shopping-center-pop-up",
+        "Store Name": "Beechwood Shopping Center Pop Up",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 12:00pm - 7:00pm",
+        "Phone": "706-208-3661",
+        "Email": "Beechwood-popup@lululemon.com",
+        "Address": "196 Alps Road, Suites 142-2 & 142-A, athens, GA, US, 30606"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/atlanta/cumberland-mall-seasonal-store",
+        "Store Name": "Cumberland Mall Pop Up",
+        "Open Hours": "Mon - Sat: 11:00am - 8:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "470-750-1854",
+        "Email": "cumberland-popup@lululemon.com",
+        "Address": "2860 Cumberland Mall, Suite 1358, Atlanta, GA, US, 30339"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/atlanta/lenox",
+        "Store Name": "Shops Around Lenox",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "470-394-5809",
+        "Email": "lenox-store@lululemon.com",
+        "Address": "3400 Around Lenox Road, 102A/B, Atlanta, GA, US, 30326"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/atlanta/ponce-city",
+        "Store Name": "Ponce City Market",
+        "Open Hours": "Mon - Sat: 10:00am - 9:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "470-333-7613",
+        "Email": "poncecity-store@lululemon.com",
+        "Address": "675 Ponce de Leon Ave, NE, Suite C187, Atlanta, GA, US, 30308"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/atlanta/howellmill",
+        "Store Name": "Howell Mill",
+        "Open Hours": "Mon - Thu: 10:00am - 7:00pm; Fri - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "404-777-5232",
+        "Email": "howellmill-store@lululemon.com",
+        "Address": "1168 Howell Mill Rd, Unit A, B, C, Atlanta, GA, US, 30318"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/atlanta/atlanta",
+        "Store Name": "Perimeter Mall",
+        "Open Hours": "Mon - Sat: 11:00am - 8:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "470-594-4961",
+        "Email": "perimeter-store@lululemon.com",
+        "Address": "4400 Ashford Dunwoody Rd, Suite 2565, Atlanta, GA, US, 30346"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/augusta/augusta-mall",
+        "Store Name": "Augusta Mall Pop Up",
+        "Open Hours": "Mon - Thu: 11:00am - 7:00pm; Fri: 11:00am - 8:00pm; Sat: 10:00am - 8:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "706-998-4098",
+        "Email": "augusta-popup@lululemon.com",
+        "Address": "3450 Wrightsboro Rd, Unit B215, Augusta, GA, US, 30909"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/dawsonville/north-georgia-premium-outlets",
+        "Store Name": "North Georgia Premium Outlets",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "706-216-1231",
+        "Email": "northgeorgia-outlet@lululemon.com",
+        "Address": "800 Highway 400 S, Suite 590, Dawsonville, GA, US, 30534"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/marietta/the-avenue-east-cobb",
+        "Store Name": "The Avenue East Cobb",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "678-839-9553",
+        "Email": "eastcobb-store@lululemon.com",
+        "Address": "4475 Roswell Rd, Suite A-300, Marietta, GA, US, 30062"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/peachtree-city/the-avenue-at-peachtree-city",
+        "Store Name": "The Avenue at Peachtree City",
+        "Open Hours": "Mon - Sat: 10:00am - 9:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "678-940-4629",
+        "Email": "peachtreecity-store@lululemon.com",
+        "Address": "215 City Circle, Suite 420, Peachtree City, GA, US, 30269"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/peachtree-corners/forum-on-peachtree-parkway",
+        "Store Name": "Forum on Peachtree Parkway",
+        "Open Hours": "Mon - Sat: 10:00am - 9:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "678-321-9072",
+        "Email": "peachtreepkwy-store@lululemon.com",
+        "Address": "5155 Peachtree Pkwy, Space 405, Peachtree Corners, GA, US, 30092"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/savannah/broughton-st",
+        "Store Name": "Broughton St",
+        "Open Hours": "Mon - Thu: 10:00am - 7:00pm; Fri - Sat: 10:00am - 8:00pm; Sun: 10:00am - 6:00pm",
+        "Phone": "912-913-7499",
+        "Email": "savannah-store@lululemon.com",
+        "Address": "309 West Broughton Street, Savannah, GA, US, 31401"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/honolulu/alamoanacenter",
+        "Store Name": "Ala Moana Ctr.",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 10:00am - 7:00pm",
+        "Phone": "808-818-8817",
+        "Email": "alamoana-store@lululemon.com",
+        "Address": "1450 Ala Moana Blvd, Unit 2715, Honolulu, HI, US, 96814"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/honolulu/kalakaua-avenue",
+        "Store Name": "Kalakaua Avenue",
+        "Open Hours": "Mon - Sun: 10:00am - 9:00pm",
+        "Phone": "808-736-3981",
+        "Email": "Kalakaua-store@lululemon.com",
+        "Address": "2424 Kalakaua Ave, Suite 117, Honolulu, HI, US, 96815"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/koloa/the-shops-at-kukui-ula",
+        "Store Name": "The Shops at Kukui\"ula",
+        "Open Hours": "Mon - Sun: 10:00am - 8:00pm",
+        "Phone": "808-808-7237",
+        "Email": "kukuiula-store@lululemon.com",
+        "Address": "2829 Ala Kalanikaumaka Street, A101, Koloa, HI, US, 96756"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/lahaina/whalers-village",
+        "Store Name": "Whalers Village",
+        "Open Hours": "Mon - Sun: 10:00am - 7:00pm",
+        "Phone": "808-736-3895",
+        "Email": "whalersvillage-store@lululemon.com",
+        "Address": "2435 Kaanapali Parkway, Space I-26, Lahaina, HI, US, 96761"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/wailea/shops-at-wailea",
+        "Store Name": "Wailea",
+        "Open Hours": "Mon - Sun: 9:00am - 8:00pm",
+        "Phone": "808-818-8509",
+        "Email": "shopsatwailea-store@lululemon.com",
+        "Address": "EW-18 - 3750 Wailea Alanui Dr, Wailea, HI, US, 96753"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/boise/boise-town-square",
+        "Store Name": "Boise Town Square",
+        "Open Hours": "Mon - Thu: 10:00am - 7:00pm; Fri - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "208-997-4115",
+        "Email": "boise-store@lululemon.com",
+        "Address": "350 North Milwaukee, Space 1025, Boise, ID, US, 83704"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/ketchum/the-local-sun-valley",
+        "Store Name": "The Local Sun Valley",
+        "Open Hours": "Mon - Sat: 10:00am - 6:00pm; Sun: 11:00am - 5:00pm",
+        "Phone": "208-291-1209",
+        "Email": "sunvalley-local@lululemon.com",
+        "Address": "191 North Main Street, Ketchum, ID, US, 83340"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/meridian/meridianvillage",
+        "Store Name": "The Village at Meridian",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "208-644-8075",
+        "Email": "meridian-store@lululemon.com",
+        "Address": "3597 East Monarch Sky Lane, #100, Meridian, ID, US, 83642"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/chicago/michiganavenue",
+        "Store Name": "900 N Michigan Ave",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "312-967-0317",
+        "Email": "900michigan-store@lululemon.com",
+        "Address": "900 North Michigan Ave, Suite L3-03, Chicago, IL, US, 60611"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/chicago/bucktown",
+        "Store Name": "Bucktown",
+        "Open Hours": "Mon - Fri: 10:00am - 7:00pm; Sat - Sun: 10:00am - 6:00pm",
+        "Phone": "773-839-3816",
+        "Email": "bucktown-store@lululemon.com",
+        "Address": "1627 N Damen Ave, Chicago, IL, US, 60647"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/chicago/southport",
+        "Store Name": "Southport Avenue",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 10:00am - 6:00pm",
+        "Phone": "773-839-7744",
+        "Email": "southport-store@lululemon.com",
+        "Address": "3556 N. Southport Ave, Chicago, IL, US, 60657"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/chicago/rushwalton",
+        "Store Name": "Rush Street",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 10:00am - 7:00pm",
+        "Phone": "312-847-2730",
+        "Email": "rush-store@lululemon.com",
+        "Address": "930 N Rush St, Chicago, IL, US, 60611"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/chicago/chicago-outlet",
+        "Store Name": "Chicago Outlet",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 10:00am - 7:00pm",
+        "Phone": "847-233-0057",
+        "Email": "chicago-outlet@lululemon.com",
+        "Address": "5220 Fashion Outlets Way, Rosemont, Chicago, IL, US, 60018"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/chicago/fulton-market",
+        "Store Name": "Fulton Market",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 10:00am - 6:00pm",
+        "Phone": "312-243-2788",
+        "Email": "fultonmarket-store@lululemon.com",
+        "Address": "932 W Randolph St, Chicago, IL, US, 60607"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/deer-park/deerpark",
+        "Store Name": "Deer Park Town Center",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 5:00pm",
+        "Phone": "847-241-1391",
+        "Email": "deerpark-store@lululemon.com",
+        "Address": "20530 North Rand Road, Unit 236, Deer Park, IL, US, 60010"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/lake-forest/market-square",
+        "Store Name": "Market Square",
+        "Open Hours": "Mon - Sat: 10:00am - 6:00pm; Sun: 10:00am - 5:00pm",
+        "Phone": "847-250-4097",
+        "Email": "marketsquare-store@lululemon.com",
+        "Address": "680 Western Ave, Lake Forest, IL, US, 60045"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/naperville/naperville",
+        "Store Name": "Naperville",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "630-491-4607",
+        "Email": "naperville-store@lululemon.com",
+        "Address": "50 South Main Street, Suite 130, Naperville, IL, US, 60540"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/northbrook/northbrook",
+        "Store Name": "Northbrook Court",
+        "Open Hours": "Mon - Sat: 11:00am - 7:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "847-572-8097",
+        "Email": "northbrook-store@lululemon.com",
+        "Address": "2106 Northbrook Court Ct, Unit 2176, Northbrook, IL, US, 60062"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/oak-brook/oak-brookcenter",
+        "Store Name": "Oakbrook Ctr",
+        "Open Hours": "Mon - Sat: 10:00am - 9:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "630-368-1610",
+        "Email": "oakbrook-store@lululemon.com",
+        "Address": "82 Oakbrook Center, Oak Brook, IL, US, 60523"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/schaumburg/woodfieldmall",
+        "Store Name": "Woodfield Mall",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "847-719-6207",
+        "Email": "woodfieldmall-store@lululemon.com",
+        "Address": "Woodfield Mall, L304, Schaumburg, IL, US, 60173"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/skokie/skokie",
+        "Store Name": "Westfield Old Orchard",
+        "Open Hours": "Mon - Sat: 10:00am - 9:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "847-719-6200",
+        "Email": "oldorchard-store@lululemon.com",
+        "Address": "4999 Old Orchard Center, Unit A8, Skokie, IL, US, 60077"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/carmel/clay-terrace-",
+        "Store Name": "Clay Terrace",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "317-818-8109",
+        "Email": "clayterrace-store@lululemon.com",
+        "Address": "14405 Clay Terrace Boulevard, Unit 103, Carmel, IN, US, 46032"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/indianapolis/keystone",
+        "Store Name": "Keystone Mall",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "317-597-8092",
+        "Email": "keystone-store@lululemon.com",
+        "Address": "8702 Keystone Crossing, Unit 21A, Indianapolis, IN, US, 46240"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/mishawaka/university-park-mall",
+        "Store Name": "University Park Mall",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "574-821-5731",
+        "Email": "universitypark-store@lululemon.com",
+        "Address": "6501 N Grape Rd., 354A, Mishawaka, IN, US, 46545"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/coralville/Iowa-River-Landing-Local",
+        "Store Name": "Iowa River Landing",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 11:00am - 5:00pm",
+        "Phone": "319-346-3360",
+        "Email": "iowariver-store@lululemon.com",
+        "Address": "920 east second avenue, suite 135, Coralville, IA, US, 52241"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/west-des-moines/jordan-creek-town-center",
+        "Store Name": "Jordan Creek Town Center",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "515-497-9662",
+        "Email": "jordancreek-store@lululemon.com",
+        "Address": "101 Jordan Creek Parkway, Unit 11145, West Des Moines, IA, US, 50266"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/leawood/leawood",
+        "Store Name": "Leawood Store",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 12:00pm - 5:00pm",
+        "Phone": "913-347-4524",
+        "Email": "leawood-store@lululemon.com",
+        "Address": "4553 W 119th St, A110, Leawood, KS, US, 66209"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/wichita/bradley-fair-shopping-center",
+        "Store Name": "Bradley Fair Shopping Center",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "316-395-5791",
+        "Email": "wichita-store@lululemon.com",
+        "Address": "2000 North Rock Road, Suite 108, Wichita, KS, US, 67206"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/lexington/lexingtongreen",
+        "Store Name": "lululemon Lexington",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "859-765-7374",
+        "Email": "lexington-store@lululemon.com",
+        "Address": "151 Larue, Suite 135, Lexington, KY, US, 40517"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/louisville/oxmoor-center",
+        "Store Name": "Oxmoor Center",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "502-466-7245",
+        "Email": "oxmoorcenter-store@lululemon.com",
+        "Address": "7900 Shelbyville Rd, Unit C01, Louisville, KY, US, 40222"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/baton-rouge/acadian-village",
+        "Store Name": "Acadian Village",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 10:00am - 5:00pm",
+        "Phone": "225-314-6510",
+        "Email": "acadianvillage-store@lululemon.com",
+        "Address": "3535 Perkins Road, Building 400, Baton Rouge, LA, US, 70808"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/lafayette/settlers-traces-pop-up",
+        "Store Name": "Settlers Trace Pop Up",
+        "Open Hours": "Mon - Sat: 10:00am - 6:00pm; Sun: 12:00pm - 5:00pm",
+        "Phone": "337-406-8491",
+        "Email": "settlerstrace-popup@lululemon.com",
+        "Address": "Suite 5, 500 Settlers Trace Boulevard, Lafayette, LA, US, 70508"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/metairie/lakeside-shopping-center",
+        "Store Name": "Lakeside Shopping Center",
+        "Open Hours": "Mon - Thu: 10:00am - 7:00pm; Fri - Sat: 10:00am - 8:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "504-608-4863",
+        "Email": "metairie-store@lululemon.com",
+        "Address": "3301 Veterans Memorial Blvd, 54A, Metairie, LA, US, 70002"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/new-orleans/canalplace",
+        "Store Name": "Canal Place",
+        "Open Hours": "Mon - Sat: 11:00am - 7:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "504-788-2857",
+        "Email": "canalplace-store@lululemon.com",
+        "Address": "333 Canal Street, Unit 100, New Orleans, LA, US, 70130"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/shreveport/fern-market-place",
+        "Store Name": "Fern Market Place",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 11:00am - 5:00pm",
+        "Phone": "318-602-4380",
+        "Email": "Fernmarket-store@lululemon.com",
+        "Address": "1384 East 70th Street, Suite 500, Shreveport, LA, US, 71105"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/kittery/kittery",
+        "Store Name": "Kittery Outlet",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 10:00am - 6:00pm",
+        "Phone": "207-813-2402",
+        "Email": "kittery-outlet@lululemon.com",
+        "Address": "340 Route 1, Suite 3, Kittery, ME, US, 03904"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/south-portland/maine-mall",
+        "Store Name": "Maine Mall",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "207-352-3738",
+        "Email": "mainemall-store@lululemon.com",
+        "Address": "364 Maine Mall Road, E115, South Portland, ME, US, 04106"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/annapolis/annapolis",
+        "Store Name": "Annapolis",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "410-457-9665",
+        "Email": "annapolis-store@lululemon.com",
+        "Address": "2002 Annapolis Mall Rd, Unit 1454, Annapolis, MD, US, 21401"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/baltimore/harboreast",
+        "Store Name": "Harbor East",
+        "Open Hours": "Mon - Thu: 10:00am - 7:00pm; Fri - Sat: 10:00am - 8:00pm; Sun: 10:00am - 6:00pm",
+        "Phone": "443-347-5584",
+        "Email": "harboreast-store@lululemon.com",
+        "Address": "1001-B Fleet St, Suite C, Baltimore, MD, US, 21202"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/bethesda/bethesda",
+        "Store Name": "Bethesda Row",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 10:00am - 7:00pm",
+        "Phone": "301-690-9278",
+        "Email": "bethesda-store@lululemon.com",
+        "Address": "4838 Bethesda Ave, Unit 16, Bethesda, MD, US, 20814"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/bethesda/montgomerymall",
+        "Store Name": "Montgomery Mall",
+        "Open Hours": "Mon - Sat: 10:00am - 9:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "301-889-8094",
+        "Email": "montgomerymall-store@lululemon.com",
+        "Address": "7101 Democracy Boulevard, Unit #1268, Bethesda, MD, US, 20817"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/columbia/columbia",
+        "Store Name": "Mall in Columbia",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "410-449-1476",
+        "Email": "mallincolumbia-store@lululemon.com",
+        "Address": "10300 Little Patuxent Parkway, Unit 2750, Columbia, MD, US, 21044"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/gaithersburg/gaithersburg-store",
+        "Store Name": "Gaithersburg",
+        "Open Hours": "Mon - Sat: 10:00am - 9:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "240-635-8698",
+        "Email": "gaithersburg-store@lululemon.com",
+        "Address": "138 Crown Park Avenue, Gaithersburg, MD, US, 20878"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/towson/towsoncenter",
+        "Store Name": "Towson Center",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "443-347-5331",
+        "Email": "towsoncenter-store@lululemon.com",
+        "Address": "825 Dulaney Valley Road, Unit 4133, Towson, MD, US, 21204"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/boston/seaport",
+        "Store Name": "Boston Seaport",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "857-847-3441",
+        "Email": "seaport@lululemon.com",
+        "Address": "62 Seaport Blvd, Boston, MA, US, 02210"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/boston/prudential",
+        "Store Name": "Prudential Center",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "617-202-3617",
+        "Email": "prudential-store@lululemon.com",
+        "Address": "776 Boylston Street, Unit 6B, Boston, MA, US, 02199"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/burlington/burlingtonmall",
+        "Store Name": "Burlington Mall",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "360-284-1150",
+        "Email": "burlingtonmall-store@lululemon.com",
+        "Address": "75 Middlesex Turnpike, Suite 1047B, Burlington, MA, US, 01803"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/chestnut-hill/chestnut-hill",
+        "Store Name": "Chestnut Hill",
+        "Open Hours": "Mon - Sat: 10:00am - 9:00pm; Sun: 11:00am - 8:00pm",
+        "Phone": "857-419-7761",
+        "Email": "chestnuthill-store@lululemon.com",
+        "Address": "55 Boylston Street, Chestnut Hill, MA, US, 02467"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/dedham/legacyplace",
+        "Store Name": "Legacy Place",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "781-365-5415",
+        "Email": "legacy-store@lululemon.com",
+        "Address": "680 Legacy Place, Unit 242, Dedham, MA, US, 02026"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/edgartown/marthas-vineyard",
+        "Store Name": "Martha's Vineyard",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 10:00am - 5:00pm",
+        "Phone": "508-761-1877",
+        "Email": "marthasvineyardstore@lululemon.com",
+        "Address": "66 Main Street, Edgartown, MA, US, 02539"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/hingham/derbystreet",
+        "Store Name": "Derby St. Shops",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "781-528-0842",
+        "Email": "hingham-store@lululemon.com",
+        "Address": "94 Derby St, Unit 219 & 221, Hingham, MA, US, 02043"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/lynnfield/marketstreet",
+        "Store Name": "Market Street",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "781-365-5766",
+        "Email": "marketstreet-store@lululemon.com",
+        "Address": "630 Market Street, Lynnfield, MA, US, 01940"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/mashpee/mashpee-commons",
+        "Store Name": "Mashpee Commons",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 5:00pm",
+        "Phone": "508-403-9783",
+        "Email": "mashpeecommons-store@lululemon.com",
+        "Address": "21 Steeple Street, Space # 11B.102, Mashpee, MA, US, 02649"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/millbury/shops-at-blackstone-valley",
+        "Store Name": "Shops at Blackstone Valley",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "774-486-6276",
+        "Email": "blackstone-popup@lululemon.com",
+        "Address": "70 Worcester-Providence turnpike, Suite 511, Millbury, MA, US, 01527"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/natick/natick",
+        "Store Name": "Natick Collection",
+        "Open Hours": "Mon - Thu: 10:00am - 7:00pm; Fri - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "508-552-3117",
+        "Email": "natickmall-store@lululemon.com",
+        "Address": "1245 Worcester Street, Unit 4054 and 4055, Natick, MA, US, 01760"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/sommerville/assembly-row-pop-up",
+        "Store Name": "Assembly Row Pop Up",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 10:00am - 6:00pm",
+        "Phone": "617-440-2287",
+        "Email": "Assemblyrow-popup@lululemon.com",
+        "Address": "335 Assembly Row, Unit 814, Sommerville, MA, US, 02145"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/wellesley/central-street-wellesley",
+        "Store Name": "Central Street, Wellesley",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "781-471-5792",
+        "Email": "wellesley-store@lululemon.com",
+        "Address": "50D Central Street, D, Wellesley, MA, US, 02482"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/Massachusetts/Wrentham",
+        "Store Name": "Wrentham Village Premium Outlet",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 10:00am - 8:00pm",
+        "Phone": "413-779-3934",
+        "Email": "Wrentham-Outlet@lululemon.com",
+        "Address": "1 Premium Outlets Blvd, Suite 195, Wrentham, MA, US, 02093"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/ann-arbor/annarbormi",
+        "Store Name": "Ann Arbor store",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "734-519-6550",
+        "Email": "annarbor-store@lululemon.com",
+        "Address": "3070 Washtenaw Avenue, Ann Arbor, MI, US, 48104"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/birch-run/birch-run-premium-outlets-pop-up",
+        "Store Name": "Birch Run Premium Outlets Pop Up",
+        "Open Hours": "Mon - Thu: 10:00am - 7:00pm; Fri - Sat: 10:00am - 8:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "989-403-0556",
+        "Email": "birchrun-outlet@lululemon.com",
+        "Address": "12150 Beyer Rd, Birch Run, MI, US, 48415"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/birmingham/birminghammi",
+        "Store Name": "Old Woodward",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "248-846-1774",
+        "Email": "oldwoodwardave-store@lululemon.com",
+        "Address": "101 S Old Woodward Ave, Birmingham, MI, US, 48009"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/clinton-township/partridge-creek",
+        "Store Name": "Partridge Creek",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "586-331-0786",
+        "Email": "partridgecreek-store@lululemon.com",
+        "Address": "17420 Hall Road, Unit 182, Clinton Township, MI, US, 48038"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/detroit/downtown-detroit",
+        "Store Name": "Downtown Detroit",
+        "Open Hours": "Mon - Sat: 11:00am - 7:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "313-450-9861",
+        "Email": "thedetroitlocal@lululemon.com",
+        "Address": "1459 Woodward Avenue, Detroit, MI, US, 48226"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/lansing/eastwood-towne-center",
+        "Store Name": "Eastwood Towne Center",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "517-903-2461",
+        "Email": "EastwoodTowneCenter@lululemon.com",
+        "Address": "3032 Centre Boulevard, East Lansing, MI, US, 48912"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/bretonvillage/bretonvillage",
+        "Store Name": "Breton Village",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "616-557-7647",
+        "Email": "bretonvillage-store@lululemon.com",
+        "Address": "1830 Breton, Suite 1880, Grand Rapids, MI, US, 49506"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/grosse-pointe/grosse-pointe-pop-up",
+        "Store Name": "Grosse Pointe Pop Up",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 12:00pm - 5:00pm",
+        "Phone": "313-484-2083",
+        "Email": "grossepointe-popup@lululemon.com",
+        "Address": "17101 Kercheval Ave, Grosse Pointe, MI, US, 48230"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/novi/twelveoaksmall",
+        "Store Name": "Twelve Oaks Mall",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "248-368-0876",
+        "Email": "twelveoaks-store@lululemon.com",
+        "Address": "27708 Novi Rd, C281, Novi, MI, US, 48377"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/rochester/rochester-store",
+        "Store Name": "Rochester Store",
+        "Open Hours": "Mon - Sat: 10:00am - 9:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "248-710-0254",
+        "Email": "rochester-store@lululemon.com",
+        "Address": "252 North Adams Road, Rochester Hills, MI, US, 48309"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/traverse-city/traverse-city",
+        "Store Name": "Traverse City",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 10:00am - 6:00pm",
+        "Phone": "231-444-5834",
+        "Email": "traversecity-store@lululemon.com",
+        "Address": "218 E Front St., Traverse City, MI, US, 49684"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/troy/somersetcollec",
+        "Store Name": "Somerset South",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "248-846-1931",
+        "Email": "somerset-store@lululemon.com",
+        "Address": "2801 West Big Beaver Road, Unit G233, Troy, MI, US, 48084"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/albertville/albertville",
+        "Store Name": "Albertville Outlet",
+        "Open Hours": "Mon - Thu: 10:00am - 7:00pm; Fri - Sat: 10:00am - 8:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "763-497-0240",
+        "Email": "albertville-outlet@lululemon.com",
+        "Address": "6415 Labeaux Avenue NE, Unit B270, Albertville, MN, US, 55301"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/edina/50th-and-france-edina",
+        "Store Name": "50th & France, Edina",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "651-758-2926",
+        "Email": "50thandFrance-store@lululemon.com",
+        "Address": "3914 W 50th Street, Edina, MN, US, 55424"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/edina/southdale-center",
+        "Store Name": "Southdale Center",
+        "Open Hours": "Mon - Tue: Closed; Wed - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "952-900-7298",
+        "Email": "southdale-store@lululemon.com",
+        "Address": "10 Southdale Center, Unit 1795, Edina, MN, US, 55435"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/minneapolis/ridgedale",
+        "Store Name": "Ridgedale",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "763-296-3135",
+        "Email": "ridgedale-store@lululemon.com",
+        "Address": "12673 Wayzata Blvd, Minneapolis, MN, US, 55305"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/minneapolis/north-loop",
+        "Store Name": "North Loop",
+        "Open Hours": "Mon - Sat: 9:00am - 7:00pm; Sun: 9:00am - 6:00pm",
+        "Phone": "612-439-2120",
+        "Email": "northloop-store@lululemon.com",
+        "Address": "134 3rd Ave North, Minneapolis, MN, US, 55401"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/rochester/apache-mall",
+        "Store Name": "Apache Mall",
+        "Open Hours": "Mon - Thu: 11:00am - 7:00pm; Fri: 11:00am - 8:00pm; Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "507-585-1503",
+        "Email": "apachemall-store@lululemon.com",
+        "Address": "1201 12th Street SW, Hwy. 14, Unit # 314, Rochester, MN, US, 55902"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/roseville/rosedale-center",
+        "Store Name": "Rosedale Center",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "651-412-2808",
+        "Email": "Rosedale-store@lululemon.com",
+        "Address": "1595 Minnesota 36, #200, Roseville, MN, US, 55113"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/woodbury/woodbury-lakes",
+        "Store Name": "Woodbury Lakes",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "651-321-5205",
+        "Email": "woodbury-store@lululemon.com",
+        "Address": "9020 Hudson Road, Suite 403A, Woodbury, MN, US, 55125"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/jackson/highlandvillageinjackson",
+        "Store Name": "Highland Village",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "601-436-4303",
+        "Email": "highland-jackson@lululemon.com",
+        "Address": "4500 I-55 North, Suite #120, Jackson, MS, US, 39211"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/ridgeland/renaissance-at-colony-park",
+        "Store Name": "Renaissance at Colony Park",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "601-348-9652",
+        "Email": "renaissance-store@lululemon.com",
+        "Address": "1000 Highland Colony Parkway, Suite 4002, Ridgeland, MS, US, 39157"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/branson/tanger-outlets-branson",
+        "Store Name": "Tanger Outlets, Branson",
+        "Open Hours": "Mon - Thu: 9:00am - 7:00pm; Fri - Sat: 9:00am - 8:00pm; Sun: 10:00am - 6:00pm",
+        "Phone": "417-708-7030",
+        "Email": "branson-outlet@lululemon.com",
+        "Address": "300 Tanger Boulevard, Unit 211, Branson, MO, US, 65616"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/columbia/shoppes-at-stadium",
+        "Store Name": "Shoppes at Stadium",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "573-615-3623",
+        "Email": "shoppesstadium-store@lululemon.com",
+        "Address": "211 N Stadium Blvd., Suite 6, Columbia, MO, US, 65203"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/des-peres/west-county-store",
+        "Store Name": "West County Store",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "314-866-4193",
+        "Email": "westcounty-store@lululemon.com",
+        "Address": "35 W County Center Dr., Space # 1095, Des Peres, MO, US, 63131"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/frontenac/plazafrontenac",
+        "Store Name": "Plaza Frontenac",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "314-886-7958",
+        "Email": "frontenac-store@lululemon.com",
+        "Address": "1701 South Lindbergh Boulevard, Unit 247, Frontenac, MO, US, 63131"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/kansas-city/kansascitymo",
+        "Store Name": "Country Club Plaza",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "816-653-6483",
+        "Email": "countryclubpl-store@lululemon.com",
+        "Address": "401 Nichols Road, Kansas City, MO, US, 64112"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/lees-summit/summit-fair-pop-up",
+        "Store Name": "Summit Fair Pop Up",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "816-477-5030",
+        "Email": "summitfair-popup@lululemon.com",
+        "Address": "910 NW Blue Parkway, Suite G, Lee's Summit, MO, US, 64086"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/springfield/battlefield-mall",
+        "Store Name": "Battlefield Mall",
+        "Open Hours": "Mon - Thu: 11:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "417-246-4479",
+        "Email": "springfield-store@lululemon.com",
+        "Address": "2825 South Glenstone Avenue, Springfield, MO, US, 65804"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/st-louis/marylandplaza",
+        "Store Name": "Maryland Plaza",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 10:00am - 6:00pm",
+        "Phone": "314-936-4562",
+        "Email": "marylandplaza-store@lululemon.com",
+        "Address": "Unit 26 Maryland Plaza, St. Louis, MO, US, 63108"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/bozeman/bozeman",
+        "Store Name": "Bozeman",
+        "Open Hours": "Mon - Sat: 9:00am - 7:00pm; Sun: 9:00am - 5:00pm",
+        "Phone": "406-344-1562",
+        "Email": "Bozeman-store@lululemon.com",
+        "Address": "23 E Main, Bozeman, MT, US, 59715"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/missoula/southgate-mall-missoula",
+        "Store Name": "Southgate Mall, Missoula",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "406-625-0370",
+        "Email": "southgatemall-store@lululemon.com",
+        "Address": "Unit# D-13A, 2901 Brooke St., Missoula, MT, US, 59801"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/lincoln/southpointe-pavilions",
+        "Store Name": "Southpointe Pavilions",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "402-687-3921",
+        "Email": "southpointe-store@lululemon.com",
+        "Address": "2940 Pine Lake Rd, Suite J, Lincoln, NE, US, 68516"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/omaha/regency",
+        "Store Name": "Regency",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 12:00pm - 5:00pm",
+        "Phone": "402-534-1336",
+        "Email": "regency-store@lululemon.com",
+        "Address": "120 Regency Pkwy, 156, Omaha, NE, US, 68114"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/omaha/villagepoint",
+        "Store Name": "Village Pointe",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 5:00pm",
+        "Phone": "402-256-7689",
+        "Email": "villagepointe-store@lululemon.com",
+        "Address": "17250 Davenport, St, Ste C102, Omaha, NE, US, 68118"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/henderson/district-at-green-valley",
+        "Store Name": "District at Green Valley",
+        "Open Hours": "Mon - Thu: 10:00am - 7:00pm; Fri - Sat: 10:00am - 8:00pm; Sun: 10:00am - 6:00pm",
+        "Phone": "725-215-6925",
+        "Email": "greenvalley-store@lululemon.com",
+        "Address": "2240 Village Walk Drive, #120, Henderson, NV, US, 89052"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/las-vegas/downtownsummerlin",
+        "Store Name": "Downtown Summerlin",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri: 10:00am - 9:00pm; Sat: 9:00am - 9:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "702-240-4175",
+        "Email": "summerlin-store@lululemon.com",
+        "Address": "1870 Festival Plaza Dr, H100, Las Vegas, NV, US, 89135"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/las-vegas/fashionshowmall",
+        "Store Name": "Fashion Show Mall",
+        "Open Hours": "Mon - Thu: 11:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "702-978-7453",
+        "Email": "fashionshow-store@lululemon.com",
+        "Address": "3200 Las Vegas Blvd. S, Unit 1770, Las Vegas, NV, US, 89109"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/las-vegas/las-vegas-premium-outlet-north",
+        "Store Name": "Las Vegas Premium Outlet North",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 10:00am - 7:00pm",
+        "Phone": "702-384-0031",
+        "Email": "lasvegas-outlet@lululemon.com",
+        "Address": "855 South Grand Central Parkway, Unit 1540, Las Vegas, NV, US, 89106"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/las-vegas/forum-shops-at-caesars-",
+        "Store Name": "Forum Shops at Caesars",
+        "Open Hours": "Mon - Sun: 10:00am - 9:00pm",
+        "Phone": "702-479-5451",
+        "Email": "caesars-store@lululemon.com",
+        "Address": "3500 Las Vegas Blvd S, Unit F01A, Las Vegas, NV, US, 89109"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/las-vegas/miracle-mile",
+        "Store Name": "Miracle Mile",
+        "Open Hours": "Mon - Sun: 10:00am - 9:00pm",
+        "Phone": "725-209-7381",
+        "Email": "miraclemile-store@lululemon.com",
+        "Address": "3663 South Las Vegas Boulevard, Suite 170, Las Vegas, NV, US, 89109"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/reno/summit-sierra",
+        "Store Name": "The Summit Sierra",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:15am - 6:00pm",
+        "Phone": "775-242-6670",
+        "Email": "summitsierra-store@lululemon.com",
+        "Address": "13935 South Virginia Street, Suite 304, Reno, NV, US, 89511"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/salem/rockingham-mall",
+        "Store Name": "Rockingham Mall",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "978-391-6259",
+        "Email": "rockinghammall@lululemon.com",
+        "Address": "99 Rockingham Park Blvd, W121A, salem, NH, US, 03079"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/new-jersey/avalon-local",
+        "Store Name": "Avalon Local",
+        "Open Hours": "Mon - Sun: 10:00am - 6:00pm",
+        "Phone": "609-368-1050",
+        "Email": "avalon-local@lululemon.com",
+        "Address": "2013 Dune Dr, Avalon, NJ, US, 08202"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/bridgewater/bridgewater",
+        "Store Name": "Bridgewater Commons",
+        "Open Hours": "Mon - Sat: 10:00am - 9:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "908-332-9609",
+        "Email": "bridgewater-store@lululemon.com",
+        "Address": "400 Commons Way, Space #2405, Bridgewater, NJ, US, 08807"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/new-jersey/cherry-hill",
+        "Store Name": "Cherry Hill Mall",
+        "Open Hours": "Mon - Sat: 10:00am - 9:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "856-420-7127",
+        "Email": "cherryhill-store@lululemon.com",
+        "Address": "2000 Route 38, Unit 1143, Cherry Hill, NJ, US, 08002"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/new-jersey/closter-plaza",
+        "Store Name": "Closter Plaza",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: Closed",
+        "Phone": "551-313-9176",
+        "Email": "closter-plaza@lululemon.com",
+        "Address": "61 VerValen Street , Closter, NJ, US, 07624"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/east-rutherford/american-dream",
+        "Store Name": "American Dream",
+        "Open Hours": "Mon - Thu: 11:00am - 9:00pm; Fri - Sat: 11:00am - 10:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "551-213-6152",
+        "Email": "americandream-store@lululemon.com",
+        "Address": "1 American Dream Way, C231, East Rutherford, NJ, US, 07073"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/edison/menlo-park-pop-up",
+        "Store Name": "Menlo Park Pop Up",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "732-710-4654",
+        "Email": "menlopark-popup@lululemon.com",
+        "Address": "55 Parsonage Rd , Suite 1550, Edison, NJ, US, 08837"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/evesham-township/sagemore",
+        "Store Name": "Promenade at Sagemore",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "856-658-8354",
+        "Email": "sagemore-store@lululemon.com",
+        "Address": "500 Route 73 South, Evesham Township, NJ, US, 08053"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/new-jersey/freehold-raceway-mall",
+        "Store Name": "Freehold Raceway Mall",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "732-314-4788",
+        "Email": "freehold-store@lululemon.com",
+        "Address": "3710 Route 9, Space #G106, Freehold, NJ, US, 07728"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/new-jersey/hoboken",
+        "Store Name": "Hoboken",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 10:00am - 6:00pm",
+        "Phone": "551-295-8471",
+        "Email": "hoboken-store@lululemon.com",
+        "Address": "313 Washington Street, Hoboken, NJ, US, 07030"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/montvale/depiero-farms",
+        "Store Name": "The Shoppes at DePiero Farm",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: Closed",
+        "Phone": "201-627-9220",
+        "Email": "depierofarms-store@lululemon.com",
+        "Address": "46 Farm View, Building C, Montvale, NJ, US, 07645"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/paramus/gardenstate",
+        "Store Name": "Garden State Plaza",
+        "Open Hours": "Mon - Thu: 10:00am - 9:00pm; Fri - Sat: 10:00am - 9:30pm; Sun: Closed",
+        "Phone": "551-295-8597",
+        "Email": "gardenstate-store@lululemon.com",
+        "Address": "100 Garden State Plaza, Unit D10, Paramus, NJ, US, 07652"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/princeton/princeton",
+        "Store Name": "Palmer Square",
+        "Open Hours": "Mon - Wed: 10:00am - 6:00pm; Thu - Fri: 10:00am - 8:30pm; Sat: 10:00am - 6:00pm; Sun: 11:00am - 5:00pm",
+        "Phone": "609-622-4165",
+        "Email": "princeton-store@lululemon.com",
+        "Address": "36 Nassau Street, Princeton, NJ, US, 08542"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/new-jersey/short-hills-mall",
+        "Store Name": "Short Hills Mall",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "973-381-1771",
+        "Email": "shorthills-store@lululemon.com",
+        "Address": "1200 Morris Turnpike, Unit # D245, Short Hills, NJ, US, 07078"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/shrewsbury/shrewsbury",
+        "Store Name": "lululemon Grove at Shrewsbury",
+        "Open Hours": "Mon - Fri: 10:00am - 8:00pm; Sat: 10:00am - 6:00pm; Sun: 11:00am - 5:00pm",
+        "Phone": "732-561-5570",
+        "Email": "groveatshrew-store@lululemon.com",
+        "Address": "553 Route 35, Space # N-7, Shrewsbury, NJ, US, 07702"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/summit/springfield",
+        "Store Name": "Springfield Ave",
+        "Open Hours": "Mon - Sat: 10:00am - 6:00pm; Sun: 10:00am - 5:00pm",
+        "Phone": "908-224-6759",
+        "Email": "springfieldave-store@lululemon.com",
+        "Address": "402 Springfield Avenue, Summit, NJ, US, 07901"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/wayne/willowbrook-wayne",
+        "Store Name": "Willowbrook, Wayne",
+        "Open Hours": "Mon - Thu: 11:00am - 8:00pm; Fri - Sat: 11:00am - 9:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "973-319-8836",
+        "Email": "willowbrookNJ-store@lululemon.com",
+        "Address": "1400 Willowbrook Mall, Space 1580, Wayne, NJ, US, 07470"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/albuquerque/abquptown",
+        "Store Name": "ABQ Uptown",
+        "Open Hours": "Mon - Thu: 10:00am - 7:00pm; Fri - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "505-405-7035",
+        "Email": "ABQuptown-store@lululemon.com",
+        "Address": "2261 Q Street NE, Albuquerque NM 87110, Space 02E , Albuquerque, NM, US, 87110"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/albany/crossgates-mall",
+        "Store Name": "Crossgates Mall",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "518-722-3385",
+        "Email": "crossgates-store@lululemon.com",
+        "Address": "1 Crossgates Mall Road, Suite B203, Albany, NY, US, 12203"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/brooklyn/Williamsburg",
+        "Store Name": "Williamsburg",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "929-447-2681",
+        "Email": "Williamsburg-Store@lululemon.com",
+        "Address": "129 N 6th Street, Brooklyn, NY, US, 11249"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/brooklyn/city-point",
+        "Store Name": "City Point",
+        "Open Hours": "Mon - Sun: 10:00am - 8:00pm",
+        "Phone": "929-447-2279",
+        "Email": "citypoint-store@lululemon.com",
+        "Address": "445 Albee Square West, G-108/G-110, Brooklyn, NY, US, 11201"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/buffalo/waldengalleria",
+        "Store Name": "Walden Galleria",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "716-681-3916",
+        "Email": "waldengalleria-store@lululemon.com",
+        "Address": "1 Walden Galleria DR, Suite J106, Buffalo, NY, US, 14225"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/east-hampton/easthampton",
+        "Store Name": "East Hampton",
+        "Open Hours": "Mon - Wed: 10:00am - 6:00pm; Thu - Sat: 10:00am - 7:00pm; Sun: 10:00am - 5:00pm",
+        "Phone": "631-502-7713",
+        "Email": "easthampton-store@lululemon.com",
+        "Address": "35 Main Street, East Hampton, NY, US, 11937"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/garden-city/roosevelt",
+        "Store Name": "Roosevelt Field",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "516-588-6970",
+        "Email": "roosevelt-store@lululemon.com",
+        "Address": "630 Old Country Road, Suite 2042, Garden City, NY, US, 11530"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/huntington-station/waltwhitman",
+        "Store Name": "Walt Whitman",
+        "Open Hours": "Mon - Thu: 11:00am - 8:00pm; Fri - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "631-483-7999",
+        "Email": "waltwhitman-store@lululemon.com",
+        "Address": "160 Walt Whitman Road, Space 1050B, Huntington Station, NY, US, 11746"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/manhasset/manhasset",
+        "Store Name": "Manhasset",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "516-788-6024",
+        "Email": "manhasset-store@lululemon.com",
+        "Address": "1950 Northern Blvd, Unit 0040, Manhasset, NY, US, 11030"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/new-york/Flatiron",
+        "Store Name": "Flatiron",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "332-239-6949",
+        "Email": "flatiron-store@lululemon.com",
+        "Address": "114 Fifth Avenue, New York, NY, US, 10011"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/new-york/columbia",
+        "Store Name": "Columbia",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "332-239-6763",
+        "Email": "columbia-store@lululemon.com",
+        "Address": "2935 Broadway, Space A, New York, NY, US, 10025"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/new-york/66thstreet",
+        "Store Name": "66th and 3rd",
+        "Open Hours": "Mon - Sun: 10:00am - 7:00pm",
+        "Phone": "332-239-6760",
+        "Email": "east66th-store@lululemon.com",
+        "Address": "1127 3rd Avenue, New York, NY, US, 10065"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/new-york/86thand3rd",
+        "Store Name": "86TH & 3RD, NYC",
+        "Open Hours": "Mon - Thu: 10:00am - 7:00pm; Fri - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "212-452-1909",
+        "Email": "86thand3rd-store@lululemon.com",
+        "Address": "1529 3rd Avenue, New York, NY, US, 10028"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/new-york/meatpacking",
+        "Store Name": "Meatpacking",
+        "Open Hours": "Mon - Sun: 10:00am - 7:00pm",
+        "Phone": "315-667-1728",
+        "Email": "meatpacking-store@lululemon.com",
+        "Address": "408 W 14th Street, Front A, New York, NY, US, 10014"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/nyc/grand-central-terminal",
+        "Store Name": "Grand Central Terminal",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "332-244-3385",
+        "Email": "grandcentral-store@lululemon.com",
+        "Address": "89 East 42nd Street, Space MC-9, New York, NY, US, 10017"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/new-york/brookfield-place",
+        "Store Name": "Brookfield Place",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "332-239-6904",
+        "Email": "brookfieldpl-store@lululemon.com",
+        "Address": "250 Vesey Street, New York, NY, US, 10281"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/new-york/Columbus-Circle",
+        "Store Name": "The Shops at Columbus Circle",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "332-239-6384",
+        "Email": "columbuscircle-store@lululemon.com",
+        "Address": "10 Columbus Circle, Unit 113, New York, NY, US, 10023"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/new-york/soho-broadway",
+        "Store Name": "Soho Broadway",
+        "Open Hours": "Mon - Sat: 10:00am - 9:00pm; Sun: 11:00am - 8:00pm",
+        "Phone": "332-239-6948",
+        "Email": "sohobroadway-store@lululemon.com",
+        "Address": "520 Broadway, New York, NY, US, 10012"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/new-york/the-shops-at-hudson-yards",
+        "Store Name": "The Shops at Hudson Yards",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "332-239-6552",
+        "Email": "hudsonyards-store@lululemon.com",
+        "Address": "500 West 33rd Street, RU 313A, New York, NY, US, 10001"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/new-york/nyc-5th-ave",
+        "Store Name": "NYC 5th Ave",
+        "Open Hours": "Mon - Sun: 10:00am - 8:00pm",
+        "Phone": "332-239-6660",
+        "Email": "nyc5thave@lululemon.com",
+        "Address": "592 5th Avenue, New York, NY, US, 10036"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/new-york/70th---columbus--nyc",
+        "Store Name": "70TH & Columbus, NYC",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "917-441-5915",
+        "Email": "70thcolumbus-store@lululemon.com",
+        "Address": "216 Columbus Avenue, New York, NY, US, 10023"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/rochester/cloverviewplaza",
+        "Store Name": "Clover View Plaza",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "585-632-4055",
+        "Email": "cloverviewplazastore@lululemon.com",
+        "Address": "2924 Monroe Avenue, Rochester, NY, US, 14618"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/eastchester/vernon-hills-shopping-center",
+        "Store Name": "Vernon Hills Shopping Center",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "914-902-4009",
+        "Email": "vernonhills-store@lululemon.com",
+        "Address": "696 White Plains Road, Scarsdale, NY, US, 10583"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/staten-island/staten-island-mall-pop-up",
+        "Store Name": "Staten Island Mall Pop Up",
+        "Open Hours": "Mon - Thu: 11:00am - 7:00pm; Fri - Sat: 11:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "929-833-1896",
+        "Email": "statenisland-popup@lululemon.com",
+        "Address": "2655 Richmond Ave, unit 2105, Staten Island, NY, US, 10314"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/destiny/destiny",
+        "Store Name": "Destiny",
+        "Open Hours": "Mon - Thu: 10:00am - 7:00pm; Fri - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "315-535-6687",
+        "Email": "destiny-store@lululemon.com",
+        "Address": "1 Destiny USA Dr, Space F-220, Syracuse, NY, US, 13290"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/victor/eastview-mall",
+        "Store Name": "Eastview Mall",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "585-672-6079",
+        "Email": "eastviewmall-store@lululemon.com",
+        "Address": "263 Eastview Mall, 225, Victor, NY, US, 14564"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/white-plains/westchestermall",
+        "Store Name": "Westchester Mall",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "914-353-4167",
+        "Email": "whiteplains-store@lululemon.com",
+        "Address": "125 Westchester Ave, Suite 1016, White Plains, NY, US, 10601"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/woodbury/woodburycommon",
+        "Store Name": "Woodbury Common Outlet",
+        "Open Hours": "Mon - Sun: 10:00am - 9:00pm",
+        "Phone": "845-928-5470",
+        "Email": "woodburycommon-store@lululemon.com",
+        "Address": "498 Red Apple Court, Unit 435, Woodbury, NY, US, 10917"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/asheville/kitchinplace",
+        "Store Name": "Kitchin Place",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 11:00am - 5:00pm",
+        "Phone": "828-882-3019",
+        "Email": "kitchinplace-store@lululemon.com",
+        "Address": "1 Kitchin Place, Asheville, NC, US, 28803"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/cary/fenton",
+        "Store Name": "Fenton",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "984-345-2743",
+        "Email": "fenton-store@lululemon.com",
+        "Address": "20 Fenton Main Street, Suite 170, Cary, NC, US, 27511"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/charlotte/southpark",
+        "Store Name": "SouthPark",
+        "Open Hours": "Mon: 10:00am - 8:00pm; Tue: 10:00am - 7:30pm; Wed - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "704-610-8573",
+        "Email": "southpark-store@lululemon.com",
+        "Address": "4400 Sharon Rd, Space# M24A, Charlotte, NC, US, 28211"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/charlotte/atherton-mill",
+        "Store Name": "Atherton Mill",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "704-826-3334",
+        "Email": "athertonmill-store@lululemon.com",
+        "Address": "2040 South Boulevard, Suite 3, Charlotte, NC, US, 28203"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/charlotte/blakeney-shopping-center",
+        "Store Name": "Blakeney Shopping Center",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "704-826-3378",
+        "Email": "blakeney-store@lululemon.com",
+        "Address": "9816 Rea Road, Charlotte, NC, US, 28277"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/durham/southpoint",
+        "Store Name": "Streets at Southpoint",
+        "Open Hours": "Mon - Thu: 10:00am - 7:00pm; Fri - Sat: 10:00am - 8:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "919-301-9326",
+        "Email": "stssouthpoint-store@lululemon.com",
+        "Address": "8030 Renaissance Parkway, Suite 835, Durham, NC, US, 27713"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/greensboro/friendly-center",
+        "Store Name": "Friendly Center",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "336-975-5163",
+        "Email": "friendlycenter-store@lululemon.com",
+        "Address": "3334 W Friendly Ave, Suite 101, Greensboro, NC, US, 27410"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/huntersville/birkdale",
+        "Store Name": "Birkdale Village",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "704-826-3827",
+        "Email": "birkdale-store@lululemon.com",
+        "Address": "16805 Birkdale Commons Pkwy, Unit 4, Huntersville, NC, US, 28078"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/raleigh/crabtree-valley-mall",
+        "Store Name": "Crabtree Valley Mall",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "919-504-5857",
+        "Email": "crabtree-store@lululemon.com",
+        "Address": "4325 Glenwood Ave, Suite 2015, Raleigh, NC, US, 27612"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/raleigh/northhills",
+        "Store Name": "North Hills",
+        "Open Hours": "Mon - Thu: 10:00am - 7:00pm; Fri - Sat: 10:00am - 8:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "919-705-0289",
+        "Email": "northhills-store@lululemon.com",
+        "Address": "4421 Six Forks Rd, Suite 113, Raleigh, NC, US, 27609"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/wilmington/mayfaire-town-center-pop-up",
+        "Store Name": "Mayfaire Town Center Pop Up",
+        "Open Hours": "Mon - Thu: 10:00am - 7:00pm; Fri - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "910-509-7520",
+        "Email": "mayfairetc-popup@lululemon.com",
+        "Address": "6863 Main Street, Unit L115, Wilmington, NC, US, 28405"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/winston-salem/thruway-local",
+        "Store Name": "Thruway Local",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "336-723-3002",
+        "Email": "thruway-local@lululemon.com",
+        "Address": "312 S Stratford Rd, Suite 312, Winston-Salem, NC, US, 27103"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/fargo/west-acres-mall",
+        "Store Name": "West Acres Mall",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "701-436-9419",
+        "Email": "fargo-store@lululemon.com",
+        "Address": "3902 13th Ave S, Unit 507, Fargo, ND, US, 58103"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/beavercreek/greene-town-center",
+        "Store Name": "Greene Town Center",
+        "Open Hours": "Mon - Sat: 10:00am - 9:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "937-583-6430",
+        "Email": "greenetown-store@lululemon.com",
+        "Address": "68 Plum St., Beavercreek, Ohio 45440, E-110, beavercreek, OH, US, 45440"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/cincinnati/kenwood",
+        "Store Name": "Kenwood",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "513-547-3521",
+        "Email": "kenwood-store@lululemon.com",
+        "Address": "7875 Montgomery Rd, unit #75, Cincinnati, OH, US, 45236"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/cincinnati/hydeparksquare",
+        "Store Name": "Hyde Park Square",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 10:00am - 6:00pm",
+        "Phone": "513-647-2368",
+        "Email": "hydeparksquare-store@lululemon.com",
+        "Address": "3500 Michigan Terrace, R-1 & R-2, Cincinnati, OH, US, 45208"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/columbus/eastontownctr",
+        "Store Name": "Easton Town Ctr",
+        "Open Hours": "Mon - Sat: 10:00am - 9:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "614-635-7958",
+        "Email": "easton-store@lululemon.com",
+        "Address": "4070 The Strand, Unit 510, Columbus, OH, US, 43219"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/columbus/columbus",
+        "Store Name": "Polaris Fashion Place",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "614-635-7930",
+        "Email": "polaris-store@lululemon.com",
+        "Address": "1500 Polaris Parkway, Space 1062, Columbus, OH, US, 43240"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/akron/summit-mall-pop-up",
+        "Store Name": "Summit Mall Pop Up",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "234-291-3401",
+        "Email": "summitmall-popup@lululemon.com",
+        "Address": "3265 West Market Street, 534D, Fairlawn, OH, US, 44333"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/toledo/The-toledo-local",
+        "Store Name": "The Toledo Local",
+        "Open Hours": "Mon - Sat: 11:00am - 6:00pm; Sun: 11:00am - 4:00pm",
+        "Phone": "419-536-7605",
+        "Email": "thetoledolocal@lululemon.com",
+        "Address": "3410 Secor Rd, Unit 530, Toledo, OH, US, 43606"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/westlake/crocker-park",
+        "Store Name": "Crocker Park",
+        "Open Hours": "Mon - Sat: 10:00am - 9:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "440-750-2447",
+        "Email": "crockerpark-store@lululemon.com",
+        "Address": "201 Market Street, Westlake, OH, US, 44145"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/woodmere/woodmere",
+        "Store Name": "Eton Chagrin",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "216-877-8959",
+        "Email": "eton-store@lululemon.com",
+        "Address": "28859 Chagrin Blvd, Woodmere, OH, US, 44122"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/oklahoma-city/classencurve",
+        "Store Name": "Classen Curve",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "405-288-4841",
+        "Email": "classencurve-store@lululemon.com",
+        "Address": "5825 NW Grand Blvd, Oklahoma City, OK, US, 73118"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/tulsa/centre1",
+        "Store Name": "Center1",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "918-233-6464",
+        "Email": "center1-store@lululemon.com",
+        "Address": "3506 S. Peoria Ave, Tulsa, OK, US, 74105"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/bend/the-bend-local",
+        "Store Name": "The Bend Local",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "541-843-8617",
+        "Email": "bend-local@lululemon.com",
+        "Address": "655 SW Powerhouse Drive, 1201, Bend, OR, US, 97702"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/eugene/oakway-center",
+        "Store Name": "Oakway Center",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "541-250-3812",
+        "Email": "Oakway-store@lululemon.com",
+        "Address": "Suite F 323 Oakway Road, Eugene, OR, US, 97401"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/happy-valley/clackamas-town-center-",
+        "Store Name": "Clackamas Town Center",
+        "Open Hours": "Mon - Thu: 11:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "503-659-1253",
+        "Email": "clackamas-store@lululemon.com",
+        "Address": "12000 Southeast 82nd Avenue, Unit J112, Happy Valley, OR, US, 97086"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/portland/washington-square-store",
+        "Store Name": "Washington Square",
+        "Open Hours": "Mon - Sat: 10:00am - 9:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "503-966-7380",
+        "Email": "Washingtonsquare@lululemon.com",
+        "Address": "9355 S.W. Washington Square Rd, Space H16, Portland, OR, US, 97223"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/portland/pearldistrict",
+        "Store Name": "Pearl District",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "503-465-4620",
+        "Email": "pearl-store@lululemon.com",
+        "Address": "1231 NW Couch Street, Portland, OR, US, 97209"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/tigard/tigard",
+        "Store Name": "Bridgeport Village",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "503-620-7438",
+        "Email": "bridgeport-store@lululemon.com",
+        "Address": "7381B SW Bridgeport Rd, Tigard, OR, US, 97224"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/woodburn/woodburn-premium-outlet",
+        "Store Name": "Woodburn Premium Outlet",
+        "Open Hours": "Mon - Fri: 10:00am - 7:00pm; Sat: 10:00am - 8:00pm; Sun: 10:00am - 7:00pm",
+        "Phone": "971-983-8008",
+        "Email": "woodburn-outlet@lululemon.com",
+        "Address": "1001 Arney Rd, Suite 800, Woodburn, OR, US, 97071"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/ardmore/suburban-square",
+        "Store Name": "Suburban Square",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "610-885-0996",
+        "Email": "suburbansquare-store@lululemon.com",
+        "Address": "49 St. Georges Place, Unit 11, Ardmore, PA, US, 19003"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/dresher/promenade-at-upper-dublin",
+        "Store Name": "Promenade at Upper Dublin",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "267-892-5404",
+        "Email": "upperdublin-store@lululemon.com",
+        "Address": "1104 Market Street, Unit #E-09, Dresher, PA, US, 19025"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/glen-mills/shoppesatbrintonlake",
+        "Store Name": "Shoppes at Brinton Lake",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "610-601-2966",
+        "Email": "brintonlake-store@lululemon.com",
+        "Address": "969 Baltimore Pike, Unit 2, Glen Mills, PA, US, 19342"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/king-of-prussia/kingofprussia",
+        "Store Name": "King of Prussia",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "610-890-7351",
+        "Email": "kop-store@lululemon.com",
+        "Address": "160 North Gulph Road, Space 2190, King of Prussia, PA, US, 19406"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/lancaster/lancaster-local0",
+        "Store Name": "Lancaster Local",
+        "Open Hours": "Mon - Sat: 10:00am - 6:00pm; Sun: 10:00am - 5:00pm",
+        "Phone": "717-667-8393",
+        "Email": "lancaster-local@lululemon.com",
+        "Address": "661 Harrisburg Ave, Lancaster, PA, US, 17603"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/newtown/village-at-newtown",
+        "Store Name": "Village at Newtown",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 10:00am - 6:00pm",
+        "Phone": "267-996-8912",
+        "Email": "newtown-store@lululemon.com",
+        "Address": "2942 South Eagle Road, Space 37, Newtown, PA, US, 18940"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/philadelphia/walnutstreet",
+        "Store Name": "Walnut St",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "215-515-5372",
+        "Email": "walnutstreet-store@lululemon.com",
+        "Address": "1720 Walnut Street, Philadelphia, PA, US, 19103"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/pittsburgh/shadyside",
+        "Store Name": "Shadyside",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "412-900-4889",
+        "Email": "shadyside-store@lululemon.com",
+        "Address": "5520 Walnut St, Pittsburgh, PA, US, 15232"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/pittsburgh/rossparkmall",
+        "Store Name": "Ross Park Mall",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "412-455-3387",
+        "Email": "rossparkmall-store@lululemon.com",
+        "Address": "1000 Ross Park Mall Drive, N01K, Pittsburgh, PA, US, 15237"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/pittsburg/south-hills-village",
+        "Store Name": "South Hills Village",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "412-816-8828",
+        "Email": "southhills-store@lululemon.com",
+        "Address": "301 South Hills Village, suite 1400, Pittsburgh, PA, US, 15241"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/tannersville/pocono-premium-outlets-pop-up",
+        "Store Name": "Pocono Premium Outlets Pop Up",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "",
+        "Email": "pocono-outlet@lululemon.com",
+        "Address": "1000 Premium Outlets Dr., Tannersville, PA, US, 18372"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/whitehall/lehigh-valley-mall",
+        "Store Name": "Lehigh Valley Mall",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "610-580-2467",
+        "Email": "lehighvalley-store@lululemon.com",
+        "Address": "907 Lehigh Valley Lifestyle Center, Whitehall, PA, US, 18052"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/puerto-rico/san-juan",
+        "Store Name": "The Mall of San Juan",
+        "Open Hours": "Mon - Sun: Closed",
+        "Phone": "787-302-0471",
+        "Email": "sanjuan-store@lululemon.com",
+        "Address": "826 Collins Avenue, 2nd Floor, San Juan, PR, US, 00924"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/cranston/gardencity",
+        "Store Name": "Garden City Center",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "401-340-2399",
+        "Email": "gardencity-store@lululemon.com",
+        "Address": "65 Hillside Road, Suite 8070, Cranston, RI, US, 02920"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/newport/the-shops-at-long-wharf",
+        "Store Name": "The Shops at Long Wharf - Local",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 10:00am - 6:00pm",
+        "Phone": "401-847-1549",
+        "Email": "newport-local@lululemon.com",
+        "Address": "45 Long Wharf, Space A, Newport, RI, US, 02840"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/providence/wayland-square",
+        "Store Name": "Wayland Square",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 11:00am - 5:00pm",
+        "Phone": "401-249-4610",
+        "Email": "waylandsquarelocal@lululemon.com",
+        "Address": "195-201 Wayland Avenue, Providence, RI, US, 02906"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/charleston/kingstreet",
+        "Store Name": "King Street",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 11:00am - 5:00pm",
+        "Phone": "843-896-2415",
+        "Email": "kingstreet-store@lululemon.com",
+        "Address": "279 King St, Charleston, SC, US, 29401"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/columbia/trenholm-plaza-store",
+        "Store Name": "Trenholm Plaza",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "803-590-6789",
+        "Email": "trenholmplaza-store@lululemon.com",
+        "Address": "4840 Forest Drive, #5, Columbia, SC, US, 29206"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/greenville/greenville0",
+        "Store Name": "Greenville",
+        "Open Hours": "Mon - Thu: 10:00am - 7:00pm; Fri: 10:00am - 8:00pm; Sat: 9:00am - 7:00pm; Sun: 10:00am - 6:00pm",
+        "Phone": "864-383-9501",
+        "Email": "Southmainst-store@lululemon.com",
+        "Address": "600 South Main Street, Suite 100, Greenville, SC, US, 29601"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/hilton-head-island/shelter-cove-town-center",
+        "Store Name": "Shelter Cove Town Center",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "803-887-3008",
+        "Email": "sheltercove-store@lululemon.com",
+        "Address": "30 Shelter Cove Lane, Unit 140, Hilton Head Island, SC, US, 29928"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/johns-island/freshfields-village-pop-up",
+        "Store Name": "Freshfields Village Pop Up",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "843-768-3566",
+        "Email": "freshfieldsvil-popup@lululemon.com",
+        "Address": "654 Freshfields Drive, Suite 200, Johns Island, SC, US, 29455"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/mt-pleasant/mt-pleasant-town-centre",
+        "Store Name": "Mt Pleasant Town Centre",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "843-380-5742",
+        "Email": "mtpleasant-store@lululemon.com",
+        "Address": "1232 Belk Dr, Mt Pleasant, SC, US, 29464"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/myrtle-beach/myrtle-beach-outlet",
+        "Store Name": "Myrtle Beach Outlet",
+        "Open Hours": "Mon - Sat: 10:00am - 9:00pm; Sun: 10:00am - 7:00pm",
+        "Phone": "843-894-2750",
+        "Email": "myrtlebeach-outlet@lululemon.com",
+        "Address": "10843 Kings Rd, Building 6, #635, myrtle beach, SC, US, 29572"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/sioux-falls/empire-mall",
+        "Store Name": "Empire Mall",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "605-702-4456",
+        "Email": "Empire-Mall@lululemon.com",
+        "Address": "4001 W 41st St, unit 0318B, Sioux Falls, SD, US, 57106"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/brentwood/hill-center-brentwood",
+        "Store Name": "Hill Center Brentwood",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "615-949-3320",
+        "Email": "brentwood-store@lululemon.com",
+        "Address": "211 Franklin Road, Suite 155, Brentwood, TN, US, 37027"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/chattanooga/warehouse-row",
+        "Store Name": "Warehouse Row",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 11:00am - 5:00pm",
+        "Phone": "423-418-6816",
+        "Email": "warehouserow-store@lululemon.com",
+        "Address": "1110 Market Street, Unit 117B, Chattanooga, TN, US, 37402"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/franklin/southside",
+        "Store Name": "Southside at McEwen",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "615-808-8714",
+        "Email": "southside-store@lululemon.com",
+        "Address": "1556 West McEwen Drive, 132, Franklin, TN, US, 37067"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/memphis/Saddlecreek",
+        "Store Name": "Saddle Creek",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "901-617-7470",
+        "Email": "Memphis-store@lululemon.com",
+        "Address": "7509 Poplar Ave, Suite 106, Germantown, TN, US, 38138"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/knoxville/west-town-mall",
+        "Store Name": "West Town Mall",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "865-999-8483",
+        "Email": "westtown-store@lululemon.com",
+        "Address": "7600 Kingston Pike, Suite 1196, Knoxville, TN, US, 37919"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/knoxville/kingston-pike",
+        "Store Name": "Kingston Pike",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "865-584-1519",
+        "Email": "kingstonpike-store@lululemon.com",
+        "Address": "5410 Kingston Pike, Knoxville, TN, US, 37919"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/murfreesboro/the-avenue-murfreesboro-pop-up",
+        "Store Name": "The Avenue Murfreesboro Pop Up",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "615-701-4961",
+        "Email": "Murfreesboro-popup@lululemon.com",
+        "Address": "2615 Medical Center Pkwy, Suite #1550, Murfreesboro, TN, US, 37129"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/nashville/the-gulch",
+        "Store Name": "The Gulch",
+        "Open Hours": "Mon - Fri: 10:00am - 7:00pm; Sat: 9:00am - 7:00pm; Sun: 10:00am - 6:00pm",
+        "Phone": "629-205-4541",
+        "Email": "thegulch-store@lululemon.com",
+        "Address": "339 11th Avenue South, Nashville, TN, US, 37203"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/nashville/mall-at-green-hills",
+        "Store Name": "Mall at Green Hills",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "615-326-1259",
+        "Email": "greenhills-store@lululemon.com",
+        "Address": "2126 Abbott Martin Road, Suite 242, Nashville, TN, US, 37215"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/nashville/nashville",
+        "Store Name": "Hill Center",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "615-808-8611",
+        "Email": "hillcenter-store@lululemon.com",
+        "Address": "4027 Hillsboro Pike, Unit 705, Nashville, TN, US, 37215"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/sevierville/tanger-outlets-sevierville",
+        "Store Name": "Tanger Outlets, Sevierville",
+        "Open Hours": "Mon - Sat: 10:00am - 9:00pm; Sun: 10:00am - 7:00pm",
+        "Phone": "865-429-7772",
+        "Email": "sevierville-outlet@lululemon.com",
+        "Address": "1645 Parkway Ste 960, Suite 1195, Sevierville, TN, US, 37862"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/alllen/watters-creek",
+        "Store Name": "Watters Creek",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "469-991-7373",
+        "Email": "watterscreek-store@lululemon.com",
+        "Address": "877 Watters Creek Blvd, Shop M800 Watters Creek Village, Alllen, TX, US, 75013"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/arlington/arlington-highlands-pop-up",
+        "Store Name": "Arlington Highlands Pop Up",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "817-466-7302",
+        "Email": "arlington-popup@lululemon.com",
+        "Address": "3900 Arlington Highlands Blvd, #165, Arlington, TX, US, 76018"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/austin/music-lane",
+        "Store Name": "Music Lane",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "512-601-8669",
+        "Email": "musiclane-store@lululemon.com",
+        "Address": "1009 South Congress Avenue, Austin, TX, US, 78704"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/austin/6thandlamar",
+        "Store Name": "6th and Lamar",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "512-881-7312",
+        "Email": "austin-store@lululemon.com",
+        "Address": "1016 West 6th Street, Austin, TX, US, 78703"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/austin/domainstore",
+        "Store Name": "The Domain",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "512-601-8738",
+        "Email": "domain-store@lululemon.com",
+        "Address": "11600 Century Oaks Terrace, Suite 116, Austin, TX, US, 78758"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/austin/bartoncreeksquare",
+        "Store Name": "Barton Creek Square",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "512-601-8823",
+        "Email": "bartoncreek-store@lululemon.com",
+        "Address": "2901 S Capital of Texas Highway, Unit A10B, Austin, TX, US, 78746"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/bee-cave/hill-country-galleria-pop-up",
+        "Store Name": "Hill Country Galleria Pop Up",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "512-263-7547",
+        "Email": "Hillcountry-popup@lululemon.com",
+        "Address": "12801 Hill Country Boulevard, Suite C1-110, Bee Cave, TX, US, 78738"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/college-station/century-square",
+        "Store Name": "Century Square",
+        "Open Hours": "Mon - Thu: 10:00am - 7:00pm; Fri - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "979-300-6996",
+        "Email": "centurysquare-local@lululemon.com",
+        "Address": "155 Century Court, Suite 109, College Station, TX, US, 77840"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/corpus-christi/la-palmera-pop-up",
+        "Store Name": "La Palmera Pop Up",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "361-900-2071",
+        "Email": "CorpusChristi-popup@lululemon.com",
+        "Address": "5488 S Padre Island Dr, Corpus Christi, TX, US, 78411"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/cypress/houston-premium-outlets",
+        "Store Name": "Houston Premium Outlets",
+        "Open Hours": "Mon - Fri: 10:00am - 8:00pm; Sat: 10:00am - 9:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "281-766-7647",
+        "Email": "houston-outlet@lululemon.com",
+        "Address": "29300 Hempstead Rd, Unit 813, Cypress, TX, US, 77433"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/dallas/knoxstreet",
+        "Store Name": "Knox Street",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "214-380-1462",
+        "Email": "knoxstreet-store@lululemon.com",
+        "Address": "3201 Knox St, Dallas, TX, US, 75205"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/dallas/dallasgalleria",
+        "Store Name": "Dallas Galleria",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "972-845-8910",
+        "Email": "dallasgalleria-store@lululemon.com",
+        "Address": "13350 N. Dallas Parkway, Suite 2285, Dallas, TX, US, 75240"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/dallas/northpark",
+        "Store Name": "North Park",
+        "Open Hours": "Mon - Tue: 10:00am - 9:00pm; Wed: 10:00am - 8:00pm; Thu - Sat: 10:00am - 9:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "214-380-1638",
+        "Email": "northpark-store@lululemon.com",
+        "Address": "8687 N Central Expy, Space C2-624, Dallas, TX, US, 75225"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/el-paso/el-paso-local",
+        "Store Name": "El Paso Local",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 11:00am - 5:00pm",
+        "Phone": "915-221-8749",
+        "Email": "elpaso-local@lululemon.com",
+        "Address": "6801 North Mesa, Suites A-1, El Paso, TX, US, 79912"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/el-paso/cielo-vista-mall-pop-up",
+        "Store Name": "Cielo Vista Mall Pop Up",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "915-955-5488",
+        "Email": "cielovistamall-popup@lululemon.com",
+        "Address": "8401 Gateway Blvd West, Space E09B, El Paso, TX, US, 79925"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/fort-worth/tanger-outlets--fort-worth",
+        "Store Name": "Tanger Outlets, Fort Worth",
+        "Open Hours": "Mon - Sat: 10:00am - 9:00pm; Sun: 10:00am - 7:00pm",
+        "Phone": "682-399-7011",
+        "Email": "fortworth-outlet@lululemon.com",
+        "Address": "15861 North Freeway, Suite 850, Fort Worth, TX, US, 76177"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/fort-worth/fortworth",
+        "Store Name": "Fort Worth",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "817-803-1109",
+        "Email": "fortworth-store@lululemon.com",
+        "Address": "1604 South University Drive, Unit 504, Fort Worth, TX, US, 76107"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/friendswood/baybrook",
+        "Store Name": "Baybrook",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "346-384-8549",
+        "Email": "baybrookmall-store@lululemon.com",
+        "Address": "Suite A110 - 700 Baybrook Mall, Friendswood, TX, US, 77546"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/frisco/stonebriar-",
+        "Store Name": "Stonebriar",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "469-956-5263",
+        "Email": "stonebriar-store@lululemon.com",
+        "Address": "2601 Preston Road, Space #1079, Frisco, TX, US, 75034"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/houston/houston",
+        "Store Name": "Houston Galleria",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 12:00pm - 7:00pm",
+        "Phone": "281-801-9835",
+        "Email": "houstongalleria-store@lululemon.com",
+        "Address": "5015 Westheimer (Galleria I), Suite A-3473, Houston, TX, US, 77056"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/houston/houston-heights-local",
+        "Store Name": "Houston Heights Local",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "713-881-9704",
+        "Email": "houstonheights-local@lululemon.com",
+        "Address": "713 Heights Blvd, Bungalow 5, Houston, TX, US, 77007"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/houston/willbowbrook-mall-pop-up",
+        "Store Name": "Willowbrook Mall Pop Up",
+        "Open Hours": "Mon - Thu: 11:00am - 8:00pm; Fri - Sat: 11:00am - 9:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "281-469-1309",
+        "Email": "WillowbrookTX-popup@lululemon.com",
+        "Address": "2000 Willowbrook Mall, Suite 1572, Houston, TX, US, 77070"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/houston/highlandvillage",
+        "Store Name": "Highland Village",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "281-603-4179",
+        "Email": "Highlandvillage-store@lululemon.com",
+        "Address": "4023 Westheimer, Houston, TX, US, 77027"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/houston/rice-village",
+        "Store Name": "Rice Village",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "346-988-3874",
+        "Email": "ricevillage-store@lululemon.com",
+        "Address": "2560 University Blvd, Houston, TX, US, 77005"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/houston/houstoncity",
+        "Store Name": "Houston CityCentre",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "281-916-2660",
+        "Email": "houstoncitycentre-store@lululemon.com",
+        "Address": "800 Town and Country Boulevard, 100, Houston, TX, US, 77024"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/katy/lacenterra-at-cinco-ranch",
+        "Store Name": "Lacenterra at Cinco Ranch",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "281-371-6928",
+        "Email": "lacenterra-store@lululemon.com",
+        "Address": "23501 Cinco Ranch Blvd, Unit #B120, Katy, TX, US, 77494"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/lubbock/kingsgate-center-south",
+        "Store Name": "Kingsgate Center South",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "806-602-2692",
+        "Email": "kingsgate-store@lululemon.com",
+        "Address": "8201 Quaker Avenue, Unit #126, Lubbock, TX, US, 79424"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/mcallen/la-plaza-mall",
+        "Store Name": "La Plaza Mall",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "210-812-4964",
+        "Email": "laplazamall-store@lululemon.com",
+        "Address": "2200 S 10th St., A04B, McAllen, TX, US, 78503"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/plano/plano",
+        "Store Name": "Legacy West",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "972-782-5986",
+        "Email": "legacywest-store@lululemon.com",
+        "Address": "7600 Windrose Ave, Block G Suite 120, Plano, TX, US, 75024"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/san-antonio/north-star-pop-up",
+        "Store Name": "North Star Pop Up",
+        "Open Hours": "Mon - Thu: 11:00am - 8:00pm; Fri - Sat: 11:00am - 9:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "726-900-3607",
+        "Email": "northstar-popup@lululemon.com",
+        "Address": "7400 San Pedro Avenue, Unit 1210, San Antonio, TX, US, 78216"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/san-antonio/quarrymarket",
+        "Store Name": "The Quarry",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "210-361-4468",
+        "Email": "quarry-store@lululemon.com",
+        "Address": "255 East Basse Road, Suite 410, San Antonio, TX, US, 78209"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/san-antonio/shopsatlacantera",
+        "Store Name": "Shops at La Cantera",
+        "Open Hours": "Mon - Thu: 11:00am - 8:00pm; Fri - Sat: 11:00am - 9:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "210-942-8749",
+        "Email": "lacantera-store@lululemon.com",
+        "Address": "15900 La Cantera Parkway, Suite #5515, San Antonio, TX, US, 78256"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/san-marcos/sanmarcos",
+        "Store Name": "San Marcos Premium Outlet",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "512-353-0140",
+        "Email": "sanmarcos-outlet@lululemon.com",
+        "Address": "lululemon, 3939 Interstate 35, Suite 1340, San Marcos, TX, US, 78666"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/shenandoah/woodlands",
+        "Store Name": "Market St, Woodlands",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "281-357-9605",
+        "Email": "woodlands-store@lululemon.com",
+        "Address": "9595 Six Pines Drive, Suite 570, Shenandoah, TX, US, 77380"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/southlake/southlaketownsquare",
+        "Store Name": "Southlake Town Square",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "817-839-3246",
+        "Email": "southlake-store@lululemon.com",
+        "Address": "233 Grand Avenue, Southlake, TX, US, 76092"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/sugar-land/first-colony-mall",
+        "Store Name": "First Colony Mall",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "281-882-3828",
+        "Email": "firstcolony-store@lululemon.com",
+        "Address": "16535 Southwest Freeway, Unit 2004, Sugar Land, TX, US, 77479"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/tyler/broadway-square-pop-up",
+        "Store Name": "Broadway Square Pop Up",
+        "Open Hours": "Mon - Thu: 11:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "903-730-6749",
+        "Email": "broadwaysquare-popup@lululemon.com",
+        "Address": "4601 S. Broadway Ave, Tyler, Unit B11, Tyler, TX, US, 75703"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/farmington/station-park",
+        "Store Name": "Station Park",
+        "Open Hours": "Mon - Sat: 10:00am - 9:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "801-683-6829",
+        "Email": "stationpark-store@lululemon.com",
+        "Address": "135 N. West Promontory, F-125, Farmington, UT, US, 84025"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/murray/fashionplace",
+        "Store Name": "Fashion Place",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "385-337-2968",
+        "Email": "fashionplace-store@lululemon.com",
+        "Address": "6191 S, State St, Unit 1575, Murray, UT, US, 84107"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/orem/university-place",
+        "Store Name": "University Place",
+        "Open Hours": "Mon - Sat: 10:00am - 9:00pm; Sun: Closed",
+        "Phone": "801-224-7363",
+        "Email": "universitypl-store@lululemon.com",
+        "Address": "575 E University Parkway, Unit #B34, Orem, UT, US, 84097"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/park-city/mainst",
+        "Store Name": "Main St. Park City",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "435-447-4595",
+        "Email": "parkcity-store@lululemon.com",
+        "Address": "333 Main St, Suite G, Park City, UT, US, 84060"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/riverton/mountain-view-village",
+        "Store Name": "Mountain View Village",
+        "Open Hours": "Mon - Sat: 10:00am - 9:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "385-855-1520",
+        "Email": "mountainview-store@lululemon.com",
+        "Address": "13303 S Teal Ridge Way, Suite M-100, Riverton, UT, US, 84096"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/salt-lake-city/trolleysquare",
+        "Store Name": "City Creek Center",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: Closed",
+        "Phone": "385-338-6008",
+        "Email": "citycreek-store@lululemon.com",
+        "Address": "50 Main Street, Suite 270, Salt Lake City, UT, US, 84101"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/sandy/shops-at-south-town-pop-up",
+        "Store Name": "Shops at South Town Pop Up",
+        "Open Hours": "Mon - Thu: 11:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 12:00pm - 6:00pm",
+        "Phone": "385-993-4468",
+        "Email": "southtown-popup@lululemon.com",
+        "Address": "10450 S. State St, Space 1238, Sandy, UT, US, 84070"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/st--george/red-cliffs-mall-",
+        "Store Name": "Red Cliffs Mall",
+        "Open Hours": "Mon - Thu: 10:00am - 8:00pm; Fri - Sat: 10:00am - 9:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "435-986-1197",
+        "Email": "redcliffsmall-store@lululemon.com",
+        "Address": "446 N. 1680 E. Street, Suite #1300, St. George, UT, US, 84790"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/burlington/burlingtonvt",
+        "Store Name": "Church Street",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "802-731-7389",
+        "Email": "churchstreet-store@lululemon.com",
+        "Address": "31 Church Street, Burlington, VT, US, 05401"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/alexandria/oldtown",
+        "Store Name": "Old Town",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "703-270-0272",
+        "Email": "oldtown-store@lululemon.com",
+        "Address": "700 King St , Alexandria, VA, US, 22314"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/arlington/fashion-centre-at-pentagon-city-pop-up",
+        "Store Name": "Fashion Centre at Pentagon City Pop Up",
+        "Open Hours": "Mon - Sat: 10:00am - 9:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "571-977-5263",
+        "Email": "fashioncentre-popup@lululemon.com",
+        "Address": "1100 S Hayes St, E08B, Arlington, VA, US, 22202"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/arlington/clarendon",
+        "Store Name": "Clarendon Blvd",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 10:00am - 6:00pm",
+        "Phone": "703-337-3222",
+        "Email": "clarendon-store@lululemon.com",
+        "Address": "2847 Clarendon Boulevard, Suite 150, Arlington, VA, US, 22201"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/ashburn/one-loudoun-pop-up",
+        "Store Name": "One Loudoun, Pop Up",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "703-858-0048",
+        "Email": "oneloudoun-popup@lululemon.com",
+        "Address": "20334 Exchange Street, Ashburn, VA, US, 20147"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/charlottesville/shops-at-stonefield",
+        "Store Name": "Shops at Stonefield",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "434-533-7939",
+        "Email": "stonefield-store@lululemon.com",
+        "Address": "2050 Bond Street, Suite 120, Charlottesville, VA, US, 22901"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/fairfax/mosaic",
+        "Store Name": "Mosaic",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "703-260-9673",
+        "Email": "mosaic-store@lululemon.com",
+        "Address": "2920 District Ave, Suite 105, Fairfax, VA, US, 22031"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/reston/reston-town-center",
+        "Store Name": "Reston Town Center",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "571-487-7975",
+        "Email": "restontowncenter-va@lululemon.com",
+        "Address": "11957 Market St., Reston, VA, US, 20190"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/henrico/shortpumpstore",
+        "Store Name": "Short Pump",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "804-902-2353",
+        "Email": "shortpump-store@lululemon.com",
+        "Address": "11800 W Broad Street, 1128, Richmond, VA, US, 23233"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/tysons-corner/tysonscorner",
+        "Store Name": "Tysons Corner, McLean",
+        "Open Hours": "Mon - Sat: 10:00am - 9:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "703-821-1357",
+        "Email": "tysons-store@lululemon.com",
+        "Address": "Tysons Corner center 1961 Chain Bridge Rd, Space J17U, Tysons Corner, VA, US, 22102"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/virginia-beach/towncenterofvirginiabeach",
+        "Store Name": "Town Center of Virginia Beach",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "757-979-3986",
+        "Email": "virginiabeach-store@lululemon.com",
+        "Address": "201 Town Center Drive, Virginia Beach, VA, US, 23462"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/williamsburg/colonial-williamsburg-local",
+        "Store Name": "Colonial Williamsburg Local",
+        "Open Hours": "Mon: 10:00am - 7:00pm; Tue - Thu: 10:00am - 6:00pm; Fri: 10:00am - 7:00pm; Sat: 9:00am - 6:00pm; Sun: 10:00am - 6:00pm",
+        "Phone": "757-220-0218",
+        "Email": "Williamsburg-local@lululemon.com",
+        "Address": "345 West Duke of Gloucester St, Williamsburg, VA, US, 23185"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/bellevue/bellevuesquare",
+        "Store Name": "Bellevue Square",
+        "Open Hours": "Mon - Sat: 10:00am - 9:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "425-462-5530",
+        "Email": "bellevue-store@lululemon.com",
+        "Address": "224 Bellevue Square, Bellevue, WA, US, 98004"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/bellingham/fairhaven-towers-pop-up",
+        "Store Name": "Fairhaven Towers Pop Up",
+        "Open Hours": "Mon - Thu: 10:00am - 6:00pm; Fri - Sat: 10:00am - 7:00pm; Sun: 10:00am - 6:00pm",
+        "Phone": "360-733-3552",
+        "Email": "Fairhaven-popup@lululemon.com",
+        "Address": "1215 12th Street, Unit 101 & 102 (Fairhaven Towers), Bellingham, WA, US, 98225"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/kirkland/village-at-totem-lake",
+        "Store Name": "Village at Totem Lake",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "425-578-5396",
+        "Email": "totemlake-store@lululemon.com",
+        "Address": "11900 NE Village Plaza, Suite 188, Kirkland, WA, US, 98034"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/lynnwood/alderwood",
+        "Store Name": "Alderwood Mall",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "425-670-1344",
+        "Email": "alderwoodmall-store@lululemon.com",
+        "Address": "3000 184th Street SW, #934, Lynnwood, WA, US, 98037"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/spokane/crescentcourt",
+        "Store Name": "Crescent Court",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "509-646-7664",
+        "Email": "crescentcourt-store@lululemon.com",
+        "Address": "707 W Main Avenue, #A6, Spokane, WA, US, 99201"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/sumner/lululemon-in-motion",
+        "Store Name": "St. Petersburg Showroom",
+        "Open Hours": "Mon - Sun: Closed",
+        "Phone": "",
+        "Email": "stpetersburgshowroom@lululemon.com",
+        "Address": "2201-140th Ave. East, Sumner Corporate Park - Adams Bldg, Sumner, WA, US, 98390"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/tacoma/tacoma-mall",
+        "Store Name": "Tacoma Mall",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "253-243-2785",
+        "Email": "tacoma-store@lululemon.com",
+        "Address": "4502 S. Steele Street, 923A, Tacoma, WA, US, 98409"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/tukwila/westfieldsouthcentermall",
+        "Store Name": "Westfield Southcenter Mall",
+        "Open Hours": "Mon - Sat: 10:00am - 9:00pm; Sun: 11:00am - 7:00pm",
+        "Phone": "206-672-8667",
+        "Email": "westfieldmall-store@lululemon.com",
+        "Address": "231 SOUTHCENTER MALL, UNIT #644, Tukwila, WA, US, 98188"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/tulalip/seattle-premium-outlets",
+        "Store Name": "Seattle Premium Outlets",
+        "Open Hours": "Mon - Sun: 10:00am - 8:00pm",
+        "Phone": "360-651-0527",
+        "Email": "seattle-outlet@lululemon.com",
+        "Address": "10600 Quil Ceda Blvd, 419B, Tulalip, WA, US, 98271"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/brookfield/the-corners-of-brookfield",
+        "Store Name": "The Corners of Brookfield",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "262-333-6447",
+        "Email": "brookfield-store@lululemon.com",
+        "Address": "335 High Street, Brookfield, WI, US, 53045"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/grand-chute/fox-river-mall",
+        "Store Name": "Fox River Mall",
+        "Open Hours": "Mon - Thu: 10:00am - 7:00pm; Fri - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "920-781-3267",
+        "Email": "foxriver-store@lululemon.com",
+        "Address": "4301 West Wisconsin Ave, Unit 152, Grand Chute, WI, US, 54913"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/madison/hilldale",
+        "Store Name": "Hilldale",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "608-315-5636",
+        "Email": "hilldalemall-store@lululemon.com",
+        "Address": "578 N. Midvale Blvd., Madison, WI, US, 53705"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/milwaukee/thirdward",
+        "Store Name": "Third Ward",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "414-296-3831",
+        "Email": "thirdward-store@lululemon.com",
+        "Address": "322 N Water St, Milwaukee, WI, US, 53202"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/pleasant-prairie/pleasant-prairie-premium-outlet-pop-up",
+        "Store Name": "Pleasant Prairie Premium Outlet Pop Up",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "262-300-5481",
+        "Email": "pprairie-outlet@lululemon.com",
+        "Address": "11211 120th Ave, Pleasant Prairie, WI, US, 53158"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/wauwatosa/mayfair",
+        "Store Name": "Mayfair",
+        "Open Hours": "Mon - Sat: 10:00am - 8:00pm; Sun: 11:00am - 6:00pm",
+        "Phone": "414-441-6019",
+        "Email": "MayfairWI-store@lululemon.com",
+        "Address": "2500 North Mayfair Road, Unit 208, Wauwatosa, WI, US, 53226"
+    },
+    {
+        "Link": "https://shop.lululemon.com/stores/us/jackson/wort-plaza-jackson-hole-pop-up",
+        "Store Name": "Wort Plaza Jackson Hole Pop Up",
+        "Open Hours": "Mon - Sat: 10:00am - 7:00pm; Sun: 10:00am - 6:00pm",
+        "Phone": "307-733-3639",
+        "Email": "jacksonhole-popup@lululemon.com",
+        "Address": "55 Glenwood Street, Space B2, Jackson, WY, US, 83001"
+    }
+]

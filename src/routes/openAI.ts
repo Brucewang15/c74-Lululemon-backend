@@ -1,8 +1,8 @@
-import { Router } from 'express'
-import OpenAIController from '../controllers/OpenAIController'
+import { Router } from "express";
+import OpenAIController from "../controllers/OpenAIController";
 
-const router = Router()
+const router = Router();
 
-router.post('/', OpenAIController.getRecommendations)
+router.post("/", OpenAIController.getRecommendations);
 
-export default router
+export default router;

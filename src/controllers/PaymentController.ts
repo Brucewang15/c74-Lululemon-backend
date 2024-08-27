@@ -1,5 +1,5 @@
-import { Request, Response } from 'express'
-import gDB from '../InitDataSource'
+import { Request, Response } from "express";
+import gDB from "../InitDataSource";
 import {
   PaymentEntity,
   PaymentMethod,
@@ -14,10 +14,10 @@ import { ResponseClass } from '../helper/Response'
 const stripe = require('stripe')(process.env.STRIPE_API_KEY);
 
 paypal.configure({
-  mode: 'sandbox',
+  mode: "sandbox",
   client_id: process.env.PAYPAL_CLIENT_ID,
   client_secret: process.env.PAYPAL_CLIENT_SECRET,
-})
+});
 
 export class PaymentController {
   static async createPayment(req: Request, res: Response) {
@@ -27,7 +27,7 @@ export class PaymentController {
       console.log('Missing payment information in request body.')
       return res
         .status(400)
-        .send('Missing payment information in request body.')
+        .send("Missing payment information in request body.");
     }
 
     // const paymentTotal = amount.total
@@ -50,16 +50,16 @@ export class PaymentController {
       newPayment.orderId = orderId
       newPayment.userId = userId
 
-      await paymentRepo.save(newPayment)
+      await paymentRepo.save(newPayment);
 
-      const orderRepo = gDB.getRepository(OrderEntity)
-      let orderToUpdate = await orderRepo.findOne({ where: { id: orderId } })
-      orderToUpdate.orderStatus = OrderStatus.PAID
+      const orderRepo = gDB.getRepository(OrderEntity);
+      let orderToUpdate = await orderRepo.findOne({ where: { id: orderId } });
+      orderToUpdate.orderStatus = OrderStatus.PAID;
 
       // console.log(newPayment)
       // console.log(orderToUpdate)
 
-      await orderRepo.save(orderToUpdate)
+      await orderRepo.save(orderToUpdate);
 
       if (payType == "stripe") {
         const orderItemRepo = gDB.getRepository(OrderItemEntity)
@@ -118,8 +118,8 @@ export class PaymentController {
         )
       }
     } catch (e) {
-      console.error('Payment processing failed:', e)
-      return res.status(500).send('Payment processing failed.')
+      console.error("Payment processing failed:", e);
+      return res.status(500).send("Payment processing failed.");
     }
   }
 }
