@@ -1,5 +1,5 @@
-import { Request, Response } from "express";
-import gDB from "../InitDataSource";
+import { Request, Response } from 'express'
+import gDB from '../InitDataSource'
 import {
   PaymentEntity,
   PaymentMethod,
@@ -11,13 +11,13 @@ import { OrderItemEntity } from '../entity/OrderItem.entity'
 import { OrderStatus } from '../helper/Enum'
 import { ResponseClass } from '../helper/Response'
 
-const stripe = require('stripe')(process.env.STRIPE_API_KEY);
+const stripe = require('stripe')(process.env.STRIPE_API_KEY)
 
 paypal.configure({
-  mode: "sandbox",
+  mode: 'sandbox',
   client_id: process.env.PAYPAL_CLIENT_ID,
   client_secret: process.env.PAYPAL_CLIENT_SECRET,
-});
+})
 
 export class PaymentController {
   static async createStripePayment(req: Request, res: Response) {
@@ -74,32 +74,36 @@ export class PaymentController {
   static async createPayment(req: Request, res: Response) {
     const { amount, orderId, userId, payType } = req.body
 
-    if (!amount || amount <= 0 || !orderId || !userId || !payType ) {
+    if (!amount || amount <= 0 || !orderId || !userId || !payType) {
       console.log('Missing payment information in request body.')
       return res
         .status(400)
-        .send("Missing payment information in request body.");
+        .send('Missing payment information in request body.')
     }
 
     try {
       const paymentRepo = gDB.getRepository(PaymentEntity)
       const newPayment = new PaymentEntity()
       newPayment.paymentStatus = PaymentStatus.PAID
-      newPayment.paymentMethod = PaymentMethod.PAYPAL
+      if (payType == 'stripe') {
+        newPayment.paymentMethod = PaymentMethod.STRIPE
+      } else {
+        newPayment.paymentMethod = PaymentMethod.PAYPAL
+      }
       newPayment.totalAmount = amount
       newPayment.orderId = orderId
       newPayment.userId = userId
 
-      await paymentRepo.save(newPayment);
+      await paymentRepo.save(newPayment)
 
-      const orderRepo = gDB.getRepository(OrderEntity);
-      let orderToUpdate = await orderRepo.findOne({ where: { id: orderId } });
-      orderToUpdate.orderStatus = OrderStatus.PAID;
+      const orderRepo = gDB.getRepository(OrderEntity)
+      let orderToUpdate = await orderRepo.findOne({ where: { id: orderId } })
+      orderToUpdate.orderStatus = OrderStatus.PAID
 
       // console.log(newPayment)
       // console.log(orderToUpdate)
 
-      await orderRepo.save(orderToUpdate);
+      await orderRepo.save(orderToUpdate)
 
       return res
       .status(200)

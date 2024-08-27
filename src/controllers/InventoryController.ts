@@ -1,30 +1,30 @@
-import { NextFunction, Request, Response } from "express";
+import { NextFunction, Request, Response } from 'express'
 
 class InventoryController {
   static index = (req: Request, res: Response) => {
-    res.send("NOT IMPLEMENTED");
-  };
+    res.send('NOT IMPLEMENTED')
+  }
 
   static item_detail = (req: Request, res: Response) => {
-    var id = req.params.id;
+    var id = req.params.id
     //res.send("checking item" + id);
 
-    res.setHeader("Content-Type", "application/json");
+    res.setHeader('Content-Type', 'application/json')
     res.end(
       JSON.stringify({
         stock: {
-          "6": 1,
-          "8": 2,
-          "10": 4,
-          "12": 2,
+          '6': 1,
+          '8': 2,
+          '10': 4,
+          '12': 2,
           S: 2,
 
           M: 3,
           L: 1,
         },
       }),
-    );
-  };
+    )
+  }
 }
 
-export default InventoryController;
+export default InventoryController
