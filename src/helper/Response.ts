@@ -6,13 +6,13 @@ export enum HttpCode {
 }
 
 export class ResponseClass {
-  msg: string;
-  statusCode: HttpCode;
-  data: any;
+  msg: string
+  statusCode: HttpCode
+  data: any
 
   constructor(statusCode: HttpCode, msg: string = null, data = null) {
-    this.statusCode = statusCode;
-    this.msg = msg;
-    this.data = data;
+    this.statusCode = statusCode
+    this.msg = msg
+    this.data = data
   }
 }

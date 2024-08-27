@@ -1,7 +1,7 @@
-import { MigrationInterface, QueryRunner } from "typeorm";
+import { MigrationInterface, QueryRunner } from 'typeorm'
 
 export class Migration1723580808565 implements MigrationInterface {
-  name = "Migration1723580808565";
+  name = 'Migration1723580808565'
 
   public async up(queryRunner: QueryRunner): Promise<void> {
     await queryRunner.query(`
@@ -17,7 +17,7 @@ export class Migration1723580808565 implements MigrationInterface {
                 "swatchName" varchar NOT NULL,
                 "cartId" integer
             )
-        `);
+        `)
     await queryRunner.query(`
             CREATE TABLE "temporary_save_for_later_entity" (
                 "id" integer PRIMARY KEY AUTOINCREMENT NOT NULL,
@@ -32,7 +32,7 @@ export class Migration1723580808565 implements MigrationInterface {
                 "cartId" integer,
                 CONSTRAINT "FK_28478d67e62eb27f256c19f2633" FOREIGN KEY ("cartId") REFERENCES "shopping_cart_entity" ("id") ON DELETE NO ACTION ON UPDATE NO ACTION
             )
-        `);
+        `)
     await queryRunner.query(`
             INSERT INTO "temporary_save_for_later_entity"(
                     "id",
@@ -57,21 +57,21 @@ export class Migration1723580808565 implements MigrationInterface {
                 "swatchName",
                 "cartId"
             FROM "save_for_later_entity"
-        `);
+        `)
     await queryRunner.query(`
             DROP TABLE "save_for_later_entity"
-        `);
+        `)
     await queryRunner.query(`
             ALTER TABLE "temporary_save_for_later_entity"
                 RENAME TO "save_for_later_entity"
-        `);
+        `)
   }
 
   public async down(queryRunner: QueryRunner): Promise<void> {
     await queryRunner.query(`
             ALTER TABLE "save_for_later_entity"
                 RENAME TO "temporary_save_for_later_entity"
-        `);
+        `)
     await queryRunner.query(`
             CREATE TABLE "save_for_later_entity" (
                 "id" integer PRIMARY KEY AUTOINCREMENT NOT NULL,
@@ -85,7 +85,7 @@ export class Migration1723580808565 implements MigrationInterface {
                 "swatchName" varchar NOT NULL,
                 "cartId" integer
             )
-        `);
+        `)
     await queryRunner.query(`
             INSERT INTO "save_for_later_entity"(
                     "id",
@@ -110,12 +110,12 @@ export class Migration1723580808565 implements MigrationInterface {
                 "swatchName",
                 "cartId"
             FROM "temporary_save_for_later_entity"
-        `);
+        `)
     await queryRunner.query(`
             DROP TABLE "temporary_save_for_later_entity"
-        `);
+        `)
     await queryRunner.query(`
             DROP TABLE "save_for_later_entity"
-        `);
+        `)
   }
 }
