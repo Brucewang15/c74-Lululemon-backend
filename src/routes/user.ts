@@ -26,4 +26,8 @@ router.put(
   UserController.updateAddress,
 );
 // ------
+
+//Password update
+router.post("/userInfo/updatePassword", UserController.updatePassword);
+
 export default router;

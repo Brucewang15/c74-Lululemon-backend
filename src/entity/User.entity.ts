@@ -23,6 +23,7 @@ import { ShoppingCartEntity } from "./ShoppingCart.entity";
 import { CartItemEntity } from "./CartItem.entity";
 import { OrderEntity } from "./Order.entity";
 import { PaymentEntity } from "./Payment.entity"; // For generating secure tokens
+import { WishlistEntity } from "./Wishlist.entity";
 
 @Entity()
 export class UserEntity {
@@ -39,8 +40,8 @@ export class UserEntity {
   lastName: string;
 
   @Column({ nullable: false, unique: true })
-  @IsEmail({}, { groups: ["signUp"] })
-  @Length(5, 500, { groups: ["signUp"] })
+  @IsEmail({}, { groups: ["email"] })
+  @Length(5, 500, { groups: ["email"] })
   email: string;
 
   @Column({ nullable: true })
@@ -53,11 +54,11 @@ export class UserEntity {
   gender: string;
 
   @Column()
-  @Length(8, 100, { groups: ["signUp"] })
+  @Length(8, 100, { groups: ["password"] })
   @Matches(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).*$/, {
     message:
       "Password must contain at least 8 characters, including 1 uppercase letter, 1 lowercase letter, and 1 number",
-    groups: ["signUp"],
+    groups: ["password"],
   })
   password: string;
 
@@ -94,7 +95,7 @@ export class UserEntity {
     (shippingAddress) => shippingAddress.user,
     { cascade: true },
   )
-  shippingAddresses: Address[];
+  shippingAddresses: ShippingAddressEntity[];
 
   @OneToOne(() => ShoppingCartEntity, (shoppingCart) => shoppingCart.user, {
     cascade: true,
@@ -107,4 +108,11 @@ export class UserEntity {
 
   @OneToMany(() => PaymentEntity, (PaymentEntity) => PaymentEntity.id)
   payments: PaymentEntity[];
+
+  // Wishlist relation
+  @OneToOne(() => WishlistEntity, (wishlist) => wishlist.user, {
+    cascade: true,
+  })
+  @JoinColumn()
+  wishlist: WishlistEntity;
 }

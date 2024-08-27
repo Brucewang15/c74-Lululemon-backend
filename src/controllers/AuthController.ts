@@ -27,28 +27,44 @@ class AuthController {
     user.hashPassword();
 
     try {
-      const error = await validate(user, { groups: ["signUp"] });
-      if (error.length > 0) {
-        CLog.bad("Validation failed: ", error);
+      const emailErrors  = await validate(user, {groups: ['email']})
+      if (emailErrors .length > 0) {
+        CLog.bad("Email validation failed: ", emailErrors )
         return res.status(400).send({
-          "Validation failed: ": error,
-        });
+          "Email validation failed: ": emailErrors
+        })
       }
-      user = await db.save(user);
+
+      const existingUser = await AuthController.db.findOne({where: {email}})
+
+      if (existingUser) {
+        console.log("Email already exists.")
+        return res.status(400).send('Email already exists.');
+      }
+
+      const passwordErrors = await validate(user, {groups: ['email']})
+      if (passwordErrors.length > 0) {
+        CLog.bad("Password validation failed: ", passwordErrors)
+        return res.status(404).send({
+          "Password validation failed: ": passwordErrors
+        })
+      }
+
+      const savedUser = await AuthController.db.save(user)
 
       // create a shopping cart for user
       // assign user to shoppingCart's user
       const shoppingCart = new ShoppingCartEntity();
-      shoppingCart.user = user;
+      shoppingCart.user = savedUser;
       await cartRepo.save(shoppingCart);
 
       // assign shopping cart to user's shopping cart
-      user.shoppingCart = shoppingCart;
-      await db.save(user);
+      savedUser.shoppingCart = shoppingCart;
+      await db.save(savedUser);
 
       return res
         .status(201)
-        .send(`User info, ${user.id}, ${user.email}, ${user.password}`);
+        .send(`User info, ${savedUser.id}, ${savedUser.email}`);
     } catch (err) {
       CLog.bad("Sign up failed: ", err);
       res.status(400).send("Sign up failed.");
@@ -102,7 +118,7 @@ class AuthController {
           lastName: user.lastName,
         },
         process.env.JWT_SECRET,
-        { expiresIn: 60 * 10 },
+        { expiresIn: 60 * 120 },
       );
 
       // Delete password before sending it back to the client
