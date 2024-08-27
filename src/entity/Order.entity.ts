@@ -6,6 +6,7 @@ import {
   ManyToMany,
   ManyToOne,
   OneToMany,
+  OneToOne,
   PrimaryGeneratedColumn,
   UpdateDateColumn,
 } from 'typeorm'
@@ -14,6 +15,7 @@ import { UserEntity } from './User.entity'
 import { ShippingAddressEntity } from './ShippingAddress.entity'
 import { OrderStatus, ShippingType } from '../helper/Enum'
 import { OrderItemEntity } from './OrderItem.entity'
+import { PaymentEntity } from './Payment.entity'
 
 @Entity()
 export class OrderEntity {
@@ -56,6 +58,10 @@ export class OrderEntity {
 
   @ManyToOne(() => UserEntity, (user) => user.orders)
   user: UserEntity
+
+  @OneToOne(() => PaymentEntity, payment => payment.orderId)
+  @JoinColumn()
+  payment: PaymentEntity;
 
   @ManyToOne(() => ShippingAddressEntity, { eager: true })
   @JoinColumn()

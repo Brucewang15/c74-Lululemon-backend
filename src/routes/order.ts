@@ -24,4 +24,6 @@ router.post('/:orderId/updateShippingFee', OrderController.updateShippingFee)
 //8. get ALL orders from DB
 router.get('/', OrderController.getAllOrders)
 
+//9. get all orders for a specific user  ( pagination included)
+router.get('/userOrders/:userId', OrderController.getUserOrdersPaginated)
 export default router
