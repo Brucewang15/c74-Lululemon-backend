@@ -37,6 +37,10 @@ export class PaymentController {
 
       const savedPayment = await paymentRepo.save(newPayment)
 
+      // adding this payment to the order
+      orderToUpdate.payment = savedPayment
+      await orderRepo.save(orderToUpdate)
+
       const paymentIntent = await stripe.paymentIntents.create({
         amount: Math.floor(orderToUpdate.totalAfterTax * 100),
         currency: 'cad',
@@ -62,14 +66,14 @@ export class PaymentController {
       const orderRepo = gDB.getRepository(OrderEntity)
       let orderToUpdate = await orderRepo.findOne({ where: { id: orderId } })
       orderToUpdate.orderStatus = OrderStatus.PAID
-      await orderRepo.save(orderToUpdate)
 
       const paymentRepo = gDB.getRepository(PaymentEntity)
       let paymentToUpdate = await paymentRepo.findOne({
         where: { id: paymentId },
       })
       paymentToUpdate.paymentStatus = PaymentStatus.PAID
-
+      orderToUpdate.payment = paymentToUpdate
+      await orderRepo.save(orderToUpdate)
       await paymentRepo.save(paymentToUpdate)
 
       return res.status(200).send(new ResponseClass(200, 'Payment Successful'))
