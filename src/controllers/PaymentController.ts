@@ -23,45 +23,60 @@ export class PaymentController {
   static async createStripePayment(req: Request, res: Response) {
     const { orderId, userId } = req.body
 
-    const orderRepo = gDB.getRepository(OrderEntity)
-    let orderToUpdate = await orderRepo.findOne({ where: { id: orderId } })
+    try {
+      const orderRepo = gDB.getRepository(OrderEntity)
+      let orderToUpdate = await orderRepo.findOne({ where: { id: orderId } })
 
-    const paymentRepo = gDB.getRepository(PaymentEntity)
-    const newPayment = new PaymentEntity()
-    newPayment.paymentStatus = PaymentStatus.PENDING
-    newPayment.paymentMethod = PaymentMethod.STRIPE
-    newPayment.totalAmount = orderToUpdate.totalAfterTax
-    newPayment.orderId = orderId
-    newPayment.userId = userId
+      const paymentRepo = gDB.getRepository(PaymentEntity)
+      const newPayment = new PaymentEntity()
+      newPayment.paymentStatus = PaymentStatus.PENDING
+      newPayment.paymentMethod = PaymentMethod.STRIPE
+      newPayment.totalAmount = orderToUpdate.totalAfterTax
+      newPayment.orderId = orderId
+      newPayment.userId = userId
 
-    const savedPayment = await paymentRepo.save(newPayment)
+      const savedPayment = await paymentRepo.save(newPayment)
 
-    const paymentIntent = await stripe.paymentIntents.create({
-      amount: orderToUpdate.totalAfterTax * 100,
-      currency: 'cad',
-      payment_method_types: ['card'],
-    })
+      const paymentIntent = await stripe.paymentIntents.create({
+        amount: Math.floor(orderToUpdate.totalAfterTax * 100),
+        currency: 'cad',
+        payment_method_types: ['card'],
+      })
 
-    return res.status(200).send(
-      new ResponseClass(200, 'Payment Ready', {
-        clientSecret: paymentIntent.client_secret,
-        paymentId: savedPayment.id,
-      }),
-    )
+      return res.status(200).send(
+        new ResponseClass(200, 'Payment Ready', {
+          clientSecret: paymentIntent.client_secret,
+          paymentId: savedPayment.id,
+        }),
+      )
+    } catch (err) {
+      console.error('Payment Prep Failed:', err)
+      return res.status(500).send('Payment Prep Failed.')
+    }
   }
 
   static async completeStripePayment(req: Request, res: Response) {
     const { orderId, userId, paymentId } = req.body
 
-    const paymentRepo = gDB.getRepository(PaymentEntity)
-    let paymentToUpdate = await paymentRepo.findOne({
-      where: { id: paymentId },
-    })
-    paymentToUpdate.paymentStatus = PaymentStatus.PAID
+    try {
+      const orderRepo = gDB.getRepository(OrderEntity)
+      let orderToUpdate = await orderRepo.findOne({ where: { id: orderId } })
+      orderToUpdate.orderStatus = OrderStatus.PAID
+      await orderRepo.save(orderToUpdate)
 
-    await paymentRepo.save(paymentToUpdate)
+      const paymentRepo = gDB.getRepository(PaymentEntity)
+      let paymentToUpdate = await paymentRepo.findOne({
+        where: { id: paymentId },
+      })
+      paymentToUpdate.paymentStatus = PaymentStatus.PAID
 
-    return res.status(200).send(new ResponseClass(200, 'Payment Successful'))
+      await paymentRepo.save(paymentToUpdate)
+
+      return res.status(200).send(new ResponseClass(200, 'Payment Successful'))
+    } catch (err) {
+      console.error('Payment Completion Failed:', err)
+      return res.status(500).send('Payment Completion Failed.')
+    }
   }
 
   static async createPayment(req: Request, res: Response) {
