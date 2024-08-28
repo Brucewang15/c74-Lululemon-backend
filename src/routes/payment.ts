@@ -4,8 +4,8 @@ import { PaymentController } from '../controllers/PaymentController'
 const router = Router()
 router.post('/', PaymentController.createPayment)
 
-router.post("/stripe", PaymentController.createStripePayment);
+router.post('/stripe', PaymentController.createStripePayment)
 
-router.post("/stripe/paid", PaymentController.completeStripePayment);
+router.post('/stripe/paid', PaymentController.completeStripePayment)
 
-export default router;
+export default router

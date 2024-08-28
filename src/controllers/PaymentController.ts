@@ -23,10 +23,9 @@ export class PaymentController {
   static async createStripePayment(req: Request, res: Response) {
     const { orderId, userId } = req.body
 
-    const orderRepo = gDB.getRepository(OrderEntity);
-    let orderToUpdate = await orderRepo.findOne({ where: { id: orderId } });
+    const orderRepo = gDB.getRepository(OrderEntity)
+    let orderToUpdate = await orderRepo.findOne({ where: { id: orderId } })
 
-    
     const paymentRepo = gDB.getRepository(PaymentEntity)
     const newPayment = new PaymentEntity()
     newPayment.paymentStatus = PaymentStatus.PENDING
@@ -35,42 +34,36 @@ export class PaymentController {
     newPayment.orderId = orderId
     newPayment.userId = userId
 
-
-    const savedPayment = await paymentRepo.save(newPayment);
+    const savedPayment = await paymentRepo.save(newPayment)
 
     const paymentIntent = await stripe.paymentIntents.create({
       amount: orderToUpdate.totalAfterTax * 100,
       currency: 'cad',
-      payment_method_types: ["card"]
+      payment_method_types: ['card'],
     })
 
-    return res
-      .status(200)
-      .send(
-        new ResponseClass(200, 'Payment Ready', {
-          clientSecret: paymentIntent.client_secret,
-          paymentId: savedPayment.id
-        }),
-      )
+    return res.status(200).send(
+      new ResponseClass(200, 'Payment Ready', {
+        clientSecret: paymentIntent.client_secret,
+        paymentId: savedPayment.id,
+      }),
+    )
   }
 
   static async completeStripePayment(req: Request, res: Response) {
     const { orderId, userId, paymentId } = req.body
 
     const paymentRepo = gDB.getRepository(PaymentEntity)
-    let paymentToUpdate = await paymentRepo.findOne({ where: { id: paymentId } });
+    let paymentToUpdate = await paymentRepo.findOne({
+      where: { id: paymentId },
+    })
     paymentToUpdate.paymentStatus = PaymentStatus.PAID
 
-    await paymentRepo.save(paymentToUpdate);
-    
-    return res
-      .status(200)
-      .send(
-        new ResponseClass(200, 'Payment Successful'),
-      )
+    await paymentRepo.save(paymentToUpdate)
+
+    return res.status(200).send(new ResponseClass(200, 'Payment Successful'))
   }
 
-  
   static async createPayment(req: Request, res: Response) {
     const { amount, orderId, userId, payType } = req.body
 
@@ -105,17 +98,14 @@ export class PaymentController {
 
       await orderRepo.save(orderToUpdate)
 
-      return res
-      .status(200)
-      .send(
+      return res.status(200).send(
         new ResponseClass(200, 'Payment Successful', {
           paymentId: newPayment.id,
         }),
       )
-
     } catch (e) {
-      console.error("Payment processing failed:", e);
-      return res.status(500).send("Payment processing failed.");
-   }
+      console.error('Payment processing failed:', e)
+      return res.status(500).send('Payment processing failed.')
+    }
   }
 }
