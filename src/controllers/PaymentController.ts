@@ -102,11 +102,12 @@ export class PaymentController {
       newPayment.orderId = orderId
       newPayment.userId = userId
 
-      await paymentRepo.save(newPayment)
+      const savedPayment = await paymentRepo.save(newPayment)
 
       const orderRepo = gDB.getRepository(OrderEntity)
       let orderToUpdate = await orderRepo.findOne({ where: { id: orderId } })
       orderToUpdate.orderStatus = OrderStatus.PAID
+      orderToUpdate.payment = savedPayment
 
       // console.log(newPayment)
       // console.log(orderToUpdate)
