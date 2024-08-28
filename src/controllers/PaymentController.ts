@@ -57,6 +57,11 @@ export class PaymentController {
   static async completeStripePayment(req: Request, res: Response) {
     const { orderId, userId, paymentId } = req.body
 
+    const orderRepo = gDB.getRepository(OrderEntity)
+    let orderToUpdate = await orderRepo.findOne({ where: { id: orderId } });
+    orderToUpdate.orderStatus = OrderStatus.PAID
+    await orderRepo.save(orderToUpdate)
+
     const paymentRepo = gDB.getRepository(PaymentEntity)
     let paymentToUpdate = await paymentRepo.findOne({ where: { id: paymentId } });
     paymentToUpdate.paymentStatus = PaymentStatus.PAID
