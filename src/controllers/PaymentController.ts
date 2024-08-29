@@ -71,7 +71,7 @@ export class PaymentController {
       })
       paymentToUpdate.paymentStatus = PaymentStatus.PAID
 
-      const paymentIntent = await stripe.retrievePaymentIntent(paymentToUpdate.apiSecret)
+      const paymentIntent = await stripe.paymentIntents.retrieve(paymentToUpdate.apiSecret)
       if (!paymentIntent || paymentIntent.status != "succeeded") {
         console.error("Payment failed to validate on server side")
       }
