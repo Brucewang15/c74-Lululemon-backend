@@ -41,7 +41,7 @@ export class PaymentController {
         payment_method_types: ['card'],
       })
 
-      newPayment.apiSecret = paymentIntent.client_secret
+      newPayment.apiSecret = paymentIntent.id
       const savedPayment = await paymentRepo.save(newPayment)
 
       // adding this payment to the order
