@@ -1,10 +1,10 @@
 import { MigrationInterface, QueryRunner } from "typeorm";
 
 export class Migration1724883256001 implements MigrationInterface {
-    name = 'Migration1724883256001'
+  name = "Migration1724883256001";
 
-    public async up(queryRunner: QueryRunner): Promise<void> {
-        await queryRunner.query(`
+  public async up(queryRunner: QueryRunner): Promise<void> {
+    await queryRunner.query(`
             CREATE TABLE "temporary_product_entity" (
                 "id" integer PRIMARY KEY AUTOINCREMENT NOT NULL,
                 "productId" varchar NOT NULL,
@@ -14,7 +14,7 @@ export class Migration1724883256001 implements MigrationInterface {
                 CONSTRAINT "UQ_be9530eb583cbbfd320561c723a" UNIQUE ("productId")
             )
         `);
-        await queryRunner.query(`
+    await queryRunner.query(`
             INSERT INTO "temporary_product_entity"("id", "productId", "price", "image", "name")
             SELECT "id",
                 "productId",
@@ -23,14 +23,14 @@ export class Migration1724883256001 implements MigrationInterface {
                 "name"
             FROM "product_entity"
         `);
-        await queryRunner.query(`
+    await queryRunner.query(`
             DROP TABLE "product_entity"
         `);
-        await queryRunner.query(`
+    await queryRunner.query(`
             ALTER TABLE "temporary_product_entity"
                 RENAME TO "product_entity"
         `);
-        await queryRunner.query(`
+    await queryRunner.query(`
             CREATE TABLE "temporary_order_entity" (
                 "id" integer PRIMARY KEY AUTOINCREMENT NOT NULL,
                 "taxAmount" decimal(10, 2) NOT NULL,
@@ -52,7 +52,7 @@ export class Migration1724883256001 implements MigrationInterface {
                 CONSTRAINT "FK_73e54f71063005717a0d0cbee70" FOREIGN KEY ("shippingAddressId") REFERENCES "shipping_address_entity" ("id") ON DELETE NO ACTION ON UPDATE NO ACTION
             )
         `);
-        await queryRunner.query(`
+    await queryRunner.query(`
             INSERT INTO "temporary_order_entity"(
                     "id",
                     "taxAmount",
@@ -85,14 +85,14 @@ export class Migration1724883256001 implements MigrationInterface {
                 "isGift"
             FROM "order_entity"
         `);
-        await queryRunner.query(`
+    await queryRunner.query(`
             DROP TABLE "order_entity"
         `);
-        await queryRunner.query(`
+    await queryRunner.query(`
             ALTER TABLE "temporary_order_entity"
                 RENAME TO "order_entity"
         `);
-        await queryRunner.query(`
+    await queryRunner.query(`
             CREATE TABLE "temporary_product_entity" (
                 "id" integer PRIMARY KEY AUTOINCREMENT NOT NULL,
                 "productId" varchar NOT NULL,
@@ -102,7 +102,7 @@ export class Migration1724883256001 implements MigrationInterface {
                 CONSTRAINT "UQ_be9530eb583cbbfd320561c723a" UNIQUE ("productId")
             )
         `);
-        await queryRunner.query(`
+    await queryRunner.query(`
             INSERT INTO "temporary_product_entity"("id", "productId", "price", "image", "name")
             SELECT "id",
                 "productId",
@@ -111,14 +111,14 @@ export class Migration1724883256001 implements MigrationInterface {
                 "name"
             FROM "product_entity"
         `);
-        await queryRunner.query(`
+    await queryRunner.query(`
             DROP TABLE "product_entity"
         `);
-        await queryRunner.query(`
+    await queryRunner.query(`
             ALTER TABLE "temporary_product_entity"
                 RENAME TO "product_entity"
         `);
-        await queryRunner.query(`
+    await queryRunner.query(`
             CREATE TABLE "temporary_order_entity" (
                 "id" integer PRIMARY KEY AUTOINCREMENT NOT NULL,
                 "taxAmount" decimal(10, 2) NOT NULL,
@@ -141,7 +141,7 @@ export class Migration1724883256001 implements MigrationInterface {
                 CONSTRAINT "FK_d676238d9607f577d292cf84812" FOREIGN KEY ("paymentId") REFERENCES "payment_entity" ("id") ON DELETE NO ACTION ON UPDATE NO ACTION
             )
         `);
-        await queryRunner.query(`
+    await queryRunner.query(`
             INSERT INTO "temporary_order_entity"(
                     "id",
                     "taxAmount",
@@ -176,21 +176,21 @@ export class Migration1724883256001 implements MigrationInterface {
                 "paymentId"
             FROM "order_entity"
         `);
-        await queryRunner.query(`
+    await queryRunner.query(`
             DROP TABLE "order_entity"
         `);
-        await queryRunner.query(`
+    await queryRunner.query(`
             ALTER TABLE "temporary_order_entity"
                 RENAME TO "order_entity"
         `);
-    }
+  }
 
-    public async down(queryRunner: QueryRunner): Promise<void> {
-        await queryRunner.query(`
+  public async down(queryRunner: QueryRunner): Promise<void> {
+    await queryRunner.query(`
             ALTER TABLE "order_entity"
                 RENAME TO "temporary_order_entity"
         `);
-        await queryRunner.query(`
+    await queryRunner.query(`
             CREATE TABLE "order_entity" (
                 "id" integer PRIMARY KEY AUTOINCREMENT NOT NULL,
                 "taxAmount" decimal(10, 2) NOT NULL,
@@ -212,7 +212,7 @@ export class Migration1724883256001 implements MigrationInterface {
                 CONSTRAINT "FK_73e54f71063005717a0d0cbee70" FOREIGN KEY ("shippingAddressId") REFERENCES "shipping_address_entity" ("id") ON DELETE NO ACTION ON UPDATE NO ACTION
             )
         `);
-        await queryRunner.query(`
+    await queryRunner.query(`
             INSERT INTO "order_entity"(
                     "id",
                     "taxAmount",
@@ -247,14 +247,14 @@ export class Migration1724883256001 implements MigrationInterface {
                 "paymentId"
             FROM "temporary_order_entity"
         `);
-        await queryRunner.query(`
+    await queryRunner.query(`
             DROP TABLE "temporary_order_entity"
         `);
-        await queryRunner.query(`
+    await queryRunner.query(`
             ALTER TABLE "product_entity"
                 RENAME TO "temporary_product_entity"
         `);
-        await queryRunner.query(`
+    await queryRunner.query(`
             CREATE TABLE "product_entity" (
                 "id" integer PRIMARY KEY AUTOINCREMENT NOT NULL,
                 "productId" varchar NOT NULL,
@@ -264,7 +264,7 @@ export class Migration1724883256001 implements MigrationInterface {
                 CONSTRAINT "UQ_be9530eb583cbbfd320561c723a" UNIQUE ("productId")
             )
         `);
-        await queryRunner.query(`
+    await queryRunner.query(`
             INSERT INTO "product_entity"("id", "productId", "price", "image", "name")
             SELECT "id",
                 "productId",
@@ -273,14 +273,14 @@ export class Migration1724883256001 implements MigrationInterface {
                 "name"
             FROM "temporary_product_entity"
         `);
-        await queryRunner.query(`
+    await queryRunner.query(`
             DROP TABLE "temporary_product_entity"
         `);
-        await queryRunner.query(`
+    await queryRunner.query(`
             ALTER TABLE "order_entity"
                 RENAME TO "temporary_order_entity"
         `);
-        await queryRunner.query(`
+    await queryRunner.query(`
             CREATE TABLE "order_entity" (
                 "id" integer PRIMARY KEY AUTOINCREMENT NOT NULL,
                 "taxAmount" decimal(10, 2) NOT NULL,
@@ -300,7 +300,7 @@ export class Migration1724883256001 implements MigrationInterface {
                 CONSTRAINT "FK_73e54f71063005717a0d0cbee70" FOREIGN KEY ("shippingAddressId") REFERENCES "shipping_address_entity" ("id") ON DELETE NO ACTION ON UPDATE NO ACTION
             )
         `);
-        await queryRunner.query(`
+    await queryRunner.query(`
             INSERT INTO "order_entity"(
                     "id",
                     "taxAmount",
@@ -333,14 +333,14 @@ export class Migration1724883256001 implements MigrationInterface {
                 "isGift"
             FROM "temporary_order_entity"
         `);
-        await queryRunner.query(`
+    await queryRunner.query(`
             DROP TABLE "temporary_order_entity"
         `);
-        await queryRunner.query(`
+    await queryRunner.query(`
             ALTER TABLE "product_entity"
                 RENAME TO "temporary_product_entity"
         `);
-        await queryRunner.query(`
+    await queryRunner.query(`
             CREATE TABLE "product_entity" (
                 "id" integer PRIMARY KEY AUTOINCREMENT NOT NULL,
                 "productId" varchar NOT NULL,
@@ -350,7 +350,7 @@ export class Migration1724883256001 implements MigrationInterface {
                 CONSTRAINT "UQ_be9530eb583cbbfd320561c723a" UNIQUE ("productId")
             )
         `);
-        await queryRunner.query(`
+    await queryRunner.query(`
             INSERT INTO "product_entity"("id", "productId", "price", "image", "name")
             SELECT "id",
                 "productId",
@@ -359,9 +359,8 @@ export class Migration1724883256001 implements MigrationInterface {
                 "name"
             FROM "temporary_product_entity"
         `);
-        await queryRunner.query(`
+    await queryRunner.query(`
             DROP TABLE "temporary_product_entity"
         `);
-    }
-
+  }
 }

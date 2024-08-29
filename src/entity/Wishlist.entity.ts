@@ -5,22 +5,22 @@ import {
   JoinTable,
   OneToOne,
   JoinColumn,
-} from 'typeorm'
-import { ProductEntity } from './Product.entity'
-import { UserEntity } from './User.entity'
+} from "typeorm";
+import { ProductEntity } from "./Product.entity";
+import { UserEntity } from "./User.entity";
 
 @Entity()
 export class WishlistEntity {
   @PrimaryGeneratedColumn()
-  id: number
+  id: number;
 
   @ManyToMany(() => ProductEntity, (product) => product.wishlists, {
     cascade: true,
     eager: true,
   })
   @JoinTable()
-  products: ProductEntity[]
+  products: ProductEntity[];
 
   @OneToOne(() => UserEntity, (user) => user.wishlist)
-  user: UserEntity
+  user: UserEntity;
 }

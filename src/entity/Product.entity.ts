@@ -1,23 +1,23 @@
-import { Entity, PrimaryGeneratedColumn, Column, ManyToMany } from 'typeorm'
-import { WishlistEntity } from './Wishlist.entity'
+import { Entity, PrimaryGeneratedColumn, Column, ManyToMany } from "typeorm";
+import { WishlistEntity } from "./Wishlist.entity";
 
 @Entity()
 export class ProductEntity {
   @PrimaryGeneratedColumn()
-  id: number
+  id: number;
 
   @Column()
-  productId: string
+  productId: string;
 
   @Column()
-  name: string
+  name: string;
 
   @Column()
-  price: string
+  price: string;
 
   @Column()
-  image: string
+  image: string;
 
   @ManyToMany(() => WishlistEntity, (wishlist) => wishlist.products)
-  wishlists: WishlistEntity[]
+  wishlists: WishlistEntity[];
 }

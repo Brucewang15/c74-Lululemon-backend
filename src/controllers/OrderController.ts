@@ -33,7 +33,7 @@ export class OrderController {
       return res.status(200).send(
         new ResponseClass(200, "Searching Order Successful", {
           order,
-        })
+        }),
       );
     } catch (e) {
       CLog.bad("loading order failed", e);
@@ -65,8 +65,8 @@ export class OrderController {
         .send(
           new ResponseClass(
             400,
-            "Please log in or include a user id to place an order"
-          )
+            "Please log in or include a user id to place an order",
+          ),
         );
     }
     const userRepo = gDB.getRepository(UserEntity);
@@ -91,8 +91,8 @@ export class OrderController {
           .send(
             new ResponseClass(
               400,
-              "Your shopping cart is empty, cannot place order"
-            )
+              "Your shopping cart is empty, cannot place order",
+            ),
           );
       }
       const shippingAddress = await addressRepo.findOneOrFail({
@@ -159,7 +159,7 @@ export class OrderController {
         new ResponseClass(200, "Placed Order Successfully!", {
           order: sanitizedOrderInfo,
           orderId: savedOrder.id,
-        })
+        }),
       );
     } catch (e) {
       CLog.bad("placing an order failed", e);
@@ -174,7 +174,7 @@ export class OrderController {
   static async updateOrderAddress(
     req: Request,
     res: Response,
-    next: NextFunction
+    next: NextFunction,
   ) {
     const { orderId, userId } = req.params;
     const {
@@ -194,8 +194,8 @@ export class OrderController {
         .send(
           new ResponseClass(
             400,
-            "please include both order id and user id to update an address"
-          )
+            "please include both order id and user id to update an address",
+          ),
         );
     }
 
@@ -242,7 +242,7 @@ export class OrderController {
         return res
           .status(404)
           .send(
-            new ResponseClass(404, "No user found, enter the right user id")
+            new ResponseClass(404, "No user found, enter the right user id"),
           );
       }
       // save the new address to the user
@@ -255,7 +255,7 @@ export class OrderController {
       return res.status(200).send(
         new ResponseClass(200, "editing order address successfully", {
           order,
-        })
+        }),
       );
     } catch (e) {
       CLog.bad("editing order address failed", e);
@@ -269,7 +269,7 @@ export class OrderController {
   static async updateOrderStatus(
     req: Request,
     res: Response,
-    next: NextFunction
+    next: NextFunction,
   ) {
     const { orderId } = req.params;
     const { orderStatus } = req.body;
@@ -290,8 +290,8 @@ export class OrderController {
           new ResponseClass(
             200,
             "Order status updated successfully",
-            order.orderStatus
-          )
+            order.orderStatus,
+          ),
         );
     } catch (e) {
       return res
@@ -305,7 +305,7 @@ export class OrderController {
   static async updateShippingFee(
     req: Request,
     res: Response,
-    next: NextFunction
+    next: NextFunction,
   ) {
     const { orderId } = req.params;
     const { shippingFee } = req.body;
@@ -315,8 +315,8 @@ export class OrderController {
         .send(
           new ResponseClass(
             400,
-            "include your orderId to update the shipping fee"
-          )
+            "include your orderId to update the shipping fee",
+          ),
         );
     }
 
@@ -342,14 +342,14 @@ export class OrderController {
       return res.status(200).send(
         new ResponseClass(200, "Shipping fee updated successfully", {
           order: sanitizedOrderInfo,
-        })
+        }),
       );
     } catch (error) {
       CLog.bad("updating shipping fee failed", error);
       return res
         .status(400)
         .send(
-          new ResponseClass(400, "Updating shipping fee failed", error.message)
+          new ResponseClass(400, "Updating shipping fee failed", error.message),
         );
     }
   }
@@ -372,7 +372,7 @@ export class OrderController {
         return res
           .status(404)
           .send(
-            new ResponseClass(404, "no order found, check your order number")
+            new ResponseClass(404, "no order found, check your order number"),
           );
       }
       for (const orderItem of order.orderItems) {
@@ -382,7 +382,7 @@ export class OrderController {
       return res.status(200).send(
         new ResponseClass(200, "Order deleted successfully", {
           deletedOrder: order,
-        })
+        }),
       );
     } catch (e) {
       CLog.bad("deleting order failed", e);
@@ -396,7 +396,7 @@ export class OrderController {
   static async getUserAllOrders(
     req: Request,
     res: Response,
-    next: NextFunction
+    next: NextFunction,
   ) {
     const { userId } = req.params;
     const userRepo = gDB.getRepository(UserEntity);
@@ -417,8 +417,8 @@ export class OrderController {
           .send(
             new ResponseClass(
               404,
-              "No user found by this user id, check your user id"
-            )
+              "No user found by this user id, check your user id",
+            ),
           );
       }
       // pagination
@@ -440,8 +440,8 @@ export class OrderController {
             new ResponseClass(
               404,
               "The page number you entered is bigger than total page, try again",
-              { totalPages }
-            )
+              { totalPages },
+            ),
           );
       }
 
@@ -462,7 +462,7 @@ export class OrderController {
         new ResponseClass(200, "All orders found", {
           paginationInfo,
           allOrdersWithoutPagination: user.orders,
-        })
+        }),
       );
     } catch (e) {
       return res
@@ -509,7 +509,7 @@ export class OrderController {
         new ResponseClass(200, "All orders found successfully,", {
           ordersWithPage: paginationInfo,
           ordersWithoutPage: allOrders,
-        })
+        }),
       );
     } catch (e) {
       return res
@@ -521,7 +521,7 @@ export class OrderController {
   static async getUserOrdersPaginated(
     req: Request,
     res: Response,
-    next: NextFunction
+    next: NextFunction,
   ) {
     const { userId } = req.params;
     const { page = 1, limit = 5 } = req.query;
@@ -547,7 +547,7 @@ export class OrderController {
       // 在数据库级别进行分页
       const [orders, totalOrders] = await orderRepo.findAndCount({
         where: { user: { id: +userId } },
-        relations: ['payment'],
+        relations: ["payment"],
         order: { createdAt: "DESC" },
         take: +limit,
         skip: (+page - 1) * +limit,
@@ -556,13 +556,11 @@ export class OrderController {
       const totalPages = Math.ceil(totalOrders / +limit);
 
       if (+page > totalPages) {
-        return res
-          .status(404)
-          .send(
-            new ResponseClass(404, "您输入的页码超出总页数,请重试", {
-              totalPages,
-            })
-          );
+        return res.status(404).send(
+          new ResponseClass(404, "您输入的页码超出总页数,请重试", {
+            totalPages,
+          }),
+        );
       }
 
       const paginationInfo = {
@@ -578,7 +576,7 @@ export class OrderController {
         new ResponseClass(200, "成功获取用户订单", {
           paginationInfo,
           orders,
-        })
+        }),
       );
     } catch (e) {
       CLog.bad("加载用户订单失败", e);

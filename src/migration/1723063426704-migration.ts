@@ -1,7 +1,7 @@
-import { MigrationInterface, QueryRunner } from 'typeorm'
+import { MigrationInterface, QueryRunner } from "typeorm";
 
 export class Migration1723063426704 implements MigrationInterface {
-  name = 'Migration1723063426704'
+  name = "Migration1723063426704";
 
   public async up(queryRunner: QueryRunner): Promise<void> {
     await queryRunner.query(`
@@ -16,7 +16,7 @@ export class Migration1723063426704 implements MigrationInterface {
                 "resetToken" varchar,
                 CONSTRAINT "UQ_415c35b9b3b6fe45a3b065030f5" UNIQUE ("email")
             )
-        `)
+        `);
     await queryRunner.query(`
             INSERT INTO "temporary_user_entity"(
                     "id",
@@ -35,14 +35,14 @@ export class Migration1723063426704 implements MigrationInterface {
                 "gender",
                 "password"
             FROM "user_entity"
-        `)
+        `);
     await queryRunner.query(`
             DROP TABLE "user_entity"
-        `)
+        `);
     await queryRunner.query(`
             ALTER TABLE "temporary_user_entity"
                 RENAME TO "user_entity"
-        `)
+        `);
     await queryRunner.query(`
             CREATE TABLE "temporary_user_entity" (
                 "id" integer PRIMARY KEY AUTOINCREMENT NOT NULL,
@@ -55,7 +55,7 @@ export class Migration1723063426704 implements MigrationInterface {
                 "resetToken" varchar,
                 CONSTRAINT "UQ_415c35b9b3b6fe45a3b065030f5" UNIQUE ("email")
             )
-        `)
+        `);
     await queryRunner.query(`
             INSERT INTO "temporary_user_entity"(
                     "id",
@@ -76,21 +76,21 @@ export class Migration1723063426704 implements MigrationInterface {
                 "password",
                 "resetToken"
             FROM "user_entity"
-        `)
+        `);
     await queryRunner.query(`
             DROP TABLE "user_entity"
-        `)
+        `);
     await queryRunner.query(`
             ALTER TABLE "temporary_user_entity"
                 RENAME TO "user_entity"
-        `)
+        `);
   }
 
   public async down(queryRunner: QueryRunner): Promise<void> {
     await queryRunner.query(`
             ALTER TABLE "user_entity"
                 RENAME TO "temporary_user_entity"
-        `)
+        `);
     await queryRunner.query(`
             CREATE TABLE "user_entity" (
                 "id" integer PRIMARY KEY AUTOINCREMENT NOT NULL,
@@ -103,7 +103,7 @@ export class Migration1723063426704 implements MigrationInterface {
                 "resetToken" varchar,
                 CONSTRAINT "UQ_415c35b9b3b6fe45a3b065030f5" UNIQUE ("email")
             )
-        `)
+        `);
     await queryRunner.query(`
             INSERT INTO "user_entity"(
                     "id",
@@ -124,14 +124,14 @@ export class Migration1723063426704 implements MigrationInterface {
                 "password",
                 "resetToken"
             FROM "temporary_user_entity"
-        `)
+        `);
     await queryRunner.query(`
             DROP TABLE "temporary_user_entity"
-        `)
+        `);
     await queryRunner.query(`
             ALTER TABLE "user_entity"
                 RENAME TO "temporary_user_entity"
-        `)
+        `);
     await queryRunner.query(`
             CREATE TABLE "user_entity" (
                 "id" integer PRIMARY KEY AUTOINCREMENT NOT NULL,
@@ -143,7 +143,7 @@ export class Migration1723063426704 implements MigrationInterface {
                 "password" varchar NOT NULL,
                 CONSTRAINT "UQ_415c35b9b3b6fe45a3b065030f5" UNIQUE ("email")
             )
-        `)
+        `);
     await queryRunner.query(`
             INSERT INTO "user_entity"(
                     "id",
@@ -162,9 +162,9 @@ export class Migration1723063426704 implements MigrationInterface {
                 "gender",
                 "password"
             FROM "temporary_user_entity"
-        `)
+        `);
     await queryRunner.query(`
             DROP TABLE "temporary_user_entity"
-        `)
+        `);
   }
 }
