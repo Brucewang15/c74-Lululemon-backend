@@ -92,9 +92,9 @@ export class PaymentController {
   }
 
   static async createPayment(req: Request, res: Response) {
-    const { amount, orderId, userId, payType } = req.body
+    const { amount, orderId, userId, payType, paypalId } = req.body
 
-    if (!amount || amount <= 0 || !orderId || !userId || !payType) {
+    if (!amount || amount <= 0 || !orderId || !userId || !payType || !paypalId) {
       console.log('Missing payment information in request body.')
       return res
         .status(400)
@@ -102,6 +102,9 @@ export class PaymentController {
     }
 
     try {
+      const capturePayment = await paypal.payment.execute(paypalId, {});
+      console.log("Payment capture successful!");
+
       const paymentRepo = gDB.getRepository(PaymentEntity)
       const newPayment = new PaymentEntity()
       newPayment.paymentStatus = PaymentStatus.PAID
