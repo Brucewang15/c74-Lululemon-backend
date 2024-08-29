@@ -45,4 +45,7 @@ export class PaymentEntity {
 
   @UpdateDateColumn()
   updatedAt: Date
+
+  @Column({ type: 'text', nullable: true })
+  apiSecret: string
 }

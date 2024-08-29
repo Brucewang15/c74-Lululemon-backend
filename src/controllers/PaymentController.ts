@@ -35,17 +35,18 @@ export class PaymentController {
       newPayment.orderId = orderId
       newPayment.userId = userId
 
-      const savedPayment = await paymentRepo.save(newPayment)
-
-      // adding this payment to the order
-      orderToUpdate.payment = savedPayment
-      await orderRepo.save(orderToUpdate)
-
       const paymentIntent = await stripe.paymentIntents.create({
         amount: Math.floor(orderToUpdate.totalAfterTax * 100),
         currency: 'cad',
         payment_method_types: ['card'],
       })
+
+      newPayment.apiSecret = paymentIntent.id
+      const savedPayment = await paymentRepo.save(newPayment)
+
+      // adding this payment to the order
+      orderToUpdate.payment = savedPayment
+      await orderRepo.save(orderToUpdate)
 
       return res.status(200).send(
         new ResponseClass(200, 'Payment Ready', {
@@ -63,15 +64,22 @@ export class PaymentController {
     const { orderId, userId, paymentId } = req.body
 
     try {
-      const orderRepo = gDB.getRepository(OrderEntity)
-      let orderToUpdate = await orderRepo.findOne({ where: { id: orderId } })
-      orderToUpdate.orderStatus = OrderStatus.PAID
 
       const paymentRepo = gDB.getRepository(PaymentEntity)
       let paymentToUpdate = await paymentRepo.findOne({
         where: { id: paymentId },
       })
       paymentToUpdate.paymentStatus = PaymentStatus.PAID
+
+      const paymentIntent = await stripe.paymentIntents.retrieve(paymentToUpdate.apiSecret)
+      if (!paymentIntent || paymentIntent.status != "succeeded") {
+        console.error("Payment failed to validate on server side")
+      }
+
+      const orderRepo = gDB.getRepository(OrderEntity)
+      let orderToUpdate = await orderRepo.findOne({ where: { id: orderId } })
+      orderToUpdate.orderStatus = OrderStatus.PAID
+
       orderToUpdate.payment = paymentToUpdate
       await orderRepo.save(orderToUpdate)
       await paymentRepo.save(paymentToUpdate)
