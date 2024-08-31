@@ -3,33 +3,71 @@ import { UserEntity } from '../entity/User.entity'
 import { NextFunction, Request, Response } from 'express'
 import { validate } from 'class-validator'
 import * as jwt from 'jsonwebtoken'
+import { CLog } from '../AppHelper'
+import { ShoppingCartEntity } from '../entity/ShoppingCart.entity'
+import cart from '../routes/cart'
 
 class AuthController {
   static db = gDB.getRepository(UserEntity)
 
-  static async signUp(req: Request, res: Response, next: NextFunction) {
-    const { firstName, lastName, email, age, gender, password } = req.body
+  // new users signup
+  static async signUp(req: Request, res: Response) {
+    const { email, password } = req.body
+
+    if (!(email && password)) {
+      return res.status(400).send('Invalid email or password.')
+    }
+
+    const db = gDB.getRepository(UserEntity)
+    const cartRepo = gDB.getRepository(ShoppingCartEntity)
     let user = new UserEntity()
-    user.firstName = firstName
-    user.lastName = lastName
     user.email = email
-    user.age = age
-    user.gender = gender
     user.password = password
 
+    user.hashPassword()
+
     try {
-      const errors = await validate(user)
-      if (errors.length > 0) {
-        return res
-          .status(400)
-          .send('Your user information is not valid, try again')
+      const emailErrors = await validate(user, { groups: ['email'] })
+      if (emailErrors.length > 0) {
+        CLog.bad('Email validation failed: ', emailErrors)
+        return res.status(400).send({
+          'Email validation failed: ': emailErrors,
+        })
       }
 
-      user.hashPassword()
-      await AuthController.db.save(user)
-      return res.status(200).send({ 'user created successfully': user })
-    } catch (e) {
-      return res.status(400).send('User created failed')
+      const existingUser = await AuthController.db.findOne({ where: { email } })
+
+      if (existingUser) {
+        console.log('Email already exists.')
+        return res.status(400).send('Email already exists.')
+      }
+
+      const passwordErrors = await validate(user, { groups: ['email'] })
+      if (passwordErrors.length > 0) {
+        CLog.bad('Password validation failed: ', passwordErrors)
+        return res.status(404).send({
+          'Password validation failed: ': passwordErrors,
+        })
+      }
+
+      const savedUser = await AuthController.db.save(user)
+
+      // create a shopping cart for user
+      // assign user to shoppingCart's user
+      const shoppingCart = new ShoppingCartEntity()
+      shoppingCart.user = savedUser
+      await cartRepo.save(shoppingCart)
+
+      // assign shopping cart to user's shopping cart
+      savedUser.shoppingCart = shoppingCart
+      await db.save(savedUser)
+
+      return res
+        .status(201)
+        .send(`User info, ${savedUser.id}, ${savedUser.email}`)
+    } catch (err) {
+      CLog.bad('Sign up failed: ', err)
+      res.status(400).send('Sign up failed.')
     }
   }
 
@@ -58,7 +96,9 @@ class AuthController {
         where: {
           email: email,
         },
+        relations: ['shoppingCart', 'shippingAddresses'],
       })
+
       // if no user found, return to client
       if (!user) {
         return res.status(404).send('User not found')
@@ -78,7 +118,7 @@ class AuthController {
           lastName: user.lastName,
         },
         process.env.JWT_SECRET,
-        { expiresIn: 60 * 10 },
+        { expiresIn: 60 * 120 },
       )
 
       // Delete password before sending it back to the client
@@ -89,6 +129,34 @@ class AuthController {
       return res
         .status(400)
         .send('Login Failed, please check your email and password. Try Again!')
+    }
+  }
+
+  static async checking(req: Request, res: Response) {
+    const email = req.body
+    console.log(email)
+
+    if (!email) {
+      return res.status(401).send(`invalid email or password`)
+    }
+
+    const db = gDB.getRepository(UserEntity)
+
+    try {
+      // figure this out
+      const user = await db.findOneOrFail({ where: email })
+
+      user.generateResetToken()
+      await db.save(user)
+
+      console.log('test', user.resetToken)
+      return res.status(201).send({
+        message: 'Password reset token generated',
+        token: user.resetToken,
+      })
+    } catch (err) {
+      CLog.bad('Login failed', err)
+      res.status(400).send(`Login failed:, ${err}`)
     }
   }
 }

@@ -47,3 +47,4 @@ temp/
 
 # Specific files
 ormconfig.json
+google_credentials.json

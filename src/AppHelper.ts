@@ -12,6 +12,7 @@ export const canNum = (...args) =>
   args.filter((a) => isNaN(parseInt(a))).length === 0
 export const canStr = (...args) =>
   args.filter((a) => typeof a === 'string').length !== 0
+
 //for back end nodejs server colorful console log
 enum gColor {
   reset = '\x1b[0m',
@@ -115,6 +116,7 @@ export const gisProduction = (): boolean => {
 
 export class CPath {
   private static upload_root: string = process.env.UPLOADFILES_ROOT
+
   constructor() {
     // check and decide the upload file path
     if (!CPath.upload_root) {
